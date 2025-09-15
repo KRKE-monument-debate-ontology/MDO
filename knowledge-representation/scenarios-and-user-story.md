@@ -4,7 +4,7 @@ icon: book-open
 
 We selected 10 sample user scenarios describing controversial situations based on 10 statues we chosen to address the topic of cancel culture, considering both the perspectives of those who want to preserve them and those who want to remove them.
 
-<h2>🎬 Preveservation and Removal sample user scenarios </h2>h2>
+<h2>🎬 Preveservation and Removal sample user scenarios </h2>
 
 <h2> 1. Statue of Christopher Columbus at Pepperdine University "Spring afternoon at Pepperdine University"</h2>
 One spring afternoon at Pepperdine University, the statue of Christopher Columbus stood quietly on campus, but the debate around it had reached its peak.<br>
