@@ -17,7 +17,7 @@ The creation of the Monument Debate Ontology (MDO) followed a structured, multi-
 
 The creation of the Monument Debate Ontology (MDO) followed a structured, multi-step process designed to balance conceptual clarity, cultural relevance, and semantic interoperability.
 
-**```mermaid**
+```mermaid
 flowchart TD
     A[📚 Preliminary Research<br/>Review of literature on monuments, heritage debates, cancel culture]
     B[🔑 Identification of Key Words<br/>Extract recurring terms → glossary]
