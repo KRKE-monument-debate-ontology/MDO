@@ -20,4 +20,4 @@
 
 ## 📃 DOCUMENTATION
 
-* [Sitography ](documentation/sitography.md)
+* [Bibliography and Sitography](documentation/sitography.md)
