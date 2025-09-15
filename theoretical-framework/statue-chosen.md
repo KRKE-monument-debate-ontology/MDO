@@ -54,6 +54,10 @@ icon: person
 
 9. .&#x20;
 
+<figure><img src="../.gitbook/assets/img_stalin.jpg" alt=""><figcaption></figcaption></figure>
+
 ***
 
 10. .
+
+<figure><img src="../.gitbook/assets/img_jimmy_savile.jpg" alt=""><figcaption></figcaption></figure>
