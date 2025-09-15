@@ -4,7 +4,7 @@ icon: book-open
 
 We selected 10 sample user scenarios describing controversial situations based on 10 statues we chosen to address the topic of cancel culture, considering both the perspectives of those who want to preserve them and those who want to remove them.
 
-<h2>🎬 Preveservation and Removal sample user scenarios </h2>
+<h1>🎬 Preveservation and Removal sample user scenarios </h1>
 
 <h2> 1. Statue of Christopher Columbus at Pepperdine University "Spring afternoon at Pepperdine University"</h2>
 One spring afternoon at Pepperdine University, the statue of Christopher Columbus stood quietly on campus, but the debate around it had reached its peak.<br>
@@ -67,7 +67,7 @@ Maria Gonzalez, a local historian and social justice activist, argues for remova
 Giovanni Russo, a member of the Italian-American Cultural Society, defends preservation. To him, the monument commemorates a 1933 transatlantic flight and a historic diplomatic gesture, not fascism. He worries that removing it risks erasing Italian-American contributions to the city and proposes contextual plaques or relocating the statue to a museum to educate the public about both the achievements and the controversies.<br>
 ➡️ The city council considers multiple options: removing the monument and renaming the street, adding historical context, relocating it to a museum, or conducting a broader public review. The debate highlights a fundamental challenge: how to balance preservation of heritage with moral responsibility, and what values Chicago wants its public spaces to represent. <br>
 
-<h2>🗿 User Story Example: Statue of Indro Montanelli </h2>
+<h1>🗿 User Story Example: Statue of Indro Montanelli </h1>
 Statue of Indro Montanelli statue in Milan - “Saturday Afternoon in Piazza della Repubblica” <br>
 It is a bright spring Saturday in Milan. In Piazza della Repubblica, the bronze statue of Indro Montanelli, inaugurated in 2006, still stands. A police cordon surrounds it, keeping two groups of demonstrators at a careful distance: on one side, those calling for its removal; on the other, those defending its presence. <br>
 Marta, 27, a contemporary history student, grips a sign reading, “No celebration for those who justified colonialism.” For her, the statue is a painful symbol in a public space. It recalls Montanelli’s statements on colonialism and his marriage to a twelve-year-old Eritrean girl during the war in Ethiopia. She feels that leaving the statue without context is a way of honoring him while erasing the victims’ perspective and normalizing values no longer acceptable. Marta hopes it will be removed and replaced with a work celebrating figures who promoted rights and equality. As she gazes at the statue, she thinks: “This isn’t about censorship. It’s about who we want as a role model today.”<br>
