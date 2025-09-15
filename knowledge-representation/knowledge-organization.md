@@ -6,6 +6,6 @@ icon: timeline
 <figure><img src="" alt=""><figcaption></figcaption></figure>
 
 <h2>Conceptual Model </h2>
-<figure><img src=".gitbook/assets/map2KRKE.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="" alt=""><figcaption></figcaption></figure>
 
 # Knowledge Organization
