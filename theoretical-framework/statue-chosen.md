@@ -7,7 +7,7 @@ icon: person
   
 We have selected ten controversial statues, located in different geographical and cultural contexts. Each of them has been at the center of discussions, protests, or institutional actions that have questioned their legitimacy in public space. </p>
 
-1. .
+<h2>1. INDRO MONTANELLI STATUE (Milan, Italy)</h2>
 
 <figure><img src="../.gitbook/assets/img_indro_montanelli_2.jpg" alt=""><figcaption></figcaption></figure>
 
@@ -15,54 +15,65 @@ We have selected ten controversial statues, located in different geographical an
 Despite his relevance in Italian cultural life, Montanelli's legacy has been increasingly questioned. Critics point to his support of fascism in his early years, his involvement in Italian colonialism and his admitted sexual abuse of a 12 years old Eritrean girl during the occupation of Ethiopia. <br>
 Since 2012, the statue has been repeatedly vandalized by different groups, mainly feminists and LGBTQIA+ activists. Acts of protest have included paint attacks and graffiti. In 2020, following the global Black Lives Matter protests, the controversy over the statue and his figure intensified. </p>
 
-2. .&#x20;
+<h2>2. CHRISTOPHER COLUMBUS STATUE (Pepperdine University, Malibu, California) </h2>
 
 <figure><img src="../.gitbook/assets/img_columbus_statue.webp" alt=""><figcaption></figcaption></figure>
 
-***
+<p>Christopher Columbus (1451-1506) was an Italian navigator and explorer whose voyages across Atlantic, sponsored by Spain, initiated the European colonization of the Americas. Long celebrated as a symbol of exploration and discovery, his legacy has become increasingly contested. Many see him as a figure associated with colonial violence, the enslavement of Indigenous people, and the onset of centuries of exploitation in the Americas. <br>
+The statue of Columbus at Pepperdine University, donated by an Italian-American organization, gradually became a point of controversy. Students find his presence on campus incompatible with values of inclusion and racial justice. <br>
+In October 2016, students launched a peaceful protest called "Waves Against Columbus", supported by groups such as the Pepperdine Black Student Association. Initially relocated to the Pepperdine campus in Florence, the statue was later gifted to Thomas Aquinas College in Santa Paula, California.</p>
 
-3. .
+<h2>3. CARL HAGENBECK STATUE (Hamburg, Germany)</h2>
 
 <figure><img src="../.gitbook/assets/img_carl_zoo_2.jpg" alt=""><figcaption></figcaption></figure>
 
-***
+<p>Carl Hagenbeck (1844–1913) was a German animal trader and entrepreneur who revolutionized the design of modern zoos by introducing naturalistic enclosures instead of traditional cages. In 1907 he founded the Tierpark Hagenbeck in Hamburg, which became a model for zoological gardens worldwide. He is remembered by some as a pioneer in improving the living conditions of animals and as an important businessman in the city of Hamburg. <br>
+Hagenbeck’s legacy is highly controversial. Alongside his innovations in zoo design, he organized the so-called Völkerschauen or “human zoos”, in which black people - especially from Africa - and Asian people were exhibited in setting that reinforced racist and colonial stereotypes. <br>
+Since 2020, activists, anti-racist groups, scholars and parts of the public have demanded a critical reassessment of Hagenbeck’s commemoration. Petitions and protests have called for the removal of his statue at the zoo etrance, the renaming of streets bearing his name, and the creation of memorials to honor the victims of the Völkerschauen. </p>
 
-4. .
+<h2>4. MAHATMA GANDHI STATUE (Accra, Ghana)</h2>
 
 <figure><img src="../.gitbook/assets/img_gandhi.webp" alt=""><figcaption></figcaption></figure>
 
-***
+<p>Mahatma Gandhi (1869–1948) was an Indian political ethicist and anti-colonial leader who became internationally known for pioneering the philosophy and strategy of non-violent resistance (satyagraha). He played a central role in the Indian independence movement and inspired civil rights movements worldwide. Gandhi is often celebrated as a global symbol of peace, non-violence and human dignity. <br>
+Despite his iconic status, Gandhi's legacy has been contested in Africa, particularly in Ghana. Critics highlight his early writings during his stay in South Africa, where he used racist language towards Africans and argued the superiority of Indians over Black Africans. They also point to his casteist views in India. <br>
+The statue was gifted by the Indian president and became the focus of protests by students, professors and activists. They demanded its removal, calling instead for monuments dedicated to African heroes. While the Ministry of Foreign Affairs defended the statue to safeguard diplomatic relations with India, growing public pressure led to its removal in 2018.</p>
 
-5. .&#x20;
+<h2>5.MARY WOLLSTONECRAFT SCULPTURE (London, United Kingdom)</h2>
 
 <figure><img src="../.gitbook/assets/img_mary.avif" alt=""><figcaption></figcaption></figure>
 
-***
+<p>Mary Wollstonecraft (1759–1797) was an English writer, philosopher, and early advocate of women's rights. She is best known for A Vindication of the Rights of Woman (1792), one of the first major works of feminist philosophy, in which she argued that women are not naturally inferior to men but only appear so because of lack of education. Wollstonecraft is remembered as a pioneering intellectual who helped lay the foundations of modern feminism. <br>
+In 2020, a statue by artist Maggi Hambling was unveiled in Newington Green, London, to honor Wollstonecraft. However, the work quickly provoked controversy. Instead of representing  Wollstonecraft herself, the statue depicts a nude, generic female figure emerging from organic forms. Supporters defended the choice as a symbol of the authenticity, strength and liberation. Critics, however, argued that the representation was sexualized, objectifying and reductive, focusing on the female body rather than Wollstonecraft's ideas and intellectual legacy. </p>
 
-6. .&#x20;
+<h2>6. JEAN BAPTISTE COLBERT STATUE (Paris, France)</h2>
 
 <figure><img src="../.gitbook/assets/img_colbert.jpg" alt=""><figcaption></figcaption></figure>
 
-***
+<p>Jean-Baptiste Colbert (1619–1683) was a French statesman who served as Minister of Finances under King Louis XIV. He played a central role in strengthening the French state, promoting mercantilist policies, and laying the foundations of modern state intervention in the economy. Remembered by many as a devoted servant of the monarchy and later celebrated as a precursor of republican values, his name has been given to streets, schools, and monuments across France. <br>
+Colbert’s legacy is deeply compromised by his authorship of the Code Noir (1685), a legal text that regulated and legitimized slavery in the French colonies. For many critics, the statue of Colbert symbolizes France’s colonial past and its complicity in the transatlantic slave trade. <br>
+The statue of Colbert in front of the National Assembly in Paris has been targeted several times. In 2017, debates around his legacy surfaced in the media, but controversy escalated in 2020, in the wake of the Black Lives Matter protests after the murder of George Floyd. The statue was vandalized with red paint and graffiti reading “Negrophobie d’État” (“State Anti-Blackness”). Activists, including the Representative Council of Black Associations in France (CRAN), as well as citizens and protest groups, have since demanded its removal or relocation.</p>
 
-7. .
+<h2>7. ANTONIO VIEIRA STATUE (Lisbon, Portugal)</h2>
 
 <figure><img src="../.gitbook/assets/img_vieira.webp" alt=""><figcaption></figcaption></figure>
 
-***
+<p>António Vieira (Lisbon, 1608 - Salvador de Bahia, 1697) was a Jesuit priest, missionary, diplomat and one of the greatest orators of the Portuguese Baroque. He defended Indigenous peoples in Brazil against colonial abuses, criticized the Inquisition and contributed significantly to Portuguese literature and diplomacy. <br>
+Despite his defense of Indigenous peoples, Vieira never condemned the African slave trade and maintained a paternalistic vision of Indigenous rights. His statue is seen by critics as a symbol of colonial hierarchy and as an expression of nostalgic imagery that minimizes Portugal’s colonial responsibilities. <br>
+In October 2017, the antiracist group Descolonizando accused Vieira of “selective pro-slavery”. In June 2020, during Black Lives Matter demonstrations in Lisbon, the statue was vandalized with red paint, graffiti reading “Decolonise,” and hearts drawn on the children.**</p>
 
-8. .
+<h2>8. INDRO MONTANELLI STATUE (Milan, Italy)</h2>
 
 <figure><img src="../.gitbook/assets/img_carl_zoo_2.jpg" alt=""><figcaption></figcaption></figure>
 
 ***
 
-9. .&#x20;
+<h2>9. INDRO MONTANELLI STATUE (Milan, Italy)</h2>
 
 <figure><img src="../.gitbook/assets/img_stalin.jpg" alt=""><figcaption></figcaption></figure>
 
 ***
 
-10. .
+<h2>10. INDRO MONTANELLI STATUE (Milan, Italy)</h2>
 
 <figure><img src="../.gitbook/assets/img_jimmy_savile.jpg" alt=""><figcaption></figcaption></figure>
