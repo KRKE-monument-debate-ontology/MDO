@@ -5,7 +5,6 @@ icon: landmark
 # Monument Debate Ontology
 
 ## INTRODUCTION&#x20;
-Ciao sono Francesca, così funziona? Vedete le mie modifiche?
 Public monuments and statues have long been powerful symbols of collective memory, identity, and heritage. As such, they also constitute focal points of debate, conflict, and reinterpretation in our society. Statues of political leaders, cultural figures, and historical actors often embody not only achievements or moments of pride but also legacies of oppression, discrimination, or controversy.
 
 The project **Monument Debate Ontology (MDO)** is designed to capture and represent the complex discussions around controversial monuments in the contemporary society. Its central aim is to understand the phenomenon of cancel culture by building an ontology in order to describe and analize how controversial monuments are viewed nowdays by different perspectives, considering _social, ethical, and political arguments_ that arise around their presence, preservation, or removal.
