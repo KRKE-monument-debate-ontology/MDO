@@ -1,5 +1,5 @@
 ---
-icon: book-open
+icon: book-open Scenarios and User story
 ---
 
 We selected 10 sample user scenarios describing controversial situations based on 10 statues we chosen to address the topic of cancel culture, considering both the perspectives of those who want to preserve them and those who want to remove them.
