@@ -1,7 +1,7 @@
 ---
 icon: timeline
 ---
-## KNOWLEDGE ORGANIZATION&#x20;
+## 🗓️ Knowledge Organization
 <h2>💭 Conceptual Map </h2>
 <figure><img src="../.gitbook/assets/map1KRKE.png" alt=""><figcaption></figcaption></figure>
 
