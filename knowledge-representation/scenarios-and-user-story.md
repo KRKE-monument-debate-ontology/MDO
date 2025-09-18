@@ -8,7 +8,7 @@ We selected 10 sample user scenarios describing controversial situations based o
 
 <h2> 1. Statue of Christopher Columbus at Pepperdine University "Spring afternoon at Pepperdine University"</h2>
 One spring afternoon at Pepperdine University, the statue of Christopher Columbus stood quietly on campus, but the debate around it had reached its peak.<br>
-Testo evidenziato in verdeMaya Johnson, a sociology junior and leader in the school’s Diversity and Inclusion group, saw the statue as a painful reminder of colonial violence and Indigenous erasure. Passing it daily left her feeling alienated, so she organized petitions, teach-ins, and wrote op-eds calling for its removal and replacement with art celebrating peace, inclusion, or Indigenous heritage.<br>
+Maya Johnson, a sociology junior and leader in the school’s Diversity and Inclusion group, saw the statue as a painful reminder of colonial violence and Indigenous erasure. Passing it daily left her feeling alienated, so she organized petitions, teach-ins, and wrote op-eds calling for its removal and replacement with art celebrating peace, inclusion, or Indigenous heritage.<br>
 Marco Bellini, a 1992 alumnus and Italian-American cultural leader, viewed the statue as honoring exploration and the struggles of Italian immigrants. He feared its removal would erase part of his community’s history and instead urged Pepperdine to add context through a plaque and education.<br>
 ➡️ In the end, the university chose a middle ground: the statue was moved to a less prominent location, a plaque was added to explain its history, and a new memorial was commissioned to honor California’s Native peoples.<br>
 
