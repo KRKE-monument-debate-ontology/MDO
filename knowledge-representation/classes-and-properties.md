@@ -4,24 +4,24 @@ icon: network-wired
 
 # Classes and Properties
 
-| CLASS |   | DESCRIPTION  |
-| ----- | - | ------------ |
-|       |   |              |
-|       |   |              |
-|       |   |              |
+| CLASS | SOURCE | DESCRIPTION  |
+| ----- | ------ | ------------ |
+|       |        |              |
+|       |        |              |
+|       |        |              |
 
 ***
 
-| OBJECT PROPERTY |   | DOMAIN→ RANGE | DESCRIPTION  |
-| --------------- | - | ------------- | ------------ |
-|                 |   |               |              |
-|                 |   |               |              |
-|                 |   |               |              |
+| OBJECT PROPERTY | SOURCE | DOMAIN→ RANGE | DESCRIPTION  |
+| --------------- | ------ | ------------- | ------------ |
+|                 |        |               |              |
+|                 |        |               |              |
+|                 |        |               |              |
 
 ***
 
-| DATA PROPERTY |   |   | DESCRIPTION  |
-| ------------- | - | - | ------------ |
-|               |   |   |              |
-|               |   |   |              |
-|               |   |   |              |
+| DATA PROPERTY | SOURCE |   | DESCRIPTION  |
+| ------------- | ------ | - | ------------ |
+|               |        |   |              |
+|               |        |   |              |
+|               |        |   |              |
