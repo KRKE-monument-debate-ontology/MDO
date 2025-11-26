@@ -5,8 +5,7 @@ icon: person
 
 # Statue Chosen
 
-In recent years, statues and public monuments have become the subject of heated debates. Once seen as simple celebratory symbols, these works have turned into focal points where historical memory, collective identity and issues of social justice intersect. Some statues are <mark style="color:$success;background-color:$success;">defended as artistic and historical testimonies</mark>, while <mark style="color:$danger;background-color:$danger;">contested by others because they are considered representations of values now problematic</mark>, such as colonialism, racism, sexism or political oppression.\
-
+In recent years, statues and public monuments have become the subject of heated debates. Once seen as simple celebratory symbols, these works have turned into focal points where historical memory, collective identity and issues of social justice intersect. Some statues are <mark style="color:$success;background-color:$success;">defended as artistic and historical testimonies</mark>, while <mark style="color:$danger;background-color:$danger;">contested by others because they are considered representations of values now problematic</mark>, such as colonialism, racism, sexism or political oppression.<br>
 
 We have selected **ten controversial statues**, located in different geographical and cultural contexts. Each of them has been at the center of discussions, protests, or institutional actions that have questioned their legitimacy in public space.
 

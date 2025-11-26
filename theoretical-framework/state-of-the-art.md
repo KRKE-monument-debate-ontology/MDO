@@ -21,8 +21,7 @@ Starting from the broader phenomenon, we collected both scholarly papers and jou
 * It aims at the removal of its target from the public sphere or memory
 
 \
-As for the particular expression of CC that is **statue removal**, we both reviewed literature we could find about the topic and searched for debates and protests surrounding controversial monuments, which could help us better understand and describe the phenomenon. The Contested Histories Initiative, a co-initiative of the European Association of History Educators (EuroClio) and the Institute for Historical Justice and Reconciliation (IHJR) was particularly useful in this sense. Contested Histories maintains a set of digital resources dedicated to debates related to examples of divisive historical memory, in order to foster a deeper comprehension of the phenomenon and was our main reference both for case studies review and for defining a classification that we later used in our conceptual model.\
-
+As for the particular expression of CC that is **statue removal**, we both reviewed literature we could find about the topic and searched for debates and protests surrounding controversial monuments, which could help us better understand and describe the phenomenon. The Contested Histories Initiative, a co-initiative of the European Association of History Educators (EuroClio) and the Institute for Historical Justice and Reconciliation (IHJR) was particularly useful in this sense. Contested Histories maintains a set of digital resources dedicated to debates related to examples of divisive historical memory, in order to foster a deeper comprehension of the phenomenon and was our main reference both for case studies review and for defining a classification that we later used in our conceptual model.<br>
 
 ***
 

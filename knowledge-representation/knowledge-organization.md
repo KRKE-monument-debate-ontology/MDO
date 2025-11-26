@@ -1,11 +1,13 @@
 ---
 icon: timeline
 ---
-# 🗓️ Knowledge Organization
-<h2>💭 Conceptual Map </h2>
-<figure><img src="../.gitbook/assets/map1KRKE.png" alt=""><figcaption></figcaption></figure>
 
-<h2>🧠 Conceptual Model </h2>
-<figure><img src="../.gitbook/assets/map2KRKE.png" alt=""><figcaption></figcaption></figure>
+# Knowledge Organization
 
+## 💭 Conceptual Map
 
+<figure><img src="../.gitbook/assets/mappa_linguaggio_naturale_2.png" alt=""><figcaption></figcaption></figure>
+
+## 🧠 Conceptual Model
+
+<figure><img src="../.gitbook/assets/conceptual_model_aggiornato.png" alt=""><figcaption></figcaption></figure>
