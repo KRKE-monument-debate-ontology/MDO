@@ -11,3 +11,8 @@ icon: timeline
 ## 🧠 Conceptual Model
 
 <figure><img src="../.gitbook/assets/conceptual_model_aggiornato.png" alt=""><figcaption></figcaption></figure>
+
+## ODP alignment&#x20;
+
+<figure><img src="../.gitbook/assets/model_con_odp.png" alt=""><figcaption></figcaption></figure>
+
