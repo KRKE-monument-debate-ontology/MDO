@@ -22,5 +22,5 @@ LEGENDA&#x20;
 
 
 
-<figure><img src="../.gitbook/assets/Copy of conceptual_model_aggiornato.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/final_conceptual_model_aggiornato.png" alt=""><figcaption></figcaption></figure>
 
