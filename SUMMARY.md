@@ -17,6 +17,11 @@
 * [Scenarios and User Story](knowledge-representation/scenarios-and-user-story.md)
 * [Knowledge Organization](knowledge-representation/knowledge-organization.md)
 * [Classes and Properties](knowledge-representation/classes-and-properties.md)
+* [Competency Questions](knowledge-representation/competency-questions.md)
+
+## 🔎 Dataset
+
+* [Page 1](dataset/page-1.md)
 
 ## 📃 DOCUMENTATION
 
