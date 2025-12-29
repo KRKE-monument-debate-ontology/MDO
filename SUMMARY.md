@@ -27,10 +27,6 @@
 
 * [Page 2](llm/page-2.md)
 
-***
-
-* [Page](page.md)
-
 ## 📃 DOCUMENTATION
 
 * [Bibliography and Sitography](documentation/sitography.md)
