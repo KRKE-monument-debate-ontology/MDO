@@ -7,7 +7,7 @@ description: >-
 
 # Page 2
 
-## hh
+## OPZIONE CON TABS
 
 {% tabs %}
 {% tab title="Case Study 1" %}
@@ -17,10 +17,22 @@ description: >-
 [scenarios-and-user-story.md](../knowledge-representation/scenarios-and-user-story.md)
 {% endcontent-ref %}
 
-
+LL
 {% endtab %}
 
 {% tab title="Case Study 2" %}
 
 {% endtab %}
 {% endtabs %}
+
+***
+
+## OPZIONE CON EXPANDIBLES
+
+<details>
+
+<summary>jjjjjj</summary>
+
+aaaaaaaaaaaaaaaaaaaaaaaaa
+
+</details>
