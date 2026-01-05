@@ -4,13 +4,13 @@ icon: book-open
 
 # Scenarios and User Story
 
-## 📖 Scenarios and User story
-
 We selected 10 sample user scenarios describing controversial situations based on 10 statues we chosen to address the topic of cancel culture, considering both the perspectives of those who want to preserve them and those who want to remove them.
 
 ## 🎬 Preveservation and Removal sample user scenarios
 
-### 1. Statue of Christopher Columbus at Pepperdine University - _"Spring afternoon at Pepperdine University"_
+
+
+1. #### Statue of Christopher Columbus at Pepperdine University - _"Spring afternoon at Pepperdine University"_
 
 One spring afternoon at Pepperdine University, the statue of Christopher Columbus stood quietly on campus, but the debate around it had reached its peak.\
 🔴 Maya Johnson, a sociology junior and leader in the school’s Diversity and Inclusion group, saw the statue as a painful reminder of colonial violence and Indigenous erasure. Passing it daily left her feeling alienated, so she organized petitions, teach-ins, and wrote op-eds calling for its removal and replacement with art celebrating peace, inclusion, or Indigenous heritage.\

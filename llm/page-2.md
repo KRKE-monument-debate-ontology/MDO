@@ -10,11 +10,17 @@ description: >-
 ## hh
 
 {% tabs %}
-{% tab title="First Tab" %}
+{% tab title="Case Study 1" %}
+## Statue of Indro Montanelli
+
+{% content-ref url="../knowledge-representation/scenarios-and-user-story.md" %}
+[scenarios-and-user-story.md](../knowledge-representation/scenarios-and-user-story.md)
+{% endcontent-ref %}
+
 
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Case Study 2" %}
 
 {% endtab %}
 {% endtabs %}
