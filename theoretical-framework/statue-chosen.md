@@ -9,6 +9,10 @@ In recent years, statues and public monuments have become the subject of heated 
 
 We have selected **ten controversial statues**, located in different geographical and cultural contexts. Each of them has been at the center of discussions, protests, or institutional actions that have questioned their legitimacy in public space.
 
+
+
+<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h4>INDRO MONTANELLI STATUE</h4></td><td><a href="statue-chosen.md#id-1.-indro-montanelli-statue-milan-italy">#id-1.-indro-montanelli-statue-milan-italy</a></td><td><a href="../.gitbook/assets/img_indro_montanelli_2.jpg">img_indro_montanelli_2.jpg</a></td></tr><tr><td><h4>CHRISTOPHER COLUMBUS STATUE </h4></td><td><a href="statue-chosen.md#id-2.-christopher-columbus-statue-pepperdine-university-malibu-california">#id-2.-christopher-columbus-statue-pepperdine-university-malibu-california</a></td><td><a href="../.gitbook/assets/img_columbus_statue.webp">img_columbus_statue.webp</a></td></tr><tr><td><h4>CARL HAGENBECK STATUE</h4></td><td><a href="statue-chosen.md#id-3.-carl-hagenbeck-statue-hamburg-germany">#id-3.-carl-hagenbeck-statue-hamburg-germany</a></td><td><a href="../.gitbook/assets/img_carl_zoo_2.jpg">img_carl_zoo_2.jpg</a></td></tr></tbody></table>
+
 ### 1. INDRO MONTANELLI STATUE (Milan, Italy)
 
 <figure><img src="../.gitbook/assets/img_indro_montanelli_2.jpg" alt=""><figcaption></figcaption></figure>
