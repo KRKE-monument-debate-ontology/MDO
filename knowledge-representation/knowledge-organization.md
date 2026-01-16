@@ -25,7 +25,7 @@ In this phase, we relied on existing ontologies whenever possible. However, we d
 
 
 
-<figure><img src="../.gitbook/assets/conceptual_model_aggiornato_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/conceptual_model_aggiornato_ULTIMA.png" alt=""><figcaption></figcaption></figure>
 
 ## 📏Conceptual Model - alignment
 
