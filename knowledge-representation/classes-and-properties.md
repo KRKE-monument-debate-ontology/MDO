@@ -30,6 +30,6 @@ layout:
 
 ***
 
-## <mark style="background-color:$success;">DATA PROPERTY</mark>
+## <mark style="background-color:green;">DATA PROPERTY</mark>
 
 <table><thead><tr><th width="180.20001220703125">DATA PROPERTY</th><th>SOURCE</th><th>DOMAIN</th><th>FORMAT</th><th>DESCRIPTION</th></tr></thead><tbody><tr><td>dcterms:date</td><td>dcterms </td><td>dbpedia-owl:Monument</td><td>xsd:gYear</td><td><em>Date of unveiling, proposal, or hearing</em> </td></tr><tr><td>dcterms:title</td><td>dcterms </td><td>dbpedia-owl:Monument</td><td>xsd:String</td><td><em>Title</em></td></tr></tbody></table>

@@ -4,7 +4,7 @@ icon: paintbrush
 
 # State of the Art
 
-## STUDY OF THE DOMAIN
+## <mark style="color:$primary;">STUDY OF THE DOMAIN</mark>
 
 The project focuses on a specific sub-phenomenon within **Cancel Culture**, which is the **removal of statues portraying historical figures who have been criticized as responsible for ideas or actions deemed morally and socially unjust**.
 
@@ -12,7 +12,7 @@ In order to better define the domain, we carefully reviewed both literature rela
 
 The following paragraphs summarize our research and present a glossary of the most recurrent terms in the definition of the phenomena at hand.
 
-## STATE OF THE ART
+## <mark style="color:$primary;">STATE OF THE ART</mark>
 
 Starting from the broader phenomenon, we collected both scholarly papers and journal articles devoted to Cancel Culture in general. The references listed in the Bibliography and Sitography sections tackle the topic from different perspectives and backgrounds (legal, historical, social), but overall, though having a different focus on this complex matter, these studies agreed on some characteristics of Cancel Culture, in particular:
 
@@ -25,7 +25,7 @@ As for the particular expression of CC that is **statue removal**, we both revie
 
 ***
 
-## GLOSSARY
+## <mark style="color:$primary;">GLOSSARY</mark>
 
 <details>
 

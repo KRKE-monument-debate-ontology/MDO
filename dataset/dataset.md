@@ -4,7 +4,7 @@ icon: face-smile-upside-down
 
 # DATASET
 
-## DATA COLLECTION&#x20;
+## <mark style="color:$primary;">DATA COLLECTION</mark>&#x20;
 
 Since ready-to-use open datasets for the domain we modelled were not available, we created one by combining information selected from our sources, in particular the Contested Histories website and digital map, and information extracted from the scenarios generated with ChatGPT.
 
@@ -14,7 +14,7 @@ The Excel and csv file can be downloaded here. The Python script used for the RD
 
 <br>
 
-## RDF PRODUCTION&#x20;
+## <mark style="color:$primary;">RDF PRODUCTION</mark>&#x20;
 
 As mentioned, each table represents a Class with multiple properties associated to it in the data model. Each row in the table, thus, represents an instance of that class, whereas each column is either a datatype property or an object property and the values in the cells represent the objects in the triple, either a Literal or a URI.
 
