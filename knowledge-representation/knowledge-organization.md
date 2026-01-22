@@ -4,7 +4,7 @@ icon: timeline
 
 # Knowledge Organization
 
-## 💭 Conceptual Map
+## 💭 <mark style="color:$primary;">Conceptual Map</mark>
 
 The first conceptual map is expressed in **natural language** and provides a high-level conceptualization of the core object of the project, namely the **Monument**.\
 This map is intended to introduce the domain and to clarify the main entities involved, together with the relationships that connect them.
@@ -17,7 +17,7 @@ Finally, the map introduces the <mark style="background-color:blue;">**controver
 
 <figure><img src="../.gitbook/assets/mappa_linguaggio_naturale_ULTIMA.png" alt=""><figcaption></figcaption></figure>
 
-## 🧠 Conceptual Model
+## 🧠 <mark style="color:$primary;">Conceptual Model</mark>
 
 The second conceptual map represents a **more formal and structured conceptual model** of the domain. While the first map is expressed in natural language and focuses on narrative clarity, this second graph translates those concepts into an **ontological representation.**
 
@@ -27,7 +27,7 @@ In this phase, we relied on existing ontologies whenever possible. However, we d
 
 <figure><img src="../.gitbook/assets/conceptual_model_aggiornato_ULTIMA.png" alt=""><figcaption></figcaption></figure>
 
-## 📏Conceptual Model - alignment
+## 📏<mark style="color:$primary;">Conceptual Model - alignment</mark>
 
 The third and final conceptual map introduces a higher level of formalization by integrating both an **Ontology Design Pattern (ODP)** and the **theoretical model of perspectivization**.&#x20;
 

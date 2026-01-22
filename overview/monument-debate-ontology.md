@@ -4,7 +4,7 @@ icon: landmark
 
 # Monument Debate Ontology
 
-## INTRODUCTION
+## <mark style="color:$primary;">INTRODUCTION</mark>
 
 Public monuments and statues have long been powerful symbols of collective memory, identity, and heritage. As such, they also constitute focal points of debate, conflict, and reinterpretation in our society. Statues of political leaders, cultural figures, and historical actors often embody not only achievements or moments of pride but also legacies of oppression, discrimination, or controversy.
 

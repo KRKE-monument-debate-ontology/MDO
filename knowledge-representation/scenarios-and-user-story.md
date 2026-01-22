@@ -6,7 +6,7 @@ icon: book-open
 
 We selected 10 sample user scenarios describing controversial situations based on 10 statues we chosen to address the topic of cancel culture, considering both the perspectives of those who want to preserve them and those who want to remove them.
 
-## 🎬 Preveservation and Removal sample user scenarios
+## 🎬 <mark style="color:$primary;">Preveservation and Removal sample user scenarios</mark>
 
 <details>
 
@@ -113,7 +113,7 @@ On a chilly evening in 2012, the small square in Glencoe, Scotland, is tense as 
 
 ***
 
-## 🗿 User Story Example: Statue of Indro Montanelli
+## 🗿 <mark style="color:$primary;">User Story Example: Statue of Indro Montanelli</mark>
 
 Statue of Indro Montanelli statue in Milan - “Saturday Afternoon in Piazza della Repubblica”\
 It is a bright spring Saturday in Milan. In Piazza della Repubblica, the bronze statue of Indro Montanelli, inaugurated in 2006, still stands. A police cordon surrounds it, keeping two groups of demonstrators at a careful distance: on one side, those calling for its removal; on the other, those defending its presence.

@@ -26,7 +26,7 @@ we chose a set of 10 statues that best represent the spectrum of controversies (
 {% endstep %}
 
 {% step %}
-<mark style="color:$tint;">**Scenario Development**</mark>
+<mark style="color:$primary;">**Scenario Development**</mark>
 
 for each selected statue, we developed user scenarios using LLM, to describe the debate from opposing perspectives: those advocating for removal and those supporting preservation.
 {% endstep %}
