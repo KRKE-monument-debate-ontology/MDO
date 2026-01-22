@@ -119,7 +119,7 @@ On 23 October 1956, at the outbreak of the Hungarian Revolution, a large crowd o
 
 ***
 
-### 10. JIMMY SAVILLE STATUE (Glasgow, Great Britain)
+### 10. JIMMY SAVILE STATUE (Glasgow, Great Britain)
 
 <figure><img src="../.gitbook/assets/img_jimmy_savile.jpg" alt=""><figcaption></figcaption></figure>
 
