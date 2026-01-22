@@ -21,7 +21,7 @@
 
 ## 🔎 Dataset
 
-* [Page 1](dataset/page-1.md)
+* [DATASET](dataset/dataset.md)
 
 ## 🖥️ LLM
 
