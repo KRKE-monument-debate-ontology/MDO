@@ -28,4 +28,6 @@ starting from the URL of the turtle file in our github repository. After organiz
 
 The RDF production was carried out using Python rdflib and Pandas. The resulting turtle dataset and the python script can be downloaded here.
 
+{% embed url="https://github.com/KRKE-monument-debate-ontology/Data_MDO" %}
+
 <br>
