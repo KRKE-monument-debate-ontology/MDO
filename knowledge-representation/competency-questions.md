@@ -5,6 +5,8 @@ icon: question
 
 # Competency Questions
 
+#### <sub>_possiamo dire che quelle che mostriamo come risposte sono una semplificazione_</sub>&#x20;
+
 ### PREFIXES&#x20;
 
 {% code expandable="true" %}
@@ -25,10 +27,61 @@ PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX  skos: <http://www.w3.org/2004/02/skos/core#> 
 PREFIX  time: <http://www.w3.org/2006/time#> 
 PREFIX  dcterms: <http://purl.org/dc/terms/> 
-PREFIX  schema1: <http://schema.org/> 
+PREFIX  schema: <http://schema.org/> 
 PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/> 
 ```
 {% endcode %}
+
+### 1) QUERY&#x20;
+
+{% code expandable="true" %}
+```sparql
+SELECT 
+  ?monument
+  (SAMPLE(?title) AS ?titleSample)
+  (SAMPLE(?date) AS ?dateSample)
+  (SAMPLE(?HistoricalFigureLabel) AS ?HistoricalFigureLabelSample)
+  (GROUP_CONCAT(DISTINCT ?materialLabel; separator=", ") AS ?materials)
+  (GROUP_CONCAT(DISTINCT ?locationLabel; separator=", ") AS ?locations)
+  (GROUP_CONCAT(DISTINCT ?creatorLabel; separator=", ") AS ?creators)
+  (GROUP_CONCAT(DISTINCT ?funderLabel; separator=", ") AS ?funders)
+  (GROUP_CONCAT(DISTINCT ?featureLabel; separator=", ") AS ?features)
+  (GROUP_CONCAT(DISTINCT ?contextualLabel; separator=", ") AS ?contextualizations)
+  (GROUP_CONCAT(DISTINCT ?conceptLabel; separator=", ") AS ?concepts)
+  (GROUP_CONCAT(DISTINCT ?controversyLabel; separator=", ") AS ?controversies)
+
+WHERE {
+  ?monument rdf:type dbo:Monument .
+  OPTIONAL { ?monument dcterms:title ?title . }
+  OPTIONAL { ?monument dcterms:date ?date . }
+  OPTIONAL { ?monument ns1:hasMaterialComponent ?material .
+    OPTIONAL { ?material rdfs:label ?materialLabel . }}
+  OPTIONAL { ?monument schema:location ?location .
+    OPTIONAL { ?location rdfs:label ?locationLabel . }}
+  OPTIONAL { ?monument schema:creator ?creator .
+    OPTIONAL { ?creator rdfs:label ?creatorLabel . }}
+  OPTIONAL { ?monument schema:funder ?funder .
+    OPTIONAL { ?funder rdfs:label ?funderLabel . }}
+  OPTIONAL { ?monument crm:P56 ?feature .
+    OPTIONAL { ?feature rdfs:label ?featureLabel . }}
+  OPTIONAL { ?monument mdo:isContextualizedBy ?contextual .
+    OPTIONAL { ?contextual rdfs:label ?contextualLabel . }}
+  OPTIONAL { ?monument mdo:reflectsHeritageOf ?concept .
+    OPTIONAL { ?concept rdfs:label ?conceptLabel . }}
+  OPTIONAL { ?monument mdo:triggeredControversy ?controversy .
+    OPTIONAL { ?controversy rdfs:label ?controversyLabel . }}
+  OPTIONAL { ?monument crm:P62 ?HistoricalFigure .
+    OPTIONAL { ?HistoricalFigure rdfs:label ?HistoricalFigureLabel . }}
+}
+GROUP BY ?monument
+```
+{% endcode %}
+
+| title                   | HistoricalFigure             | date | material | location                         | creator       | funder                | feature                                              | contextual material                                                         | heritage concept                                  | controversy                                                                           |
+| ----------------------- | ---------------------------- | ---- | -------- | -------------------------------- | ------------- | --------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Indro Montanelli Statue | Indro Montanelli (1909-2001) | 2006 | Bronze   | Montanelli public gardens, Milan | Vito Tongiani | Municipality of Milan | Indro Montanelli seated while typing on his Olivetti | Engraved inscription on the pedestal reading "Indro Montanelli, Journalist" | Colonialism, Freedom of press, Pedophilia, Racism | The controversy triggered by Indro Montanelli Statue in the montanelli public gardens |
+
+***
 
 ### 2) QUERY
 
