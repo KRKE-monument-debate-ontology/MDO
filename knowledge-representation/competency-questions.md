@@ -7,6 +7,7 @@ icon: question
 
 ### PREFIXES&#x20;
 
+{% code expandable="true" %}
 ```sparql
 PREFIX  pr: <http://www.ontologydesignpatterns.org/cp/owl/participantRole.owl>
 PREFIX  crm: <http://www.cidoc-crm.org/cidoc-crm/> 
@@ -27,10 +28,11 @@ PREFIX  dcterms: <http://purl.org/dc/terms/>
 PREFIX  schema1: <http://schema.org/> 
 PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/> 
 ```
+{% endcode %}
 
 ### 2) QUERY
 
-{% code fullWidth="false" expandable="true" %}
+{% code fullWidth="false" %}
 ```sparql
 SELECT ?historicalFigureLabel ?legacyLabel ?controversialFactLabel
 WHERE {
