@@ -15,7 +15,7 @@ The monument is also linked to broader conceptual and historical dimensions. It 
 
 Finally, the map introduces the <mark style="background-color:blue;">**controversial dimension**</mark> of the monument by connecting it to **stakeholders**, **arguments**, and **values**. Stakeholders are actors who participate in the debate surrounding the monument and who hold different perspectives, often grounded in specific cultural or ideological values. These perspectives may result in opposing stances, such as <mark style="background-color:green;">supporting the preservation</mark> or the <mark style="background-color:red;">removal of the monument.</mark>
 
-<figure><img src="../.gitbook/assets/mappa_linguaggio_naturale_ULTIMA.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/mappa_linguaggio_naturale_BASTA.png" alt=""><figcaption></figcaption></figure>
 
 ## 🧠 <mark style="color:$primary;">Conceptual Model</mark>
 
@@ -25,7 +25,7 @@ In this phase, we relied on existing ontologies whenever possible. However, we d
 
 
 
-<figure><img src="../.gitbook/assets/conceptual_model_aggiornato_ULTIMA.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/conceptual_model_aggiornato_BASTA.png" alt=""><figcaption></figcaption></figure>
 
 ## 📏<mark style="color:$primary;">Conceptual Model - alignment</mark>
 
@@ -40,4 +40,4 @@ Overall, this final conceptual map enables the modeling of monument debates as *
 
 
 
-<figure><img src="../.gitbook/assets/odp_persp_model_ULTIMA.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/odp_persp_model_BASTA.png" alt=""><figcaption></figcaption></figure>
