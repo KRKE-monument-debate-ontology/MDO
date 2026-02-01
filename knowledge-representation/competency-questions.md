@@ -9,7 +9,7 @@ icon: question
 
 ### PREFIXES&#x20;
 
-{% code expandable="true" %}
+{% code fullWidth="true" expandable="true" %}
 ```sparql
 PREFIX  pr: <http://www.ontologydesignpatterns.org/cp/owl/participantRole.owl>
 PREFIX  crm: <http://www.cidoc-crm.org/cidoc-crm/> 
@@ -34,7 +34,7 @@ PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/>
 
 ### 1) QUERY&#x20;
 
-{% code expandable="true" %}
+{% code fullWidth="true" expandable="true" %}
 ```sparql
 SELECT 
   ?monument
