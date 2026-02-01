@@ -9,7 +9,7 @@ icon: question
 
 ### PREFIXES&#x20;
 
-{% code fullWidth="true" expandable="true" %}
+{% code fullWidth="false" expandable="true" %}
 ```sparql
 PREFIX  pr: <http://www.ontologydesignpatterns.org/cp/owl/participantRole.owl>
 PREFIX  crm: <http://www.cidoc-crm.org/cidoc-crm/> 
@@ -34,7 +34,7 @@ PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/>
 
 ### 1) QUERY&#x20;
 
-{% code fullWidth="true" expandable="true" %}
+{% code fullWidth="false" expandable="true" %}
 ```sparql
 SELECT 
   ?monument
@@ -77,7 +77,7 @@ GROUP BY ?monument
 ```
 {% endcode %}
 
-<table data-full-width="true"><thead><tr><th>title</th><th width="153.5999755859375">HistoricalFigure</th><th width="80.79998779296875">date</th><th width="104.79998779296875">material</th><th width="232.79998779296875">location</th><th width="129.5999755859375">creator</th><th>funder</th><th width="173.5999755859375">feature</th><th width="215.20001220703125">contextual material</th><th width="176">heritage concept</th><th width="222.4000244140625">controversy</th></tr></thead><tbody><tr><td>Indro Montanelli Statue</td><td>Indro Montanelli (1909-2001)</td><td>2006</td><td>Bronze</td><td>Montanelli public gardens, Milan</td><td>Vito Tongiani</td><td>Municipality of Milan</td><td>Indro Montanelli seated while typing on his Olivetti</td><td>Engraved inscription on the pedestal reading "Indro Montanelli, Journalist"</td><td>Colonialism, Freedom of press, Pedophilia, Racism</td><td>The controversy triggered by Indro Montanelli Statue in the montanelli public gardens</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th>title</th><th width="153.5999755859375">HistoricalFigure</th><th width="80.79998779296875">date</th><th width="104.79998779296875">material</th><th width="232.79998779296875">location</th><th width="129.5999755859375">creator</th><th>funder</th><th width="173.5999755859375">feature</th><th width="215.20001220703125">contextual material</th><th width="176">heritage concept</th><th width="222.4000244140625">controversy</th></tr></thead><tbody><tr><td>Indro Montanelli Statue</td><td>Indro Montanelli (1909-2001)</td><td>2006</td><td>Bronze</td><td>Montanelli public gardens, Milan</td><td>Vito Tongiani</td><td>Municipality of Milan</td><td>Indro Montanelli seated while typing on his Olivetti</td><td>Engraved inscription on the pedestal reading "Indro Montanelli, Journalist"</td><td>Colonialism, Freedom of press, Pedophilia, Racism</td><td>The controversy triggered by Indro Montanelli Statue in the montanelli public gardens</td></tr></tbody></table>
 
 ***
 
