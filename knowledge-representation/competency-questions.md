@@ -49,29 +49,38 @@ SELECT
   (GROUP_CONCAT(DISTINCT ?contextualLabel; separator=", ") AS ?contextualizations)
   (GROUP_CONCAT(DISTINCT ?conceptLabel; separator=", ") AS ?concepts)
   (GROUP_CONCAT(DISTINCT ?controversyLabel; separator=", ") AS ?controversies)
-
 WHERE {
-  ?monument rdf:type dbo:Monument .
+  ?monument a dbo:Monument .
+
   OPTIONAL { ?monument dcterms:title ?title . }
   OPTIONAL { ?monument dcterms:date ?date . }
-  OPTIONAL { ?monument ns1:hasMaterialComponent ?material .
-    OPTIONAL { ?material rdfs:label ?materialLabel . }}
-  OPTIONAL { ?monument schema:location ?location .
-    OPTIONAL { ?location rdfs:label ?locationLabel . }}
-  OPTIONAL { ?monument schema:creator ?creator .
-    OPTIONAL { ?creator rdfs:label ?creatorLabel . }}
-  OPTIONAL { ?monument schema:funder ?funder .
-    OPTIONAL { ?funder rdfs:label ?funderLabel . }}
-  OPTIONAL { ?monument crm:P56 ?feature .
-    OPTIONAL { ?feature rdfs:label ?featureLabel . }}
-  OPTIONAL { ?monument mdo:isContextualizedBy ?contextual .
-    OPTIONAL { ?contextual rdfs:label ?contextualLabel . }}
-  OPTIONAL { ?monument mdo:reflectsHeritageOf ?concept .
-    OPTIONAL { ?concept rdfs:label ?conceptLabel . }}
-  OPTIONAL { ?monument mdo:triggeredControversy ?controversy .
-    OPTIONAL { ?controversy rdfs:label ?controversyLabel . }}
-  OPTIONAL { ?monument crm:P62 ?HistoricalFigure .
-    OPTIONAL { ?HistoricalFigure rdfs:label ?HistoricalFigureLabel . }}
+  OPTIONAL {
+    ?monument ns1:hasMaterialComponent ?material .
+    ?material rdfs:label ?materialLabel .}
+  OPTIONAL {
+    ?monument schema:location ?location .
+    ?location rdfs:label ?locationLabel .}
+  OPTIONAL {
+    ?monument schema:creator ?creator .
+    ?creator rdfs:label ?creatorLabel .}
+  OPTIONAL {
+    ?monument schema:funder ?funder .
+    ?funder rdfs:label ?funderLabel .}
+  OPTIONAL {
+    ?monument crm:P56 ?feature .
+    ?feature rdfs:label ?featureLabel .}
+  OPTIONAL {
+    ?monument mdo:isContextualizedBy ?contextual .
+    ?contextual rdfs:label ?contextualLabel .}
+  OPTIONAL {
+    ?monument mdo:reflectsHeritageOf ?concept .
+    ?concept rdfs:label ?conceptLabel .}
+  OPTIONAL {
+    ?monument mdo:triggeredControversy ?controversy .
+    ?controversy rdfs:label ?controversyLabel .}
+  OPTIONAL {
+    ?monument crm:P62 ?HistoricalFigure .
+    ?HistoricalFigure rdfs:label ?HistoricalFigureLabel .}
 }
 GROUP BY ?monument
 ```
