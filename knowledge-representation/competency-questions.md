@@ -101,10 +101,10 @@ WHERE {
     ?historicalFigure rdfs:label ?historicalFigureLabel . }
   OPTIONAL {
     ?historicalFigure mdo:hasLegacyImpact ?legacy .
-    OPTIONAL { ?legacy rdfs:label ?legacyLabel . }}
+    ?legacy rdfs:label ?legacyLabel . }
   OPTIONAL {
     ?historicalFigure schema1:performerIn ?controversialFact .
-    OPTIONAL { ?controversialFact rdfs:label ?controversialFactLabel . }}
+    ?controversialFact rdfs:label ?controversialFactLabel . }
 }
 ```
 {% endcode %}
