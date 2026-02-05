@@ -94,7 +94,7 @@ GROUP BY ?monument
 
 {% code fullWidth="false" %}
 ```sparql
-SELECT ?historicalFigureLabel ?legacyLabel ?controversialFactLabel
+SELECT ?historicalFigureLabel ?legacyLabel 
 WHERE {
   ?monument crm:P62 ?historicalFigure .
   OPTIONAL { 
@@ -102,11 +102,6 @@ WHERE {
   OPTIONAL {
     ?historicalFigure mdo:hasLegacyImpact ?legacy .
     ?legacy rdfs:label ?legacyLabel . }
-  OPTIONAL {
-    ?historicalFigure schema1:performerIn ?controversialFact .
-    ?controversialFact rdfs:label ?controversialFactLabel . }
-}
+  
 ```
 {% endcode %}
-
-<table><thead><tr><th width="251.20001220703125">historicalFigureLabel</th><th width="247.79998779296875">legacyLabel</th><th width="425.800048828125">controversialFactLabel</th></tr></thead><tbody><tr><td>Mahatma Gandhi (1869-1948)</td><td>Opposition to racism, Indian Independence, Non violent resistance</td><td>Racist and derogatory statements about Black Africans in early writings, Casteist views and ambiguous position on the indian's caste system</td></tr><tr><td>Carl Hagenbeck (1844-1913)</td><td>Animal welfare, Zoo design</td><td>Hagenbeck was known for his exhibitions of people, especially from Africa, which were brought in Germany and displayed in circuses and zoos</td></tr></tbody></table>
