@@ -7,7 +7,7 @@ icon: question
 
 #### <sub>_possiamo dire che quelle che mostriamo come risposte sono una semplificazione_</sub>&#x20;
 
-## <mark style="color:$primary;">PREFIXES</mark>&#x20;
+### <mark style="color:$primary;">PREFIXES</mark>&#x20;
 
 {% code fullWidth="false" expandable="true" %}
 ```sparql
@@ -32,9 +32,9 @@ PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/>
 ```
 {% endcode %}
 
-## <mark style="color:$primary;">LIVELLO 1 descrizione del monumento</mark>&#x20;
+### <mark style="color:$primary;">LIVELLO 1 descrizione del monumento</mark>&#x20;
 
-### 1) Dove, quando, chi, come?
+#### 1) Dove, quando, chi, come?
 
 {% code fullWidth="false" expandable="true" %}
 ```sparql
@@ -92,9 +92,9 @@ GROUP BY ?monument
 
 ***
 
-## <mark style="color:$primary;">LIVELLO 2 - valori simbolici legati alla statua e al personaggio storico</mark>
+### <mark style="color:$primary;">LIVELLO 2 - valori simbolici legati alla statua e al personaggio storico</mark>
 
-### 2) QUERY Perché il personaggio è stato celebrato con una statua? (crm:E12  crm:P17  mdo:Legacy)
+#### 2) QUERY Perché il personaggio è stato celebrato con una statua? (crm:E12  crm:P17  mdo:Legacy)
 
 {% code fullWidth="false" %}
 ```sparql
