@@ -7,7 +7,7 @@ icon: question
 
 #### <sub>_possiamo dire che quelle che mostriamo come risposte sono una semplificazione_</sub>&#x20;
 
-## PREFIXES&#x20;
+## <mark style="color:$primary;">PREFIXES</mark>&#x20;
 
 {% code fullWidth="false" expandable="true" %}
 ```sparql
@@ -32,7 +32,7 @@ PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/>
 ```
 {% endcode %}
 
-## LIVELLO 1 descrizione del monumento&#x20;
+## <mark style="color:$primary;">LIVELLO 1 descrizione del monumento</mark>&#x20;
 
 ### 1) Dove, quando, chi, come?
 
@@ -92,7 +92,7 @@ GROUP BY ?monument
 
 ***
 
-## LIVELLO 2 - valori simbolici legati alla statua e al personaggio storico
+## <mark style="color:$primary;">LIVELLO 2 - valori simbolici legati alla statua e al personaggio storico</mark>
 
 ### 2) QUERY Perché il personaggio è stato celebrato con una statua? (crm:E12  crm:P17  mdo:Legacy)
 
@@ -132,7 +132,7 @@ WHERE {
 
 ***
 
-## LIVELLO 3: INTERPRETAZIONI DELLA STATUA&#x20;
+## <mark style="color:$primary;">LIVELLO 3: INTERPRETAZIONI DELLA STATUA</mark>&#x20;
 
 ### 5) Chi è coinvolto nella controversia aperta dal monumento? (mdo:Controversy  ceon-actor:participatingActor  ceon-actor:Stakeholder)
 
@@ -185,7 +185,7 @@ WHERE {
 
 ***
 
-## LIVELLO 4 - DIBATTITO, POSIZIONI E SOLUZIONI
+## <mark style="color:$primary;">LIVELLO 4 - DIBATTITO, POSIZIONI E SOLUZIONI</mark>
 
 ### 10) Quali proteste/azioni sono legate al monumento? (tip:timeIndexedParticipation  tip:includesObject  dbo:Monument)
 
