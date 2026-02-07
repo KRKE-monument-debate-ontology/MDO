@@ -122,19 +122,66 @@ WHERE {
 
 #### 4) Per quali motivi il personaggio raffigurato è considerato controverso ? (dbo:HistoricalFigure  schema:performerIn  mdo:ControversialFact)
 
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+
 ***
 
 ### LIVELLO 3: INTERPRETAZIONI DELLA STATUA&#x20;
 
 #### 5) Chi è coinvolto nella controversia aperta dal monumento? (mdo:Controversy  ceon-actor:participatingActor  ceon-actor:Stakeholder)
 
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+
 #### 6) Qual è l’argomentazione dello stakeholder? (ceon-actor:Stakeholder  dio:supports  mdo:Argument)
+
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
 
 #### 7) Qual è la posizione dello stakeholder? (ceon-actor:Stakeholder  mdo:hasStance  mdo:ProRemoval/mdo:ProPreservation) manca nel modello ma c’è nei dati
 
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+
 #### 8) Quali valori usano gli stakeholder favorevoli alla rimozione e quelli favorevoli alla preservazione a sostegno della loro argomentazione? (per ogni proRemoval  mdo:holdsValue  mdo:Value)(per ogni proPreservation  mdo:holdsValue  mdo:Value)
 
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+
 #### 9) Stakeholder ProRemoval e ProPreservation hanno valori in comune nelle loro argomentazioni?
+
+<pre><code><strong>// Some code
+</strong></code></pre>
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
 
 ***
 
@@ -142,13 +189,61 @@ WHERE {
 
 #### 10) Quali proteste/azioni sono legate al monumento? (tip:timeIndexedParticipation  tip:includesObject  dbo:Monument)
 
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+
 #### 11) Chi e partecipa alla protesta? (tip:timeIndexedParticipation  tip:forEntity  ceon-actor:Stakeholder)
+
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
 
 #### 12) Quando partecipa alla protesta? (tip:timeIndexedParticipation  tip:atTime  tip:TimeInterval; tip:TimeInterval  time:hasBeginning  time:Instant ECCETERA)
 
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+
 #### 13) Dove si svolge la protesta? tip:timeIndexedParticipation  tip:isSettingFor  mdo:DebateSetting)
+
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
 
 #### 14) Qual è l’esito del dibattito? (deo:Discussion  mdo:resultsIn  mdo:ActionProposal)
 
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+
 #### 15) Which statue-related contestation events were amplified through traditional or social media?
+
+```
+// Some code
+```
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
 
