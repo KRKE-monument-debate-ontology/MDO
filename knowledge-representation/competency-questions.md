@@ -184,12 +184,24 @@ GROUP BY ?historicalFigureLabel
 
 #### 9) Stakeholder ProRemoval e ProPreservation hanno valori in comune nelle loro argomentazioni?
 
-<pre><code><strong>// Some code
-</strong></code></pre>
+```sparql
+SELECT 
+  ?valueLabel
+  (GROUP_CONCAT(DISTINCT ?pers1Label; separator=", ") AS ?proRemovalPerspectives)
+  (GROUP_CONCAT(DISTINCT ?pers2Label; separator=", ") AS ?proPreservationPerspectives)
+WHERE {
+  ?value mdo:generates ?pers1 .
+  ?pers1 a mdo:ProRemoval .
+  OPTIONAL { ?pers1 rdfs:label ?pers1Label . }
+  ?value mdo:generates ?pers2 .
+  ?pers2 a mdo:ProPreservation .
+  OPTIONAL { ?pers2 rdfs:label ?pers2Label . }
+  OPTIONAL { ?value rdfs:label ?valueLabel . }
+}
+GROUP BY ?value ?valueLabel
+```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+<table><thead><tr><th width="159.20001220703125">valueLabel</th><th width="562.5999755859375">proRemovalPerspectives</th><th width="596">proPreservationPerspectives</th></tr></thead><tbody><tr><td>Critical thinking</td><td>Pro Removal perspective on António Vieira statue controversy</td><td>Pro Preservation perspective on Jean Baptiste Colbert statue controversy, Pro Preservation perspective on Hagenbeck statue controversy</td></tr><tr><td>Cultural identity</td><td>Pro Removal perspective on Jean Baptiste Colbert statue controversy, Pro Removal perspective on Gandhi statue controversy</td><td>Pro Preservation perspective on Colombo statue controversy, <br>Pro Preservation perspective on Edward Colston statue controversy, <br>Pro Preservation perspective on Savile statue controversy, <br>Pro Preservation perspective on Stalin statue controversy, <br>Pro Preservation perspective on António Vieira statue controversy</td></tr></tbody></table>
 
 ***
 
