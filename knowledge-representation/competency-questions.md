@@ -96,7 +96,7 @@ GROUP BY ?monument
 
 #### 2) QUERY Perché il personaggio è stato celebrato con una statua? (crm:E12  crm:P17  mdo:Legacy)
 
-{% code fullWidth="false" %}
+{% code fullWidth="false" expandable="true" %}
 ```sparql
 SELECT 
   ?historicalFigureLabel 
@@ -184,6 +184,7 @@ GROUP BY ?historicalFigureLabel
 
 #### 9) Stakeholder ProRemoval e ProPreservation hanno valori in comune nelle loro argomentazioni?
 
+{% code expandable="true" %}
 ```sparql
 SELECT 
   ?valueLabel
@@ -200,6 +201,7 @@ WHERE {
 }
 GROUP BY ?value ?valueLabel
 ```
+{% endcode %}
 
 <table><thead><tr><th width="159.20001220703125">valueLabel</th><th width="562.5999755859375">proRemovalPerspectives</th><th width="596">proPreservationPerspectives</th></tr></thead><tbody><tr><td>Critical thinking</td><td>Pro Removal perspective on António Vieira statue controversy</td><td>Pro Preservation perspective on Jean Baptiste Colbert statue controversy, Pro Preservation perspective on Hagenbeck statue controversy</td></tr><tr><td>Cultural identity</td><td>Pro Removal perspective on Jean Baptiste Colbert statue controversy, Pro Removal perspective on Gandhi statue controversy</td><td>Pro Preservation perspective on Colombo statue controversy, <br>Pro Preservation perspective on Edward Colston statue controversy, <br>Pro Preservation perspective on Savile statue controversy, <br>Pro Preservation perspective on Stalin statue controversy, <br>Pro Preservation perspective on António Vieira statue controversy</td></tr></tbody></table>
 
