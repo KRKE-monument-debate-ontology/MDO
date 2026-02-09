@@ -98,17 +98,25 @@ GROUP BY ?monument
 
 {% code fullWidth="false" %}
 ```sparql
-SELECT ?historicalFigureLabel ?legacyLabel 
+SELECT 
+  ?historicalFigureLabel 
+  (GROUP_CONCAT(DISTINCT ?legacyLabel; separator="; ") AS ?Legacy)
 WHERE {
   ?monument crm:P62 ?historicalFigure .
   OPTIONAL { 
-    ?historicalFigure rdfs:label ?historicalFigureLabel . }
+    ?historicalFigure rdfs:label ?historicalFigureLabel .}
   OPTIONAL {
     ?historicalFigure mdo:hasLegacyImpact ?legacy .
-    ?legacy rdfs:label ?legacyLabel . }
-  
+    ?legacy rdfs:label ?legacyLabel .}
+}
+GROUP BY ?historicalFigureLabel
 ```
 {% endcode %}
+
+| HistoricalFigure                | Legacy                              |
+| ------------------------------- | ----------------------------------- |
+| António Vieira (1608-1697)      | Advocacy; Religion and Spirituality |
+| Mary Wollstonecraft (1759-1797) | Philosophy; Women's rights; Writing |
 
 #### 3) Quali valori e concetti sono associati alla statua? (mdo:Monument  mdo:reflectsHeritageOf  skos:Concept)
 
