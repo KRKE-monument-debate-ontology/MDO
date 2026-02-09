@@ -211,13 +211,29 @@ GROUP BY ?value ?valueLabel
 
 #### 10) Quali proteste/azioni sono legate al monumento? (tip:timeIndexedParticipation  tip:includesObject  dbo:Monument)
 
-```
-// Some code
+```sparql
+SELECT DISTINCT 
+  ?title
+  ?activityLabel
+WHERE {
+  # Monumento → Controversia
+  ?monument mdo:triggeredControversy ?controversy .
+
+  # Controversia → Stakeholder
+  ?controversy ceon-actor:participatingActor ?stakeholder .
+  ?stakeholder a ceon-actor:Stakeholder .
+
+  # Stakeholder → Activity (protesta)
+  ?activity ceon-actor:participatingActor ?stakeholder .
+  ?activity a crm:E7 .
+
+  OPTIONAL { ?monument dcterms:title ?title . }
+  OPTIONAL { ?activity rdfs:label ?activityLabel . }
+}
+ORDER BY ?title ?activityLabel
 ```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+<table><thead><tr><th width="210">Monument</th><th width="800">activity</th></tr></thead><tbody><tr><td>Indro Montanelli Statue</td><td>A feminist LGBTQ+ movement placed a sticker saying 16 ‘Children’s rapist’ over the engraving ‘Giornalista.</td></tr><tr><td>Indro Montanelli Statue</td><td>A feminist group (Non Una Di Meno) splattered the statue with pink paint</td></tr><tr><td>Indro Montanelli Statue</td><td>The student organisations Rete Studenti Milano and LuMe (Laboratorio Universitario Metropolitano) splashed four cans of red paint on the statue and sprayed ‘Racist, Rapist’ in black on the pedestal</td></tr></tbody></table>
 
 #### 11) Chi e partecipa alla protesta? (tip:timeIndexedParticipation  tip:forEntity  ceon-actor:Stakeholder)
 
