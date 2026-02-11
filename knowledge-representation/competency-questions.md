@@ -213,23 +213,8 @@ GROUP BY ?value ?valueLabel
 
 ```sparql
 SELECT DISTINCT 
-  ?title ?activityLabel
-WHERE {
-  ?monument mdo:triggeredControversy ?controversy .
-
-  ?controversy ceon-actor:participatingActor ?stakeholder .
-  ?stakeholder a ceon-actor:Stakeholder .
-
-  ?activity ceon-actor:participatingActor ?stakeholder .
-  ?activity a crm:E7 .
-
-  OPTIONAL { ?monument dcterms:title ?title . }
-  OPTIONAL { ?activity rdfs:label ?activityLabel . }
-}
-ORDER BY ?title ?activityLabel
+MANCA TIP:INCLUDESOBJECT NELLE TABELLE
 ```
-
-<table><thead><tr><th width="210">Monument</th><th width="800">activity</th></tr></thead><tbody><tr><td>Indro Montanelli Statue</td><td>A feminist LGBTQ+ movement placed a sticker saying 16 ‘Children’s rapist’ over the engraving ‘Giornalista.</td></tr><tr><td>Indro Montanelli Statue</td><td>A feminist group (Non Una Di Meno) splattered the statue with pink paint</td></tr><tr><td>Indro Montanelli Statue</td><td>The student organisations Rete Studenti Milano and LuMe (Laboratorio Universitario Metropolitano) splashed four cans of red paint on the statue and sprayed ‘Racist, Rapist’ in black on the pedestal</td></tr></tbody></table>
 
 #### 11) Chi e partecipa alla protesta? (tip:timeIndexedParticipation  tip:forEntity  ceon-actor:Stakeholder
 
@@ -250,9 +235,7 @@ WHERE {
 ORDER BY ?participation
 ```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+<table><thead><tr><th width="411.5999755859375">participationLabel</th><th width="553.199951171875">stakeholderLabel</th></tr></thead><tbody><tr><td>Participation in the protest about Gandhi's statue</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td></tr><tr><td>Participation in the protest about Gandhi's statue</td><td>Ministry of Foreign Affairs</td></tr></tbody></table>
 
 #### 12) Quando partecipa alla protesta? (tip:timeIndexedParticipation  tip:atTime  tip:TimeInterval; tip:TimeInterval  time:hasBeginning  time:Instant ECCETERA)
 
