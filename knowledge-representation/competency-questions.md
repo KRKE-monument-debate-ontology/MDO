@@ -213,17 +213,13 @@ GROUP BY ?value ?valueLabel
 
 ```sparql
 SELECT DISTINCT 
-  ?title
-  ?activityLabel
+  ?title ?activityLabel
 WHERE {
-  # Monumento → Controversia
   ?monument mdo:triggeredControversy ?controversy .
 
-  # Controversia → Stakeholder
   ?controversy ceon-actor:participatingActor ?stakeholder .
   ?stakeholder a ceon-actor:Stakeholder .
 
-  # Stakeholder → Activity (protesta)
   ?activity ceon-actor:participatingActor ?stakeholder .
   ?activity a crm:E7 .
 
