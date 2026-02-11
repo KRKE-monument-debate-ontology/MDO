@@ -230,7 +230,7 @@ WHERE {
   ?stakeholder a ceon-actor:Stakeholder .
 
   OPTIONAL { ?stakeholder rdfs:label ?stakeholderLabel . }
-           { ?participation rdfs:label ?participationLabel . }
+  OPTIONAL { ?participation rdfs:label ?participationLabel . }
 }
 ORDER BY ?participation
 ```
@@ -239,13 +239,36 @@ ORDER BY ?participation
 
 #### 12) Quando partecipa alla protesta? (tip:timeIndexedParticipation  tip:atTime  tip:TimeInterval; tip:TimeInterval  time:hasBeginning  time:Instant ECCETERA)
 
-```
-// Some code
-```
+{% code expandable="true" %}
+```sparql
+SELECT DISTINCT 
+    ?stakeholderLabel  
+    ?participationLabel
+    ?beginValue
+    ?endValue
+WHERE {
+  ?participation a tip:TimeIndexedParticipation ;
+                 tip:forEntity ?stakeholder ;
+                 tip:atTime ?interval .
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+  ?stakeholder a ceon-actor:Stakeholder .
+
+  ?interval time:hasBeginning ?beginInstant ;
+            time:hasEnd ?endInstant .
+
+  ?beginInstant a time:Instant .
+  ?endInstant a time:Instant .
+
+  OPTIONAL { ?stakeholder rdfs:label ?stakeholderLabel . }
+  OPTIONAL { ?participation rdfs:label ?participationLabel . }
+  OPTIONAL { ?beginInstant time:inXSDgYearMonth ?beginValue . }
+  OPTIONAL { ?endInstant time:inXSDgYearMonth ?endValue . }
+}
+ORDER BY ?participation
+```
+{% endcode %}
+
+<table><thead><tr><th width="224.5999755859375">stakeholderLabel</th><th width="436.6000061035156">participationLabel</th><th>beginValue</th><th>endValue</th></tr></thead><tbody><tr><td>eritrean person</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>history student</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>feminist LGBTQ+</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr><tr><td>right-wing mayor of Milan, Gabriele Albertini</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr></tbody></table>
 
 #### 13) Dove si svolge la protesta? tip:timeIndexedParticipation  tip:isSettingFor  mdo:DebateSetting)
 
