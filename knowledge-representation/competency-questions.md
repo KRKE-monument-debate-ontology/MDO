@@ -120,23 +120,36 @@ GROUP BY ?historicalFigureLabel
 
 #### 3) Quali valori e concetti sono associati alla statua? (mdo:Monument  mdo:reflectsHeritageOf  skos:Concept)
 
-```
-// Some code
+```sparql
+SELECT DISTINCT ?conceptLabel ?monumentTitle
+WHERE {
+  ?monument a dbo:Monument ;
+            mdo:reflectsHeritageOf ?concept ;
+            dcterms:title ?monumenttitle .
+
+  ?concept rdfs:label ?conceptLabel }
 ```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+| conceptLabel     | monumentTtle                  |
+| ---------------- | ----------------------------- |
+| Authoritarianism | Stalin Statue in Budapest     |
+| Colonialism      | Jean Baptiste Colbert Statue  |
+| Racism           | Carl Hagenbeck Statue         |
+| Sexism           | Mary Wollstonecraft Sculpture |
 
 #### 4) Per quali motivi il personaggio raffigurato è considerato controverso ? (dbo:HistoricalFigure  schema:performerIn  mdo:ControversialFact)
 
-```
-// Some code
+```sparql
+SELECT DISTINCT ?historicalfigurelabel ?controversialFactlabel
+WHERE {
+  ?historicalFigure schema:performerIn ?controversialFact ;
+                    rdfs:label ?historicalfigurelabel .
+
+  ?controversialFact rdfs:label ?controversialFactlabel .
+}
 ```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+<table><thead><tr><th width="280.79998779296875">historicalFigureLabel</th><th width="800">controversialFactLabel</th></tr></thead><tbody><tr><td>Jean Baptiste Colbert (1619-1683)</td><td>Colbert was responsible for laying the foundations of the Code Noir, a legal text that legitimised slavery and institutionalised the domination and brutal treatment of people in the French colonies.</td></tr><tr><td>Jimmy Savile (1926-2011)</td><td>After his death, Jimmy Savile was accused of widespread sexual abuse of minors and adults, with investigations concluding that he had exploited his celebrity status to commit offences over several decades.</td></tr><tr><td>Carl Hagenbeck (1844-1913)</td><td>Hagenbeck was known for his exhibitions of people, especially from Africa, which were brought in Germany and displayed in circuses and zoos</td></tr></tbody></table>
 
 ***
 
