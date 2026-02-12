@@ -157,13 +157,20 @@ WHERE {
 
 #### 5) Chi è coinvolto nella controversia aperta dal monumento? (mdo:Controversy  ceon-actor:participatingActor  ceon-actor:Stakeholder)
 
-```
-// Some code
+```sparql
+SELECT DISTINCT ?stakeholderlabel ?controversylabel
+WHERE {
+  ?controversy a mdo:Controversy .
+  ?controversy ceon-actor:participatingActor ?stakeholder ;
+               rdfs:label ?controversylabel .
+
+  ?stakeholder rdfs:label ?stakeholderlabel .}
 ```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+| stakeholder                                                                             | controversy                                                                     |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Maya Johnson, sociology junior and leader in the school’s Diversity and Inclusion group | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
+| Marco Bellini, 1992 alumnus and Italian-American cultural leader                        | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 
 #### 6) Qual è l’argomentazione dello stakeholder? (ceon-actor:Stakeholder  dio:supports  mdo:Argument)
 
