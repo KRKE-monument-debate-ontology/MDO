@@ -88,7 +88,7 @@ GROUP BY ?monument
 ```
 {% endcode %}
 
-<table data-full-width="false"><thead><tr><th>title</th><th width="153.5999755859375">HistoricalFigure</th><th width="80.79998779296875">date</th><th width="104.79998779296875">material</th><th width="232.79998779296875">location</th><th width="129.5999755859375">creator</th><th>funder</th><th width="173.5999755859375">feature</th><th width="215.20001220703125">contextual material</th><th width="176">heritage concept</th><th width="222.4000244140625">controversy</th></tr></thead><tbody><tr><td>Indro Montanelli Statue</td><td>Indro Montanelli (1909-2001)</td><td>2006</td><td>Bronze</td><td>Montanelli public gardens, Milan</td><td>Vito Tongiani</td><td>Municipality of Milan</td><td>Indro Montanelli seated while typing on his Olivetti</td><td>Engraved inscription on the pedestal reading "Indro Montanelli, Journalist"</td><td>Colonialism, Freedom of press, Pedophilia, Racism</td><td>The controversy triggered by Indro Montanelli Statue in the montanelli public gardens</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th>monument</th><th width="153.5999755859375">HistoricalFigure</th><th width="80.79998779296875">date</th><th width="104.79998779296875">material</th><th width="232.79998779296875">location</th><th width="129.5999755859375">creator</th><th>funder</th><th width="173.5999755859375">feature</th><th width="215.20001220703125">contextual material</th><th width="176">heritage concept</th><th width="222.4000244140625">controversy</th></tr></thead><tbody><tr><td>Indro Montanelli Statue</td><td>Indro Montanelli (1909-2001)</td><td>2006</td><td>Bronze</td><td>Montanelli public gardens, Milan</td><td>Vito Tongiani</td><td>Municipality of Milan</td><td>Indro Montanelli seated while typing on his Olivetti</td><td>Engraved inscription on the pedestal reading "Indro Montanelli, Journalist"</td><td>Colonialism, Freedom of press, Pedophilia, Racism</td><td>The controversy triggered by Indro Montanelli Statue in the montanelli public gardens</td></tr></tbody></table>
 
 ***
 
@@ -121,7 +121,7 @@ GROUP BY ?historicalFigureLabel
 #### 3) Quali valori e concetti sono associati alla statua? (mdo:Monument  mdo:reflectsHeritageOf  skos:Concept)
 
 ```sparql
-SELECT DISTINCT ?conceptLabel ?monumentTitle
+SELECT DISTINCT ?conceptLabel ?monumenttitle
 WHERE {
   ?monument a dbo:Monument ;
             mdo:reflectsHeritageOf ?concept ;
@@ -130,7 +130,7 @@ WHERE {
   ?concept rdfs:label ?conceptLabel }
 ```
 
-| conceptLabel     | monumentTtle                  |
+| concept          | monument                      |
 | ---------------- | ----------------------------- |
 | Authoritarianism | Stalin Statue in Budapest     |
 | Colonialism      | Jean Baptiste Colbert Statue  |
@@ -149,7 +149,7 @@ WHERE {
 }
 ```
 
-<table><thead><tr><th width="280.79998779296875">historicalFigureLabel</th><th width="800">controversialFactLabel</th></tr></thead><tbody><tr><td>Jean Baptiste Colbert (1619-1683)</td><td>Colbert was responsible for laying the foundations of the Code Noir, a legal text that legitimised slavery and institutionalised the domination and brutal treatment of people in the French colonies.</td></tr><tr><td>Jimmy Savile (1926-2011)</td><td>After his death, Jimmy Savile was accused of widespread sexual abuse of minors and adults, with investigations concluding that he had exploited his celebrity status to commit offences over several decades.</td></tr><tr><td>Carl Hagenbeck (1844-1913)</td><td>Hagenbeck was known for his exhibitions of people, especially from Africa, which were brought in Germany and displayed in circuses and zoos</td></tr></tbody></table>
+<table><thead><tr><th width="280.79998779296875">historicalFigure</th><th width="800">controversialFact</th></tr></thead><tbody><tr><td>Jean Baptiste Colbert (1619-1683)</td><td>Colbert was responsible for laying the foundations of the Code Noir, a legal text that legitimised slavery and institutionalised the domination and brutal treatment of people in the French colonies.</td></tr><tr><td>Jimmy Savile (1926-2011)</td><td>After his death, Jimmy Savile was accused of widespread sexual abuse of minors and adults, with investigations concluding that he had exploited his celebrity status to commit offences over several decades.</td></tr><tr><td>Carl Hagenbeck (1844-1913)</td><td>Hagenbeck was known for his exhibitions of people, especially from Africa, which were brought in Germany and displayed in circuses and zoos</td></tr></tbody></table>
 
 ***
 
@@ -167,13 +167,18 @@ WHERE {
 
 #### 6) Qual è l’argomentazione dello stakeholder? (ceon-actor:Stakeholder  dio:supports  mdo:Argument)
 
-```
-// Some code
+```sparql
+SELECT  ?argumentLabel ?stakeholderLabel ?controversyLabel
+WHERE {
+  ?controversy ceon-actor:participatingActor ?stakeholder .
+  ?stakeholder dio:supports ?argument .
+  ?argument rdfs:label ?argumentLabel .
+  ?stakeholder rdfs:label ?stakeholderLabel .
+  ?controversy rdfs:label ?controversyLabel .
+}
 ```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+<table><thead><tr><th width="431.39996337890625">controversy</th><th width="428.60009765625">stakeholder</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Ministry of Foreign Affairs</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
 
 #### 7) Qual è la posizione dello stakeholder? (ceon-actor:Stakeholder  mdo:hasStance  mdo:ProRemoval/mdo:ProPreservation) manca nel modello ma c’è nei dati
 
@@ -231,6 +236,7 @@ MANCA TIP:INCLUDESOBJECT NELLE TABELLE
 
 #### 11) Chi e partecipa alla protesta? (tip:timeIndexedParticipation  tip:forEntity  ceon-actor:Stakeholder
 
+{% code expandable="true" %}
 ```sparql
 SELECT DISTINCT 
 	?participationLabel
@@ -247,8 +253,9 @@ WHERE {
 }
 ORDER BY ?participation
 ```
+{% endcode %}
 
-<table><thead><tr><th width="411.5999755859375">participationLabel</th><th width="553.199951171875">stakeholderLabel</th></tr></thead><tbody><tr><td>Participation in the protest about Gandhi's statue</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td></tr><tr><td>Participation in the protest about Gandhi's statue</td><td>Ministry of Foreign Affairs</td></tr></tbody></table>
+<table><thead><tr><th width="411.5999755859375">participation</th><th width="553.199951171875">stakeholder</th></tr></thead><tbody><tr><td>Participation in the protest about Stalin's statue</td><td>István, factory worker</td></tr><tr><td>Participation in the protest about Stalin's statue</td><td>Katalin, history teacher</td></tr></tbody></table>
 
 #### 12) Quando partecipa alla protesta? (tip:timeIndexedParticipation  tip:atTime  tip:TimeInterval; tip:TimeInterval  time:hasBeginning  time:Instant ECCETERA)
 
@@ -281,7 +288,7 @@ ORDER BY ?participation
 ```
 {% endcode %}
 
-<table><thead><tr><th width="224.5999755859375">stakeholderLabel</th><th width="436.6000061035156">participationLabel</th><th>beginValue</th><th>endValue</th></tr></thead><tbody><tr><td>eritrean person</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>history student</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>feminist LGBTQ+</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr><tr><td>right-wing mayor of Milan, Gabriele Albertini</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr></tbody></table>
+<table><thead><tr><th width="224.5999755859375">stakeholder</th><th width="436.6000061035156">participation</th><th>begin</th><th>end</th></tr></thead><tbody><tr><td>eritrean person</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>history student</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>feminist LGBTQ+</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr><tr><td>right-wing mayor of Milan, Gabriele Albertini</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr></tbody></table>
 
 #### 13) Dove si svolge la protesta? tip:timeIndexedParticipation  tip:isSettingFor  mdo:DebateSetting)
 
@@ -295,15 +302,19 @@ ORDER BY ?participation
 
 #### 14) Qual è l’esito del dibattito? (deo:Discussion  mdo:resultsIn  mdo:ActionProposal)
 
-```
-// Some code
+```sparql
+SELECT DISTINCT ?discussionLabel ?proposalLabel
+WHERE {
+  ?discussion mdo:resultsIn ?proposal .
+  
+  OPTIONAL { ?discussion rdfs:label ?discussionLabel . }
+  OPTIONAL { ?proposal rdfs:label ?proposalLabel . }
+}
 ```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+<table><thead><tr><th width="545.2001342773438">discussion</th><th width="415.59991455078125">proposal</th></tr></thead><tbody><tr><td>The discussion that arises from different stakeholders' perspectives on Savile statue controversy</td><td>The discussion among the stakeholders did not lead to a remedy action</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Gandhi statue controversy</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Wollstonecraftstatue controversy</td><td>Replace the statue with a new one</td></tr></tbody></table>
 
-#### 15) Which statue-related contestation events were amplified through traditional or social media?
+#### 15)&#x20;
 
 ```
 // Some code
