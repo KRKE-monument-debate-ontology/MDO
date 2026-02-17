@@ -246,9 +246,19 @@ GROUP BY ?value ?valueLabel
 #### 10) Which contestation events or actions are associated with the monument?
 
 ```sparql
-SELECT DISTINCT 
-MANCA TIP:INCLUDESOBJECT NELLE TABELLE
+SELECT ?monument ?ParticipationLabel ?eventLabel
+WHERE {
+  ?Participation tip:includesObject ?monument .
+  ?Participation rdfs:label ?ParticipationLabel . 
+  ?Participation 
+}
 ```
+
+|                  |                                                          |   |
+| ---------------- | -------------------------------------------------------- | - |
+| monument\_savile | Participation in the protest about Jimmy Savile's statue |   |
+|                  |                                                          |   |
+|                  |                                                          |   |
 
 #### 11) Who are the stakeholders participating in the protest?&#x20;
 
