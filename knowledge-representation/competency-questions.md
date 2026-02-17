@@ -5,9 +5,9 @@ icon: question
 
 # Competency Questions
 
-#### <sub>_possiamo dire che quelle che mostriamo come risposte sono una semplificazione_</sub>&#x20;
+#### <sub>_possiamo dire che quelle che mostriamo come risposte sono una semplificazione_</sub>
 
-### <mark style="color:$primary;">PREFIXES</mark>&#x20;
+### <mark style="color:$primary;">PREFIXES</mark>
 
 {% code fullWidth="false" expandable="true" %}
 ```sparql
@@ -32,7 +32,7 @@ PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/>
 ```
 {% endcode %}
 
-### <mark style="color:$primary;">LEVEL 1 description of the monument</mark>&#x20;
+### <mark style="color:$primary;">LEVEL 1 description of the monument</mark>
 
 #### 1) Where, when, who, how?
 
@@ -153,7 +153,7 @@ WHERE {
 
 ***
 
-### <mark style="color:$primary;">LEVEL 3: Interpretations of the statue</mark>&#x20;
+### <mark style="color:$primary;">LEVEL 3: Interpretations of the statue</mark>
 
 #### 5) Who is involved in the controversy triggered by the monument? (mdo:Controversy  ceon-actor:participatingActor  ceon-actor:Stakeholder)
 
@@ -207,9 +207,8 @@ WHERE {
 | - | - | - |
 |   |   |   |
 
-#### 9) Do Pro-Removal and Pro-Preservation stakeholders share any common values in their arguments? 
+#### 9) Do Pro-Removal and Pro-Preservation stakeholders share any common values in their arguments?
 
-{% code expandable="true" %}
 ```sparql
 SELECT 
   ?valueLabel
@@ -226,15 +225,14 @@ WHERE {
 }
 GROUP BY ?value ?valueLabel
 ```
-{% endcode %}
 
-<table><thead><tr><th width="159.20001220703125">valueLabel</th><th width="562.5999755859375">proRemovalPerspectives</th><th width="596">proPreservationPerspectives</th></tr></thead><tbody><tr><td>Critical thinking</td><td>Pro Removal perspective on António Vieira statue controversy</td><td>Pro Preservation perspective on Jean Baptiste Colbert statue controversy, Pro Preservation perspective on Hagenbeck statue controversy</td></tr><tr><td>Cultural identity</td><td>Pro Removal perspective on Jean Baptiste Colbert statue controversy, Pro Removal perspective on Gandhi statue controversy</td><td>Pro Preservation perspective on Colombo statue controversy, <br>Pro Preservation perspective on Edward Colston statue controversy, <br>Pro Preservation perspective on Savile statue controversy, <br>Pro Preservation perspective on Stalin statue controversy, <br>Pro Preservation perspective on António Vieira statue controversy</td></tr></tbody></table>
+<table><thead><tr><th width="159.20001220703125">valueLabel</th><th width="562.5999755859375">proRemovalPerspectives</th><th width="596">proPreservationPerspectives</th></tr></thead><tbody><tr><td>Critical thinking</td><td>Pro Removal perspective on António Vieira statue controversy</td><td>Pro Preservation perspective on Jean Baptiste Colbert statue controversy, Pro Preservation perspective on Hagenbeck statue controversy</td></tr><tr><td>Cultural identity</td><td>Pro Removal perspective on Jean Baptiste Colbert statue controversy, Pro Removal perspective on Gandhi statue controversy</td><td>Pro Preservation perspective on Colombo statue controversy,<br>Pro Preservation perspective on Edward Colston statue controversy,<br>Pro Preservation perspective on Savile statue controversy,<br>Pro Preservation perspective on Stalin statue controversy,<br>Pro Preservation perspective on António Vieira statue controversy</td></tr></tbody></table>
 
 ***
 
 ### <mark style="color:$primary;">LEVEL 4 - DEBATE, POSITIONS AND SOLUTIONS</mark>
 
-#### 10) Which protests or actions are linked to the monument?  Which contestation events or actions are associated with the monument?(tip:timeIndexedParticipation  tip:includesObject  dbo:Monument)
+#### 10) Which protests or actions are linked to the monument? Which contestation events or actions are associated with the monument?(tip:timeIndexedParticipation  tip:includesObject  dbo:Monument)
 
 ```sparql
 SELECT DISTINCT 
@@ -299,15 +297,27 @@ ORDER BY ?participation
 
 #### 13) Where does the protest occur? / What is the setting of the contestation? tip:timeIndexedParticipation  tip:isSettingFor  mdo:DebateSetting)
 
+{% code expandable="true" %}
+```sparql
+SELECT DISTINCT ?NomeMonumento ?controversiaLabel ?luogoProtestaLabel
+WHERE {
+  ?monumento mdo:triggeredControversy ?controversia .
+  BIND(STRAFTER(REPLACE(STR(?monumento), "monument_", ""), "monument/") AS ?slug)
+  ?partecipazione tip:forEntity ?idNelCSV .
+  FILTER(CONTAINS(LCASE(STR(?idNelCSV)), LCASE(?slug)))
+  ?partecipazione tip:isSettingFor ?luogoProtesta .
+  ?luogoProtesta a mdo:DebateSetting .
+  BIND(CONCAT("Monument ", UCASE(SUBSTR(?slug, 1, 1)), SUBSTR(?slug, 2)) AS ?NomeMonumento)
+  OPTIONAL { ?controversia rdfs:label ?controversiaLabel . }
+  OPTIONAL { ?luogoProtesta rdfs:label ?luogoProtestaLabel . }
+}
+ORDER BY ?NomeMonumento
 ```
-// Some code
-```
+{% endcode %}
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+<table><thead><tr><th width="181.60003662109375">monumento</th><th width="575.8001708984375">controversy</th><th width="254.800048828125">place</th></tr></thead><tbody><tr><td>Monument Stalin</td><td>The controversy triggered by the Stalin Statue in Városliget, Budapest</td><td>Budapest, Városliget</td></tr><tr><td>Monument Vieira</td><td>The controversy triggered by António Vieira in Trindade Coelho Square</td><td>Trindade Coelho Square</td></tr></tbody></table>
 
-#### 14) What is the outcome of the debate?  (deo:Discussion  mdo:resultsIn  mdo:ActionProposal)
+#### 14) What is the outcome of the debate? (deo:Discussion  mdo:resultsIn  mdo:ActionProposal)
 
 ```sparql
 SELECT DISTINCT ?discussionLabel ?proposalLabel
@@ -321,7 +331,7 @@ WHERE {
 
 <table><thead><tr><th width="545.2001342773438">discussion</th><th width="415.59991455078125">proposal</th></tr></thead><tbody><tr><td>The discussion that arises from different stakeholders' perspectives on Savile statue controversy</td><td>The discussion among the stakeholders did not lead to a remedy action</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Gandhi statue controversy</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Wollstonecraftstatue controversy</td><td>Replace the statue with a new one</td></tr></tbody></table>
 
-#### 15)&#x20;
+#### 15)
 
 ```
 // Some code
@@ -330,4 +340,3 @@ WHERE {
 |   |   |   |
 | - | - | - |
 |   |   |   |
-
