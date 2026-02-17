@@ -205,13 +205,18 @@ WHERE {
 
 #### 8) What values are held by stakeholders supporting either the removal or the preservation of monuments to sustain their respective arguments?&#x20;
 
-```
-// Some code
+```sparql
+SELECT  ?stakeholderLabel ?valueLabel ?argumentLabel
+WHERE {
+  ?stakeholder dio:supports ?argument .
+  ?argument rdfs:label ?argumentLabel . 
+  ?stakeholder mdo:holdsValue ?value .
+  ?value rdfs:label ?valueLabel .
+?stakeholder rdfs:label ?stakeholderLabel
+}
 ```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+<table><thead><tr><th width="269.79998779296875">stakeholder</th><th width="177.4000244140625">value</th><th width="564.7999877929688">argument</th></tr></thead><tbody><tr><td>right-wing mayor of Milan, Gabriele Albertini</td><td>Historical memory</td><td>The statue should be preserved to remember Indro Montanelli as he was one of the most famous Italian journalists of the twentieth century</td></tr><tr><td>feminist group (Non Una Di Meno)</td><td>Gender equality</td><td>The statue should be removed because it celebrates Indro Montanelli without providing proper historical context, overlooking his statements on colonialism and his marriage to a twelve-year-old Eritrean girl</td></tr></tbody></table>
 
 #### 9) Do Pro-Removal and Pro-Preservation stakeholders share any common values in their arguments?
 
