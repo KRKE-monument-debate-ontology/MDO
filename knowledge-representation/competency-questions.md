@@ -189,13 +189,19 @@ WHERE {
 
 #### 7) What is the stakeholder's position?&#x20;
 
-```
-// Some code
+```sparql
+SELECT ?controversyLabel ?stakeholderLabel ?perspectiveLabel 
+WHERE {
+  ?participation mdo:hasStance ?perspective .
+  ?participation tip:forEntity ?stakeholder .
+  ?stakeholder rdfs:label ?stakeholderLabel . 
+  ?perspective rdfs:label ?perspectiveLabel .
+  ?controversy ceon-actor:participatingActor ?stakeholder .
+  ?controversy rdfs:label ?controversyLabel . 
+}
 ```
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+<table><thead><tr><th width="348.99993896484375">controversy</th><th width="282">stakeholder</th><th width="351.2000732421875">perspective</th></tr></thead><tbody><tr><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td><td>Anna Mueller, history teacher</td><td>Pro Removal perspective on Hagenbeck statue controversy</td></tr><tr><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td><td>Samuel Bako, community organizer of Afro-German heritage</td><td>Pro Preservation perspective on Hagenbeck statue controversy</td></tr></tbody></table>
 
 #### 8) What values are held by stakeholders supporting either the removal or the preservation of monuments to sustain their respective arguments?&#x20;
 
