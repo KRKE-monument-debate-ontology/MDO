@@ -254,11 +254,9 @@ WHERE {
 }
 ```
 
-|                  |                                                          |   |
-| ---------------- | -------------------------------------------------------- | - |
-| monument\_savile | Participation in the protest about Jimmy Savile's statue |   |
-|                  |                                                          |   |
-|                  |                                                          |   |
+| monument         | participation                                            |
+| ---------------- | -------------------------------------------------------- |
+| monument\_savile | Participation in the protest about Jimmy Savile's statue |
 
 #### 11) Who are the stakeholders participating in the protest?&#x20;
 
