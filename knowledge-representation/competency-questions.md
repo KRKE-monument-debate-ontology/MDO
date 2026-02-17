@@ -32,9 +32,9 @@ PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/>
 ```
 {% endcode %}
 
-### <mark style="color:$primary;">LIVELLO 1 descrizione del monumento</mark>&#x20;
+### <mark style="color:$primary;">LEVEL 1 description of the monument</mark>&#x20;
 
-#### 1) Dove, quando, chi, come?
+#### 1) Where, when, who, how?
 
 {% code fullWidth="false" expandable="true" %}
 ```sparql
@@ -92,9 +92,9 @@ GROUP BY ?monument
 
 ***
 
-### <mark style="color:$primary;">LIVELLO 2 - valori simbolici legati alla statua e al personaggio storico</mark>
+### <mark style="color:$primary;">LEVEL 2 - >Symbolic values related to the statue and the historical figure</mark>
 
-#### 2) QUERY Perché il personaggio è stato celebrato con una statua? (crm:E12  crm:P17  mdo:Legacy)
+#### 2) QUERY Why was the character celebrated with a statue? What were the reasons for commemorating the historical figure with a statue? (crm:E12  crm:P17  mdo:Legacy)
 
 {% code fullWidth="false" expandable="true" %}
 ```sparql
@@ -118,7 +118,7 @@ GROUP BY ?historicalFigureLabel
 | António Vieira (1608-1697)      | Advocacy; Religion and Spirituality |
 | Mary Wollstonecraft (1759-1797) | Philosophy; Women's rights; Writing |
 
-#### 3) Quali valori e concetti sono associati alla statua? (mdo:Monument  mdo:reflectsHeritageOf  skos:Concept)
+#### 3) Which values and concepts are associated with the statue? (mdo:Monument  mdo:reflectsHeritageOf  skos:Concept)
 
 ```sparql
 SELECT DISTINCT ?conceptLabel ?monumenttitle
@@ -137,7 +137,7 @@ WHERE {
 | Racism           | Carl Hagenbeck Statue         |
 | Sexism           | Mary Wollstonecraft Sculpture |
 
-#### 4) Per quali motivi il personaggio raffigurato è considerato controverso ? (dbo:HistoricalFigure  schema:performerIn  mdo:ControversialFact)
+#### 4) For what reasons is the character depicted considered controversial? (dbo:HistoricalFigure  schema:performerIn  mdo:ControversialFact)
 
 ```sparql
 SELECT DISTINCT ?historicalfigurelabel ?controversialFactlabel
@@ -153,9 +153,9 @@ WHERE {
 
 ***
 
-### <mark style="color:$primary;">LIVELLO 3: INTERPRETAZIONI DELLA STATUA</mark>&#x20;
+### <mark style="color:$primary;">LEVEL 3: Interpretations of the statue</mark>&#x20;
 
-#### 5) Chi è coinvolto nella controversia aperta dal monumento? (mdo:Controversy  ceon-actor:participatingActor  ceon-actor:Stakeholder)
+#### 5) Who is involved in the controversy triggered by the monument? (mdo:Controversy  ceon-actor:participatingActor  ceon-actor:Stakeholder)
 
 ```sparql
 SELECT DISTINCT ?stakeholderlabel ?controversylabel
@@ -172,7 +172,7 @@ WHERE {
 | Maya Johnson, sociology junior and leader in the school’s Diversity and Inclusion group | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 | Marco Bellini, 1992 alumnus and Italian-American cultural leader                        | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 
-#### 6) Qual è l’argomentazione dello stakeholder? (ceon-actor:Stakeholder  dio:supports  mdo:Argument)
+#### 6) What is the stakeholder argument? (ceon-actor:Stakeholder  dio:supports  mdo:Argument)
 
 ```sparql
 SELECT  ?argumentLabel ?stakeholderLabel ?controversyLabel
@@ -187,7 +187,7 @@ WHERE {
 
 <table><thead><tr><th width="431.39996337890625">controversy</th><th width="428.60009765625">stakeholder</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Ministry of Foreign Affairs</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
 
-#### 7) Qual è la posizione dello stakeholder? (ceon-actor:Stakeholder  mdo:hasStance  mdo:ProRemoval/mdo:ProPreservation) manca nel modello ma c’è nei dati
+#### 7) What is the stakeholder's position? (ceon-actor:Stakeholder  mdo:hasStance  mdo:ProRemoval/mdo:ProPreservation) manca nel modello ma c’è nei dati
 
 ```
 // Some code
@@ -197,7 +197,7 @@ WHERE {
 | - | - | - |
 |   |   |   |
 
-#### 8) Quali valori usano gli stakeholder favorevoli alla rimozione e quelli favorevoli alla preservazione a sostegno della loro argomentazione? (per ogni proRemoval  mdo:holdsValue  mdo:Value)(per ogni proPreservation  mdo:holdsValue  mdo:Value)
+#### 8) What values are mobilized by stakeholders supporting either the removal or the preservation of monuments to sustain their respective arguments? Which values are employed by stakeholders in favor of removal and those in favor of preservation to support their arguments? (per ogni proRemoval  mdo:holdsValue  mdo:Value)(per ogni proPreservation  mdo:holdsValue  mdo:Value)
 
 ```
 // Some code
@@ -207,7 +207,7 @@ WHERE {
 | - | - | - |
 |   |   |   |
 
-#### 9) Stakeholder ProRemoval e ProPreservation hanno valori in comune nelle loro argomentazioni?
+#### 9) Do Pro-Removal and Pro-Preservation stakeholders share any common values in their arguments? 
 
 {% code expandable="true" %}
 ```sparql
@@ -232,16 +232,16 @@ GROUP BY ?value ?valueLabel
 
 ***
 
-### <mark style="color:$primary;">LIVELLO 4 - DIBATTITO, POSIZIONI E SOLUZIONI</mark>
+### <mark style="color:$primary;">LEVEL 4 - DEBATE, POSITIONS AND SOLUTIONS</mark>
 
-#### 10) Quali proteste/azioni sono legate al monumento? (tip:timeIndexedParticipation  tip:includesObject  dbo:Monument)
+#### 10) Which protests or actions are linked to the monument?  Which contestation events or actions are associated with the monument?(tip:timeIndexedParticipation  tip:includesObject  dbo:Monument)
 
 ```sparql
 SELECT DISTINCT 
 MANCA TIP:INCLUDESOBJECT NELLE TABELLE
 ```
 
-#### 11) Chi e partecipa alla protesta? (tip:timeIndexedParticipation  tip:forEntity  ceon-actor:Stakeholder
+#### 11) Who is participating in the protest? Who are the stakeholders participating in the protest? (tip:timeIndexedParticipation  tip:forEntity  ceon-actor:Stakeholder
 
 {% code expandable="true" %}
 ```sparql
@@ -264,7 +264,7 @@ ORDER BY ?participation
 
 <table><thead><tr><th width="411.5999755859375">participation</th><th width="553.199951171875">stakeholder</th></tr></thead><tbody><tr><td>Participation in the protest about Stalin's statue</td><td>István, factory worker</td></tr><tr><td>Participation in the protest about Stalin's statue</td><td>Katalin, history teacher</td></tr></tbody></table>
 
-#### 12) Quando partecipa alla protesta? (tip:timeIndexedParticipation  tip:atTime  tip:TimeInterval; tip:TimeInterval  time:hasBeginning  time:Instant ECCETERA)
+#### 12) When does the protest take place? What is the temporal interval of the protest?(tip:timeIndexedParticipation  tip:atTime  tip:TimeInterval; tip:TimeInterval  time:hasBeginning  time:Instant ECCETERA)
 
 {% code expandable="true" %}
 ```sparql
@@ -297,7 +297,7 @@ ORDER BY ?participation
 
 <table><thead><tr><th width="224.5999755859375">stakeholder</th><th width="436.6000061035156">participation</th><th>begin</th><th>end</th></tr></thead><tbody><tr><td>eritrean person</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>history student</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>feminist LGBTQ+</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr><tr><td>right-wing mayor of Milan, Gabriele Albertini</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr></tbody></table>
 
-#### 13) Dove si svolge la protesta? tip:timeIndexedParticipation  tip:isSettingFor  mdo:DebateSetting)
+#### 13) Where does the protest occur? / What is the setting of the contestation? tip:timeIndexedParticipation  tip:isSettingFor  mdo:DebateSetting)
 
 ```
 // Some code
@@ -307,7 +307,7 @@ ORDER BY ?participation
 | - | - | - |
 |   |   |   |
 
-#### 14) Qual è l’esito del dibattito? (deo:Discussion  mdo:resultsIn  mdo:ActionProposal)
+#### 14) What is the outcome of the debate?  (deo:Discussion  mdo:resultsIn  mdo:ActionProposal)
 
 ```sparql
 SELECT DISTINCT ?discussionLabel ?proposalLabel
