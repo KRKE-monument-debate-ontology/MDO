@@ -94,7 +94,7 @@ GROUP BY ?monument
 
 ### <mark style="color:$primary;">LEVEL 2 - >Symbolic values related to the statue and the historical figure</mark>
 
-#### 2) QUERY Why was the character celebrated with a statue? What were the reasons for commemorating the historical figure with a statue? (crm:E12  crm:P17  mdo:Legacy)
+#### 2) Why was the character celebrated with a statue?&#x20;
 
 {% code fullWidth="false" expandable="true" %}
 ```sparql
@@ -118,7 +118,7 @@ GROUP BY ?historicalFigureLabel
 | António Vieira (1608-1697)      | Advocacy; Religion and Spirituality |
 | Mary Wollstonecraft (1759-1797) | Philosophy; Women's rights; Writing |
 
-#### 3) Which values and concepts are associated with the statue? (mdo:Monument  mdo:reflectsHeritageOf  skos:Concept)
+#### 3) Which values and concepts are associated with the statue?&#x20;
 
 ```sparql
 SELECT DISTINCT ?conceptLabel ?monumenttitle
@@ -137,7 +137,7 @@ WHERE {
 | Racism           | Carl Hagenbeck Statue         |
 | Sexism           | Mary Wollstonecraft Sculpture |
 
-#### 4) For what reasons is the character depicted considered controversial? (dbo:HistoricalFigure  schema:performerIn  mdo:ControversialFact)
+#### 4) For what reasons is the character depicted considered controversial?&#x20;
 
 ```sparql
 SELECT DISTINCT ?historicalfigurelabel ?controversialFactlabel
@@ -155,7 +155,7 @@ WHERE {
 
 ### <mark style="color:$primary;">LEVEL 3: Interpretations of the statue</mark>
 
-#### 5) Who is involved in the controversy triggered by the monument? (mdo:Controversy  ceon-actor:participatingActor  ceon-actor:Stakeholder)
+#### 5) Who is involved in the controversy triggered by the monument?&#x20;
 
 ```sparql
 SELECT DISTINCT ?stakeholderlabel ?controversylabel
@@ -172,7 +172,7 @@ WHERE {
 | Maya Johnson, sociology junior and leader in the school’s Diversity and Inclusion group | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 | Marco Bellini, 1992 alumnus and Italian-American cultural leader                        | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 
-#### 6) What is the stakeholder argument? (ceon-actor:Stakeholder  dio:supports  mdo:Argument)
+#### 6) What is the stakeholder argument?&#x20;
 
 ```sparql
 SELECT  ?argumentLabel ?stakeholderLabel ?controversyLabel
@@ -187,7 +187,7 @@ WHERE {
 
 <table><thead><tr><th width="431.39996337890625">controversy</th><th width="428.60009765625">stakeholder</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Ministry of Foreign Affairs</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
 
-#### 7) What is the stakeholder's position? (ceon-actor:Stakeholder  mdo:hasStance  mdo:ProRemoval/mdo:ProPreservation) manca nel modello ma c’è nei dati
+#### 7) What is the stakeholder's position?&#x20;
 
 ```
 // Some code
@@ -197,7 +197,7 @@ WHERE {
 | - | - | - |
 |   |   |   |
 
-#### 8) What values are mobilized by stakeholders supporting either the removal or the preservation of monuments to sustain their respective arguments? Which values are employed by stakeholders in favor of removal and those in favor of preservation to support their arguments? (per ogni proRemoval  mdo:holdsValue  mdo:Value)(per ogni proPreservation  mdo:holdsValue  mdo:Value)
+#### 8) What values are held by stakeholders supporting either the removal or the preservation of monuments to sustain their respective arguments?&#x20;
 
 ```
 // Some code
@@ -232,14 +232,14 @@ GROUP BY ?value ?valueLabel
 
 ### <mark style="color:$primary;">LEVEL 4 - DEBATE, POSITIONS AND SOLUTIONS</mark>
 
-#### 10) Which protests or actions are linked to the monument? Which contestation events or actions are associated with the monument?(tip:timeIndexedParticipation  tip:includesObject  dbo:Monument)
+#### 10) Which contestation events or actions are associated with the monument?
 
 ```sparql
 SELECT DISTINCT 
 MANCA TIP:INCLUDESOBJECT NELLE TABELLE
 ```
 
-#### 11) Who is participating in the protest? Who are the stakeholders participating in the protest? (tip:timeIndexedParticipation  tip:forEntity  ceon-actor:Stakeholder
+#### 11) Who are the stakeholders participating in the protest?&#x20;
 
 {% code expandable="true" %}
 ```sparql
@@ -262,7 +262,7 @@ ORDER BY ?participation
 
 <table><thead><tr><th width="411.5999755859375">participation</th><th width="553.199951171875">stakeholder</th></tr></thead><tbody><tr><td>Participation in the protest about Stalin's statue</td><td>István, factory worker</td></tr><tr><td>Participation in the protest about Stalin's statue</td><td>Katalin, history teacher</td></tr></tbody></table>
 
-#### 12) When does the protest take place? What is the temporal interval of the protest?(tip:timeIndexedParticipation  tip:atTime  tip:TimeInterval; tip:TimeInterval  time:hasBeginning  time:Instant ECCETERA)
+#### 12) What is the temporal interval of the protest?
 
 {% code expandable="true" %}
 ```sparql
@@ -295,7 +295,7 @@ ORDER BY ?participation
 
 <table><thead><tr><th width="224.5999755859375">stakeholder</th><th width="436.6000061035156">participation</th><th>begin</th><th>end</th></tr></thead><tbody><tr><td>eritrean person</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>history student</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>feminist LGBTQ+</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr><tr><td>right-wing mayor of Milan, Gabriele Albertini</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr></tbody></table>
 
-#### 13) Where does the protest occur? / What is the setting of the contestation? tip:timeIndexedParticipation  tip:isSettingFor  mdo:DebateSetting)
+#### 13) What is the setting of the contestation?&#x20;
 
 {% code expandable="true" %}
 ```sparql
@@ -317,7 +317,7 @@ ORDER BY ?NomeMonumento
 
 <table><thead><tr><th width="181.60003662109375">monumento</th><th width="575.8001708984375">controversy</th><th width="254.800048828125">place</th></tr></thead><tbody><tr><td>Monument Stalin</td><td>The controversy triggered by the Stalin Statue in Városliget, Budapest</td><td>Budapest, Városliget</td></tr><tr><td>Monument Vieira</td><td>The controversy triggered by António Vieira in Trindade Coelho Square</td><td>Trindade Coelho Square</td></tr></tbody></table>
 
-#### 14) What is the outcome of the debate? (deo:Discussion  mdo:resultsIn  mdo:ActionProposal)
+#### 14) What is the outcome of the debate?&#x20;
 
 ```sparql
 SELECT DISTINCT ?discussionLabel ?proposalLabel
@@ -331,12 +331,35 @@ WHERE {
 
 <table><thead><tr><th width="545.2001342773438">discussion</th><th width="415.59991455078125">proposal</th></tr></thead><tbody><tr><td>The discussion that arises from different stakeholders' perspectives on Savile statue controversy</td><td>The discussion among the stakeholders did not lead to a remedy action</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Gandhi statue controversy</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Wollstonecraftstatue controversy</td><td>Replace the statue with a new one</td></tr></tbody></table>
 
-#### 15)
+#### 15) Which monuments triggered debates that gained significant digital resonance, specifically within online or social media settings?
 
-```
-// Some code
-```
+{% code expandable="true" %}
+```sparql
+SELECT DISTINCT ?NomeMonumento ?controversiaLabel ?MediaPiattaforma
+WHERE {
+  
+  ?monumento mdo:triggeredControversy ?controversia .
+  
+  
+  ?partecipazione tip:forEntity ?idNelCSV .
+  ?partecipazione tip:isSettingFor ?luogoProtesta .
+  ?luogoProtesta a mdo:DebateSetting .
+  ?luogoProtesta rdfs:label ?MediaPiattaforma .
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
+ 
+  FILTER (regex(str(?MediaPiattaforma), "social media|online|web|stampa", "i"))
+
+  
+  BIND(STRAFTER(REPLACE(STR(?monumento), "monument_", ""), "monument/") AS ?slug)
+  FILTER(CONTAINS(LCASE(STR(?idNelCSV)), LCASE(?slug)))
+
+  
+  BIND(CONCAT("Monument ", UCASE(SUBSTR(?slug, 1, 1)), SUBSTR(?slug, 2)) AS ?NomeMonumento)
+  
+  OPTIONAL { ?controversia rdfs:label ?controversiaLabel . }
+}
+ORDER BY ?MediaPiattaforma
+```
+{% endcode %}
+
+<table><thead><tr><th width="240">monument</th><th width="630.60009765625">controversy</th><th width="195.60009765625">place</th></tr></thead><tbody><tr><td>Monument Hagenbeck</td><td>The controversy triggered by Carl Hagenbeck Statue in Tierpark Hagenbeck</td><td>Online</td></tr><tr><td>Monument Gandhi</td><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Social Media</td></tr></tbody></table>
