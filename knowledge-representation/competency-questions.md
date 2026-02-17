@@ -246,7 +246,7 @@ GROUP BY ?value ?valueLabel
 #### 10) Which contestation events or actions are associated with the monument?
 
 ```sparql
-SELECT ?monument ?ParticipationLabel ?eventLabel
+SELECT  ?ParticipationLabel ?monument
 WHERE {
   ?Participation tip:includesObject ?monument .
   ?Participation rdfs:label ?ParticipationLabel . 
@@ -254,9 +254,9 @@ WHERE {
 }
 ```
 
-| monument         | participation                                            |
-| ---------------- | -------------------------------------------------------- |
-| monument\_savile | Participation in the protest about Jimmy Savile's statue |
+| participation                                            | monument         |
+| -------------------------------------------------------- | ---------------- |
+| Participation in the protest about Jimmy Savile's statue | monument\_savile |
 
 #### 11) Who are the stakeholders participating in the protest?&#x20;
 
@@ -286,8 +286,8 @@ ORDER BY ?participation
 {% code expandable="true" %}
 ```sparql
 SELECT DISTINCT 
-    ?stakeholderLabel  
     ?participationLabel
+    ?stakeholderLabel  
     ?beginValue
     ?endValue
 WHERE {
@@ -312,7 +312,7 @@ ORDER BY ?participation
 ```
 {% endcode %}
 
-<table><thead><tr><th width="224.5999755859375">stakeholder</th><th width="436.6000061035156">participation</th><th>begin</th><th>end</th></tr></thead><tbody><tr><td>eritrean person</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>history student</td><td>Participation in the protest about Montanelli's statue</td><td>2012-02</td><td>2012-02</td></tr><tr><td>feminist LGBTQ+</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr><tr><td>right-wing mayor of Milan, Gabriele Albertini</td><td>Participation in the protest about Montanelli's statue</td><td>2018-01</td><td>2018-01</td></tr></tbody></table>
+<table><thead><tr><th width="436.6000061035156">participation</th><th width="224.5999755859375">stakeholder</th><th>begin</th><th>end</th></tr></thead><tbody><tr><td>Participation in the protest about Montanelli's statue</td><td>eritrean person</td><td>2012-02</td><td>2012-02</td></tr><tr><td>Participation in the protest about Montanelli's statue</td><td>history student</td><td>2012-02</td><td>2012-02</td></tr><tr><td>Participation in the protest about Montanelli's statue</td><td>feminist LGBTQ+</td><td>2018-01</td><td>2018-01</td></tr><tr><td>Participation in the protest about Montanelli's statue</td><td>right-wing mayor of Milan, Gabriele Albertini</td><td>2018-01</td><td>2018-01</td></tr></tbody></table>
 
 #### 13) What is the setting of the contestation?&#x20;
 
