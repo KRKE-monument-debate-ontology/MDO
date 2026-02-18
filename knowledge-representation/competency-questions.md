@@ -250,7 +250,6 @@ SELECT  ?ParticipationLabel ?monument
 WHERE {
   ?Participation tip:includesObject ?monument .
   ?Participation rdfs:label ?ParticipationLabel . 
-  ?Participation 
 }
 ```
 
