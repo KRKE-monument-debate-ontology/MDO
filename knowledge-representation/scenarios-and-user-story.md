@@ -126,4 +126,4 @@ The two groups watch each other warily, divided by barriers. Marta and Lorenzo c
 — Marta: “I understand the value Montanelli had for you, but this statue hurts many.”\
 — Lorenzo: “And I understand the pain. But I believe the solution is to explain, not tear it down.”
 
-➡️ Neither changes their mind. Yet, as they part ways, both carry a quiet awareness: behind every monument lies a debate that speaks more about the present than the past. # Scenarios and User Story
+➡️ Neither changes their mind. Yet, as they part ways, both carry a quiet awareness: behind every monument lies a debate that speaks more about the present than the past.&#x20;
