@@ -7,7 +7,14 @@ description: >-
 
 # Page 2
 
+### obiettivo&#x20;
+
 Verificare se un LLM è in grado di generare un knowledge graph coerente con la Monument Debate Ontology (MDO) a partire da una descrizione testuale di un caso studio.
+
+You must generate RDF/Turtle using ONLY the classes and properties listed below.\
+Do not invent new classes or properties.\
+Use correct RDF syntax.\
+Use the prefix mdo: for the Monument Debate Ontology.
 
 ## OPZIONE CON TABS
 
