@@ -20,6 +20,14 @@ Use the prefix mdo: for the Monument Debate Ontology.
 {% endstep %}
 
 {% step %}
+### CLASSES AND PROPERTIES&#x20;
+
+{% content-ref url="../knowledge-representation/classes-and-properties.md" %}
+[classes-and-properties.md](../knowledge-representation/classes-and-properties.md)
+{% endcontent-ref %}
+{% endstep %}
+
+{% step %}
 ### User Story&#x20;
 
 It is a bright spring Saturday in Milan. In Piazza della Repubblica, the bronze statue of Indro Montanelli, inaugurated in 2006, still stands. A police cordon surrounds it, keeping two groups of demonstrators at a careful distance: on one side, those calling for its removal; on the other, those defending its presence. \
