@@ -7,6 +7,8 @@ description: >-
 
 # Page 2
 
+Verificare se un LLM è in grado di generare un knowledge graph coerente con la Monument Debate Ontology (MDO) a partire da una descrizione testuale di un caso studio.
+
 ## OPZIONE CON TABS
 
 {% tabs %}
