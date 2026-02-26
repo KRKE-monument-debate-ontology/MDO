@@ -154,6 +154,6 @@ mdo:ContextualisationProposal a mdo:ActionProposal ;
 {% step %}
 ### Knowledge Graph&#x20;
 
-<figure><img src="../.gitbook/assets/rdf-grapher (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rdf-grapher (2).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
