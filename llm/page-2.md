@@ -30,17 +30,15 @@ Use the prefix mdo: for the Monument Debate Ontology.
 {% step %}
 ### User Story&#x20;
 
-It is a bright spring Saturday in Milan. In Piazza della Repubblica, the bronze statue of Indro Montanelli, inaugurated in 2006, still stands. A police cordon surrounds it, keeping two groups of demonstrators at a careful distance: on one side, those calling for its removal; on the other, those defending its presence. \
-\
-🔴 Marta, 27, a contemporary history student, grips a sign reading, “No celebration for those who justified colonialism.” For her, the statue is a painful symbol in a public space. <mark style="color:$danger;background-color:$danger;">It recalls Montanelli’s statements on colonialism and his marriage to a twelve-year-old Eritrean girl</mark> during the war in Ethiopia. She feels that leaving the statue without context is a way of honoring him while erasing the victims’ perspective and normalizing values no longer acceptable. Marta hopes it will be removed and replaced with a work celebrating figures who promoted rights and equality. As she gazes at the statue, she thinks: “This isn’t about censorship. It’s about who we want as a role model today.” \
-\
-🟢 Across the cordon, Lorenzo, 72, a retired war correspondent, holds a small bouquet of flowers. For him, Montanelli was a <mark style="color:$success;background-color:$success;">master of journalism</mark>. He acknowledges the dark parts of his biography but believes they must be understood in their historical context and in the complexity of the man. To remove the statue, he argues, would be to rewrite history and lose a piece of the city’s memory. Lorenzo hopes instead to enrich the site with a plaque that tells both the journalistic achievements and the controversies. As he approaches, he thinks: “We aren’t better if we erase the past; we must confront it, not remove it.”\
-\
-The two groups watch each other warily, divided by barriers. Marta and Lorenzo cross paths briefly as the police allow demonstrators to move in small groups.\
-— Marta: “I understand the value Montanelli had for you, but this statue hurts many.”\
-— Lorenzo: “And I understand the pain. But I believe the solution is to explain, not tear it down.”\
-\
-➡️ Neither changes their mind. Yet, as they part ways, both carry a quiet awareness: behind every monument lies a debate that speaks more about the present than the past.
+In 2006, the Comune di Milano inaugurated a statue of Indro Montanelli in the public gardens of Milan that bear his name. Sculpted by Vito Tongiani, the bronze figure shows Montanelli seated at his typewriter. The monument was intended as a tribute to one of the most influential Italian journalists of the twentieth century. For several years, it stood largely as a symbol of journalistic achievement and civic recognition.
+
+The first rupture came in February 2012. One morning, the statue was found splashed with red paint, and a fake bomb made of wood and paper had been placed beneath its hat. The act marked the beginning of a public controversy. Among those present that day was an <mark style="color:red;background-color:red;">Eritrean man who supported the gesture</mark>. To him, the red paint <mark style="color:red;background-color:red;">symbolized the violence of Italian colonialism</mark> and forced the city to confront a history often left unaddressed. Not far away, a <mark style="color:green;background-color:green;">history student reacted differently</mark>. He was disturbed by the vandalism and believed that damaging a monument only deepened divisions. In his view, <mark style="color:green;background-color:green;">the statue represented a piece of public memory</mark>—problematic, perhaps, but something to be studied and debated rather than attacked.
+
+The debate intensified in 2020. During a protest organized by <mark style="color:red;background-color:red;">Rete Studenti Milano</mark>, demonstrators once again targeted the monument. They threw red paint and wrote the words “Racist, Rapist” at its base. For the students, the statue was not a neutral tribute but a public <mark style="color:red;background-color:red;">celebration that ignored Montanelli’s support for colonialism and his marriage to a twelve-year-old Eritrean girl</mark>. They argued that a city cannot honor a figure in a shared public space without acknowledging the harm connected to his actions. Some called for the statue’s removal; others demanded clear contextualization.
+
+Across the police cordon stands a <mark style="color:green;background-color:green;">journalist</mark>, visibly shaken by the scene. He speaks to a small group of supporters, explaining that <mark style="color:green;background-color:green;">Montanelli’s legacy in journalism is immense, that he shaped Italian reporting for decades.</mark> Removing the statue, he says, would not correct history—it would erase it. He believes the monument should remain, perhaps contextualized, but not torn down.
+
+Since then, the statue has remained in place. Yet its meaning has changed. What was inaugurated in 2006 as a straightforward tribute has become a focal point of competing memories—one centered on colonial violence and moral accountability, the other on professional legacy and the preservation of history. The bronze figure has not moved, but the story surrounding it continues to evolve.
 {% endstep %}
 
 {% step %}
@@ -48,105 +46,160 @@ The two groups watch each other warily, divided by barriers. Marta and Lorenzo c
 
 {% code expandable="true" %}
 ```luau
-@prefix pr: <http://www.ontologydesignpatterns.org/cp/owl/participantRole.owl> .
+@prefix mdo: <https://github.com/KRKE-monument-debate-ontology/Data_MDO/md-ontology/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix deo: <http://purl.org/spar/deo/> .
 @prefix dio: <https://w3id.org/dio#> .
-@prefix mdo: <https://github.com/KRKE-monument-debate-ontology/Data_MDO/md-ontology/> .
-@prefix ns1: <http://w3id.org/CEON/ontology/material/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix tip: <http://ontologydesignpatterns.owl/cp/owl/timeindexedparticipation.owl/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix schema1: <http://schema.org/> .
 @prefix ceon-actor: <http://w3id.org/CEON/ontology/actor/> .
-
-mdo:MontanelliStatue a dbo:Monument ;
-    rdfs:subClassOf crm:E24_Physical_Human-Made_Thing ;
-    dcterms:title "Statue of Indro Montanelli"^^xsd:string ;
+@prefix pr: <http://www.ontologydesignpatterns.org/cp/owl/participantRole.owl> .
+@prefix tip: <http://ontologydesignpatterns.owl/cp/owl/timeindexedparticipation.owl/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+ 
+### MONUMENT AND FIGURE ###
+ 
+mdo:Statue_Montanelli a dbo:Monument ;
+    rdfs:label "Indro Montanelli Statue" ;
     dcterms:date "2006"^^xsd:gYear ;
-    schema1:location mdo:PiazzaDellaRepubblica ;
-    schema1:creator mdo:UnknownSculptor ;
-    schema1:funder mdo:MunicipalityOfMilan ;
-    crm:P62_depicts mdo:IndroMontanelli ;
-    crm:P108_was_produced_by mdo:MontanelliProduction ;
-    mdo:triggerdControversy mdo:MontanelliControversy ;
-    mdo:reflectsHeritageOf mdo:JournalisticHeritage .
-
-mdo:PiazzaDellaRepubblica a schema1:Place .
-
-mdo:UnknownSculptor a crm:E39_Actor .
-
-mdo:MunicipalityOfMilan a schema1:GovernmentOrganization .
-
-mdo:MontanelliProduction a crm:E12_Production ;
-    crm:P17_was_motivated_by mdo:JournalisticLegacy .
-
+    crm:P62 mdo:IndroMontanelli ;
+    mdo:triggeredControversy mdo:Controversy_Montanelli .
+ 
 mdo:IndroMontanelli a mdo:HistoricalFigure ;
-    mdo:hasLegacyImpact mdo:JournalisticLegacy ;
-    schema1:PerformerIn mdo:ColonialMarriageFact .
-
-mdo:JournalisticLegacy a mdo:Legacy .
-
-mdo:JournalisticHeritage a skos:Concept .
-
-mdo:ColonialMarriageFact a mdo:ControversialFacts .
-
-mdo:MontanelliControversy a mdo:Controversy ;
-    ceon-actor:participatingActor mdo:Marta ,
-                                   mdo:Lorenzo .
-
-mdo:Marta a ceon-actor:Stakeholder ;
-    mdo:HoldsValue mdo:SocialJusticeValue ;
-    schema1:knowsAbout mdo:JournalisticLegacy ,
-                       mdo:ColonialMarriageFact ;
-    dio:supports mdo:RemovalArgument .
-
-mdo:Lorenzo a ceon-actor:Stakeholder ;
-    mdo:HoldsValue mdo:HistoricalMemoryValue ;
-    schema1:knowsAbout mdo:JournalisticLegacy ,
-                       mdo:ColonialMarriageFact ;
-    dio:supports mdo:ContextualisationArgument .
-
-mdo:SocialJusticeValue a mdo:Value ;
-    mdo:generates mdo:ProRemovalPerspective .
-
-mdo:HistoricalMemoryValue a mdo:Value ;
-    mdo:generates mdo:ProPreservationPerspective .
-
-mdo:ProRemovalPerspective a mdo:ProRemoval ;
-    mdo:emergesFrom mdo:PublicDiscussion .
-
-mdo:ProPreservationPerspective a mdo:ProPreservation ;
-    mdo:emergesFrom mdo:PublicDiscussion .
-
-mdo:PublicDiscussion a deo:Discussion .
-
-mdo:RemovalArgument a mdo:Argument ;
-    dcterms:subject mdo:MontanelliStatue ,
-                    mdo:ColonialMarriageFact ,
-                    mdo:IndroMontanelli ;
-    mdo:justifiedWithValue mdo:SocialJusticeValue ;
-    mdo:resultsIn mdo:RemovalProposal .
-
-mdo:ContextualisationArgument a mdo:Argument ;
-    dcterms:subject mdo:MontanelliStatue ,
-                    mdo:JournalisticLegacy ,
-                    mdo:IndroMontanelli ;
-    mdo:justifiedWithValue mdo:HistoricalMemoryValue ;
-    mdo:resultsIn mdo:ContextualisationProposal .
-
-mdo:RemovalProposal a mdo:ActionProposal ;
-    crm:P2_has_type mdo:Removal .
-
-mdo:ContextualisationProposal a mdo:ActionProposal ;
-    crm:P2_has_type mdo:Contextualisation .
+    rdfs:label "Indro Montanelli" ;
+    mdo:hasLegacyImpact mdo:Legacy_Journalism ;
+    schema:performerIn mdo:Colonial_Actions .
+ 
+mdo:Colonial_Actions a mdo:ControversialFact ;
+    rdfs:label "Colonial past and marriage to minor" .
+ 
+mdo:Legacy_Journalism a mdo:Legacy ;
+    rdfs:label "Journalistic Achievement" .
+ 
+### DISCUSSIONS ###
+ 
+mdo:Discussion_2012 a deo:Discussion ;
+    rdfs:label "2012 Public Controversy" ;
+    dcterms:date "2012"^^xsd:gYear .
+ 
+mdo:Discussion_2020 a deo:Discussion ;
+    rdfs:label "2020 Public Debate" ;
+    dcterms:date "2020"^^xsd:gYear .
+ 
+### PERSPECTIVES 2012 (Emergenti dalla discussione 2012) ###
+ 
+mdo:Perspective_Removal_2012 a mdo:ProRemoval ;
+    rdfs:label "Pro-Removal Perspective (2012)" ;
+    mdo:emergesFrom mdo:Discussion_2012 .
+ 
+mdo:Perspective_Preservation_2012 a mdo:ProPreservation ;
+    rdfs:label "Pro-Preservation Perspective (2012)" ;
+    mdo:emergesFrom mdo:Discussion_2012 .
+ 
+### PERSPECTIVES 2020 (Emergenti dalla discussione 2020) ###
+ 
+mdo:Perspective_Removal_2020 a mdo:ProRemoval ;
+    rdfs:label "Pro-Removal Perspective (2020)" ;
+    mdo:emergesFrom mdo:Discussion_2020 .
+ 
+mdo:Perspective_Preservation_2020 a mdo:ProPreservation ;
+    rdfs:label "Pro-Preservation Perspective (2020)" ;
+    mdo:emergesFrom mdo:Discussion_2020 .
+ 
+### ACTIVITIES (crm:E7) ###
+ 
+mdo:Activity_Vandalism_2012 a crm:E7 ;
+    rdfs:label "2012 Vandalism Event" ;
+    dcterms:date "2012"^^xsd:gYear .
+ 
+mdo:Activity_Protest_2020 a crm:E7 ;
+    rdfs:label "2020 Protest Event" ;
+    dcterms:date "2020"^^xsd:gYear .
+ 
+### PARTICIPATIONS 2012 ###
+ 
+# Uomo Eritreo (2012)
+mdo:Participation_2012_Eritrean a tip:TimeIndexedParticipation ;
+    rdfs:label "Participation of Eritrean Man (2012)" ;
+    tip:forEntity mdo:Eritrean_Man ;
+    tip:hasRole mdo:Role_Witness_Protestor ;
+    tip:includesEvent mdo:Activity_Vandalism_2012 ;
+    tip:includesObject mdo:Statue_Montanelli .
+ 
+# Studente di Storia (2012)
+mdo:Participation_2012_HistoryStudent a tip:TimeIndexedParticipation ;
+    rdfs:label "Participation of History Student (2012)" ;
+    tip:forEntity mdo:History_Student ;
+    tip:hasRole mdo:Role_History_Observer ;
+    tip:includesEvent mdo:Activity_Vandalism_2012 ;
+    tip:includesObject mdo:Statue_Montanelli .
+ 
+### PARTICIPATIONS 2020 ###
+ 
+# Rete Studenti (2020)
+mdo:Participation_2020_Students a tip:TimeIndexedParticipation ;
+    rdfs:label "Participation of Rete Studenti (2020)" ;
+    tip:forEntity mdo:Rete_Studenti_Milano ;
+    tip:hasRole mdo:Role_Student_Org ;
+    tip:includesEvent mdo:Activity_Protest_2020 ;
+    tip:includesObject mdo:Statue_Montanelli .
+ 
+# Giornalista (2020)
+mdo:Participation_2020_Journalist a tip:TimeIndexedParticipation ;
+    rdfs:label "Participation of Journalist (2020)" ;
+    tip:forEntity mdo:Journalist_Stakeholder ;
+    tip:hasRole mdo:Role_Journalist_Professional ;
+    tip:includesEvent mdo:Activity_Protest_2020 ;
+    tip:includesObject mdo:Statue_Montanelli .
+ 
+### ROLES AND STANCES ###
+ 
+# Ruoli 2012
+mdo:Role_Witness_Protestor a pr:Role ;
+    rdfs:label "Witness and Protest Supporter" ;
+    mdo:hasStance mdo:Perspective_Removal_2012 .
+ 
+mdo:Role_History_Observer a pr:Role ;
+    rdfs:label "History Student Observer" ;
+    mdo:hasStance mdo:Perspective_Preservation_2012 .
+ 
+# Ruoli 2020
+mdo:Role_Student_Org a pr:Role ;
+    mdo:hasStance mdo:Perspective_Removal_2020 .
+ 
+mdo:Role_Journalist_Professional a pr:Role ;
+    mdo:hasStance mdo:Perspective_Preservation_2020 .
+ 
+### ARGUMENTS AND VALUES ###
+ 
+# Lato Rimozione (Social Justice)
+mdo:Value_Social_Justice a mdo:Value ;
+    rdfs:label "Social Justice" ;
+    mdo:generates mdo:Perspective_Removal_2012, mdo:Perspective_Removal_2020 .
+ 
+mdo:Argument_Colonialism a mdo:Argument ;
+    rdfs:label "Argument: Colonial Violence" ;
+    dcterms:subject mdo:Colonial_Actions ;
+    mdo:justifiedWithValue mdo:Value_Social_Justice .
+ 
+# Lato Conservazione (Historical Memory)
+mdo:Value_Historical_Memory a mdo:Value ;
+    rdfs:label "Historical Memory" ;
+    mdo:generates mdo:Perspective_Preservation_2012, mdo:Perspective_Preservation_2020 .
+ 
+mdo:Argument_Legacy a mdo:Argument ;
+    rdfs:label "Argument: Professional History" ;
+    dcterms:subject mdo:Legacy_Journalism ;
+    mdo:justifiedWithValue mdo:Value_Historical_Memory .
+ 
+### STAKEHOLDERS (dio:supports) ###
+ 
+mdo:Eritrean_Man a ceon-actor:Stakeholder ; dio:supports mdo:Argument_Colonialism .
+mdo:Rete_Studenti_Milano a ceon-actor:Stakeholder ; dio:supports mdo:Argument_Colonialism .
+mdo:History_Student a ceon-actor:Stakeholder ; dio:supports mdo:Argument_Legacy .
+mdo:Journalist_Stakeholder a ceon-actor:Stakeholder ; dio:supports mdo:Argument_Legacy .
 ```
 {% endcode %}
 {% endstep %}
