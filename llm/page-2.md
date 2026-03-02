@@ -1,9 +1,4 @@
----
-description: >-
-  As last step, we used the ontology as a conditioning framework for a Large Language Model.
-By providing the LLM with selected case studies and constraining it to our ontology structure, we asked it to generate knowledge graphs compliant with MDO.
-This experiment tested the robustness of our ontology as a modeling framework, its applicability in AI-assisted knowledge extraction, its potential for hybrid symbolic–neural workflows.
----
+
 
 # Page 2
 
