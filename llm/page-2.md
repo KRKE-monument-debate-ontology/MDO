@@ -1,12 +1,23 @@
-
+---
+description: >-
+  usare la nostra ontologia come condizionamento di un LLM --> dargli i casi
+  studio e chiedergli di generare un knowledge graph basato sulla nostra
+  ontologia
+---
 
 # Page 2
+
+### Introduction
+
+As last step, we used the ontology as a conditioning framework for a Large Language Model.\
+By providing the LLM with selected case studies and constraining it to our ontology structure, we asked it to generate knowledge graphs compliant with MDO.\
+This experiment tested the robustness of our ontology as a modeling framework, its applicability in AI-assisted knowledge extraction, its potential for hybrid symbolic–neural workflows.
 
 ## Statue of Indro Montanelli
 
 {% stepper %}
 {% step %}
-### Obiettivo
+#### Obiettivo
 
 You must generate RDF/Turtle using ONLY the classes and properties listed below.\
 Do not invent new classes or properties.\
@@ -15,7 +26,7 @@ Use the prefix mdo: for the Monument Debate Ontology.
 {% endstep %}
 
 {% step %}
-### CLASSES AND PROPERTIES&#x20;
+#### CLASSES AND PROPERTIES
 
 {% content-ref url="../knowledge-representation/classes-and-properties.md" %}
 [classes-and-properties.md](../knowledge-representation/classes-and-properties.md)
@@ -23,7 +34,7 @@ Use the prefix mdo: for the Monument Debate Ontology.
 {% endstep %}
 
 {% step %}
-### User Story&#x20;
+#### User Story
 
 In 2006, the Comune di Milano inaugurated a statue of Indro Montanelli in the public gardens of Milan that bear his name. Sculpted by Vito Tongiani, the bronze figure shows Montanelli seated at his typewriter. The monument was intended as a tribute to one of the most influential Italian journalists of the twentieth century. For several years, it stood largely as a symbol of journalistic achievement and civic recognition.
 
@@ -37,7 +48,7 @@ Since then, the statue has remained in place. Yet its meaning has changed. What 
 {% endstep %}
 
 {% step %}
-### RDF/Turtle generated&#x20;
+#### RDF/Turtle generated
 
 {% code expandable="true" %}
 ```luau
@@ -200,7 +211,7 @@ mdo:Journalist_Stakeholder a ceon-actor:Stakeholder ; dio:supports mdo:Argument_
 {% endstep %}
 
 {% step %}
-### Knowledge Graph&#x20;
+#### Knowledge Graph
 
 <figure><img src="../.gitbook/assets/rdf-grapher (2).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
