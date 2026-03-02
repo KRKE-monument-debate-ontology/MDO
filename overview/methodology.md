@@ -10,8 +10,7 @@ The creation of the Monument Debate Ontology (MDO) followed a structured, multi-
 {% step %}
 <mark style="color:$primary;">**Domain Analysis and Preliminary Research**</mark>
 
-we began with an in-depth review of existing literature on controversial monuments, collective memory, heritage studies, public history, and cancel culture.
-This phase allowed us to identify the main dimensions of monument controversies and to understand the actors involved.
+we began with an in-depth review of existing literature on controversial monuments, collective memory, heritage studies, public history, and cancel culture. This phase allowed us to identify the main dimensions of monument controversies and to understand the actors involved.
 {% endstep %}
 
 {% step %}
@@ -43,41 +42,34 @@ based on the glossary and scenarios we developed a conceptual model of the domai
 
 we produced a graphical representation of the ontology, mapping classes and their relationships to facilitate comprehension and usability.
 {% endstep %}
-{% endstepper %}
 
 {% step %}
-<mark style="color:$primary;">**Dataset Creation**</mark>
+#### <sub><mark style="color:$primary;">**Dataset Creation**<mark style="color:$primary;"></sub>
 
 we constructed our own dataset by combining information from the Contested Histories website and digital map, together with data extracted from the LLM-generated scenarios. We organized the data in structured Excel sheets, creating one table for each class in the conceptual model.
 {% endstep %}
-{% endstepper %}
 
 {% step %}
-<mark style="color:$primary;">**RDF Production**</mark>
+#### <sub><mark style="color:$primary;">**RDF Production**<mark style="color:$primary;"></sub>
 
 transformation of tabular data into RDF triples using Python (Pandas and rdflib), with systematically designed URIs.
 {% endstep %}
-{% endstepper %}
 
 {% step %}
-<mark style="color:$primary;">**Ontology Formalization in Protégé**</mark>
+#### <sub><mark style="color:$primary;">**Ontology Formalization in Protégé**<mark style="color:$primary;"></sub>
 
 The ontology structure was further refined and formalized in Protégé, where we defined class hierarchies, specified object and datatype properties, checked logical consistency and structured domains and ranges. This phase ensured coherence and formal correctness of the ontology.
 {% endstep %}
-{% endstepper %}
 
 {% step %}
-<mark style="color:$primary;">**Competency Questions and SPARQL Queries**</mark>
+#### <sub><mark style="color:$primary;">**Competency Questions and SPARQL Queries**<mark style="color:$primary;"></sub>
 
-we then formulated competency questions to define the functional requirements of the ontology.
-For each competency question, we developed corresponding SPARQL queries to test whether the ontology and dataset could successfully retrieve the intended information.
+we then formulated competency questions to define the functional requirements of the ontology. For each competency question, we developed corresponding SPARQL queries to test whether the ontology and dataset could successfully retrieve the intended information.
 {% endstep %}
-{% endstepper %}
 
 {% step %}
-<mark style="color:$primary;">**Ontology-Guided LLM Experimentation**</mark>
+#### <sub><mark style="color:$primary;">**Ontology-Guided LLM Experimentation**<mark style="color:$primary;"></sub>
 
-we used the ontology as a conditioning framework for a Large Language Model.
-By providing the LLM with selected case studies and constraining it to our ontology structure, we asked it to generate knowledge graphs compliant with MDO.
+we used the ontology as a conditioning framework for a Large Language Model. By providing the LLM with selected case studies and constraining it to our ontology structure, we asked it to generate knowledge graphs compliant with MDO.
 {% endstep %}
 {% endstepper %}
