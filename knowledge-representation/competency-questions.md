@@ -37,7 +37,7 @@ PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/>
 ```
 {% endcode %}
 
-### <mark style="color:$primary;">LEVEL 1 description of the monument</mark>
+### <mark style="color:$primary;">LEVEL 1  - description of the monument</mark>
 
 #### 1) Where, when, who, how?
 
@@ -97,7 +97,7 @@ GROUP BY ?monument
 
 ***
 
-### <mark style="color:$primary;">LEVEL 2 - >Symbolic values related to the statue and the historical figure</mark>
+### <mark style="color:$primary;">LEVEL 2 - Symbolic values related to the statue and the historical figure</mark>
 
 #### 2) Why was the character celebrated with a statue?&#x20;
 
@@ -158,7 +158,7 @@ WHERE {
 
 ***
 
-### <mark style="color:$primary;">LEVEL 3: Interpretations of the statue</mark>
+### <mark style="color:$primary;">LEVEL 3 - Interpretations of the statue</mark>
 
 #### 5) Who is involved in the controversy triggered by the monument?&#x20;
 
@@ -246,7 +246,7 @@ GROUP BY ?value ?valueLabel
 
 ***
 
-### <mark style="color:$primary;">LEVEL 4 - DEBATE, POSITIONS AND SOLUTIONS</mark>
+### <mark style="color:$primary;">LEVEL 4 - Debate, Positions and Proposals</mark>
 
 #### 10) Which contestation events or actions are associated with the monument?
 
