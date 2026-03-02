@@ -25,7 +25,7 @@ In this phase, we relied on existing ontologies whenever possible. However, we d
 
 
 
-<figure><img src="../.gitbook/assets/remedy_conceptual_model_aggiornato.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/AAA_conceptual_model_aggiornato.png" alt=""><figcaption></figcaption></figure>
 
 ## 📏<mark style="color:$primary;">Conceptual Model - alignment</mark>
 
@@ -40,4 +40,4 @@ Overall, this final conceptual map enables the modeling of monument debates as *
 
 
 
-<figure><img src="../.gitbook/assets/odp_persp_model_OWL.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/AAA_odp_persp_model.png" alt=""><figcaption></figcaption></figure>
