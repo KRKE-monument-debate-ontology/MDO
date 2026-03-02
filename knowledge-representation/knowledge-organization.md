@@ -40,4 +40,4 @@ Overall, this final conceptual map enables the modeling of monument debates as *
 
 
 
-<figure><img src="../.gitbook/assets/AAA_odp_persp_model.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/AAA_odp_persp_model (1).png" alt=""><figcaption></figcaption></figure>
