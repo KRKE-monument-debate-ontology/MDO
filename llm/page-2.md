@@ -27,7 +27,25 @@ Use the prefix mdo: for the Monument Debate Ontology.
 {% endstep %}
 
 {% step %}
-#### User Story
+### User Story - semplificata&#x20;
+
+
+{% endstep %}
+
+{% step %}
+### RDF/TTL generation&#x20;
+
+
+{% endstep %}
+
+{% step %}
+### Knowledge Graph&#x20;
+
+
+{% endstep %}
+
+{% step %}
+#### User Story -  con 2 eventi
 
 In 2006, the Comune di Milano inaugurated a statue of Indro Montanelli in the public gardens of Milan that bear his name. Sculpted by Vito Tongiani, the bronze figure shows Montanelli seated at his typewriter. The monument was intended as a tribute to one of the most influential Italian journalists of the twentieth century. For several years, it stood largely as a symbol of journalistic achievement and civic recognition.
 
