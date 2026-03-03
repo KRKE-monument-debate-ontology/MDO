@@ -4,9 +4,9 @@ icon: book-open
 
 # Scenarios and User Story
 
-We selected 10 sample user scenarios describing controversial situations based on 10 statues we chosen to address the topic of cancel culture, considering both the perspectives of those who want to preserve them and those who want to remove them.
+We selected 10 sample user scenarios describing controversial situations based on 10 statues we chose to address the topic of cancel culture, considering both the perspectives of those who want to preserve them and those who want to remove them.
 
-## 🎬 <mark style="color:$primary;">Preveservation and Removal sample user scenarios</mark>
+## 🎬 <mark style="color:$primary;"> Preservation and Removal sample user scenarios</mark>
 
 <details>
 
@@ -45,7 +45,7 @@ On a Monday morning at the University of Ghana, the statue of Mahatma Gandhi sta
 
 <summary><strong>4. Statue of Mary Wollstonecraft in London</strong> - <em>"A chilly autumn morning in 202O near the Houses of Parliament in London"</em></summary>
 
-On a chilly autumn morning in 2020, a new statue was unveiled in London near the Houses of Parliament, Mary Wollstonecraft, rendered nude in a striking contemporary style by artist Maggi Hambling.\
+On a chilly autumn morning in 2020, a new statue was unveiled in London near the Houses of Parliament: Mary Wollstonecraft, rendered nude in a striking contemporary style by artist Maggi Hambling.\
 🟢 For Hambling and supporters of the MOTG campaign, the statue is a bold <mark style="color:$success;background-color:$success;">celebration of female strength and authenticity. They see the nudity not as scandal but as a statement of liberation, a reminder of the raw, universal power of womanhood.</mark> Supporters attend events and tours, believing the work sparks vital conversations about women’s history and empowerment.\
 Critics, however, view the piece differently.\
 🔴 Art historians, feminist activists, and commentators argue that its <mark style="color:$danger;background-color:$danger;">abstract, sexualized form undermines Wollstonecraft’s intellectual legacy. For them, the statue replaces the pioneering thinker with a generic female figure shaped by the male gaze.</mark> They publish essays and hold debates calling for interpretative panels or alternative artworks that foreground Wollstonecraft’s ideas rather than her body.\
@@ -94,7 +94,6 @@ On a grey late afternoon in Bristol, the sky heavy with clouds, the bronze statu
 On a crisp late October night in 1956, Városliget in Budapest is tense under the shadow of the towering bronze statue of Joseph Stalin. The city is in the grip of revolution, and the statue, erected in 1951, looms as a symbol of Soviet oppression.\
 🔴 István, a 25-year-old factory worker, stands among the protesters with ropes and cutting torches. For him, the statue is not just bronze—it <mark style="color:$danger;background-color:$danger;">embodies the fear, disappearances, and oppression his family endured</mark>. He sees tearing it down as the first step toward freedom, a defiant act to reclaim dignity and make the world witness their refusal to kneel.\
 🟢 Katalin, 52, a history teacher and longtime communist party member, watches from the sidelines. She recognizes Stalin’s crimes but views the statue as a <mark style="color:$success;background-color:$success;">testament to the fight against fascism and a reminder of those who died</mark>. She urges caution, fearing that destroying it could erase lessons of the past and invite chaos. Her hope is to preserve history in a museum where its full story can be told. ➡️ As ropes tighten and the bronze figure groans, the statue crashes to the ground, leaving only the boots behind—a surreal reminder of oppression toppled. The act is both defiant and symbolic: the fall of the statue signals the city’s first steps toward freedom, yet the memory of the past remains, haunting the empty space.\
-➡️ As ropes tighten and the bronze figure groans, the statue crashes to the ground, leaving only the boots behind—a surreal reminder of oppression toppled. The act is both defiant and symbolic: the fall of the statue signals the city’s first steps toward freedom, yet the memory of the past remains, haunting the empty space.
 
 </details>
 
@@ -115,7 +114,7 @@ On a chilly evening in 2012, the small square in Glencoe, Scotland, is tense as 
 
 ## 🗿 <mark style="color:$primary;">User Story Example: Statue of Indro Montanelli</mark>
 
-Statue of Indro Montanelli statue in Milan - “Saturday Afternoon in Piazza della Repubblica”\
+Statue of Indro Montanelli in Milan - “Saturday Afternoon in Piazza della Repubblica”\
 It is a bright spring Saturday in Milan. In Piazza della Repubblica, the bronze statue of Indro Montanelli, inaugurated in 2006, still stands. A police cordon surrounds it, keeping two groups of demonstrators at a careful distance: on one side, those calling for its removal; on the other, those defending its presence.
 
 🔴 Marta, 27, a contemporary history student, grips a sign reading, “No celebration for those who justified colonialism.” For her, the statue is a painful symbol in a public space. <mark style="color:$danger;background-color:$danger;">It recalls Montanelli’s statements on colonialism and his marriage to a twelve-year-old Eritrean girl</mark> during the war in Ethiopia. She feels that leaving the statue without context is a way of honoring him while erasing the victims’ perspective and normalizing values no longer acceptable. Marta hopes it will be removed and replaced with a work celebrating figures who promoted rights and equality. As she gazes at the statue, she thinks: “This isn’t about censorship. It’s about who we want as a role model today.”
