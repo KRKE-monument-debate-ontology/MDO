@@ -15,9 +15,9 @@ We have selected **ten controversial statues**, located in different geographica
 
 <figure><img src="../.gitbook/assets/img_indro_montanelli_2.jpg" alt=""><figcaption></figcaption></figure>
 
-Indro Montanelli (Fucecchio, 1909 – Milano, 2001) was one of the most influential Italian journalists of the 20th century, as well as a prolific writer. Over the course of his career he collaborated with leading newspapers, and became a prominent figure at _Corriere della Sera,_ one of the most important newspaper in Italy. After leaving it over political disagreement, he founded and directed his own newspaper, _Il Giornale_. He is remembered by many as a <mark style="color:$success;background-color:$success;">symbol of journalistic authority and intellectual freedom in Italy.</mark>
+Indro Montanelli (Fucecchio, 1909 – Milano, 2001) was one of the most influential Italian journalists of the 20th century, as well as a prolific writer. Over the course of his career he collaborated with leading newspapers, and became a prominent figure at _Corriere della Sera,_ one of the most important newspapers in Italy. After leaving it over political disagreements, he founded and directed his own newspaper, _Il Giornale_. He is remembered by many as a <mark style="color:$success;background-color:$success;">symbol of journalistic authority and intellectual freedom in Italy.</mark>
 
-Despite his relevance in Italian cultural life, Montanelli's legacy has been increasingly questioned. Critics point to his <mark style="color:$danger;background-color:$danger;">support of fascism in his early years, his involvement in Italian colonialism and his admitted sexual abuse of a 12 years old Eritrean girl during the occupation of Ethiopia.</mark>
+Despite his relevance in Italian cultural life, Montanelli's legacy has been increasingly questioned. Critics point to his <mark style="color:$danger;background-color:$danger;">support of fascism in his early years, his involvement in Italian colonialism and his admitted sexual abuse of a 12-years-old Eritrean girl during the occupation of Ethiopia.</mark>
 
 Since 2012, the statue has been repeatedly vandalized by different groups, mainly feminists and LGBTQIA+ activists. Acts of protest have included paint attacks and graffiti. In 2020, following the global Black Lives Matter protests, the controversy over the statue and his figure intensified.
 
@@ -27,7 +27,7 @@ Since 2012, the statue has been repeatedly vandalized by different groups, mainl
 
 <figure><img src="../.gitbook/assets/img_columbus_statue.webp" alt=""><figcaption></figcaption></figure>
 
-Christopher Columbus (1451-1506) was an Italian navigator and explorer whose voyages across Atlantic, sponsored by Spain, initiated the European colonization of the Americas. Long celebrated as a s<mark style="color:$success;background-color:$success;">ymbol of exploration and discovery</mark>, his legacy has become increasingly contested. Many see him as a figure associated with <mark style="color:$danger;background-color:$danger;">colonial violence, the enslavement of Indigenous people, and the onset of centuries of exploitation in the Americas.</mark>
+Christopher Columbus (1451-1506) was an Italian navigator and explorer whose voyages across the Atlantic, sponsored by Spain, initiated the European colonization of the Americas. Long celebrated as a <mark style="color:$success;background-color:$success;">symbol of exploration and discovery</mark>, his legacy has become increasingly contested. Many see him as a figure associated with <mark style="color:$danger;background-color:$danger;">colonial violence, the enslavement of Indigenous people, and the onset of centuries of exploitation in the Americas.</mark>
 
 The statue of Columbus at Pepperdine University, donated by an Italian-American organization, gradually became a point of controversy. Students find his presence on campus incompatible with values of inclusion and racial justice.
 
@@ -41,9 +41,9 @@ In October 2016, students launched a peaceful protest called "Waves Against Colu
 
 Carl Hagenbeck (1844–1913) was a German animal trader and entrepreneur who revolutionized the design of modern zoos by introducing naturalistic enclosures instead of traditional cages. In 1907 he founded the Tierpark Hagenbeck in Hamburg, which became a model for zoological gardens worldwide. He is remembered by some as a <mark style="color:$success;background-color:$success;">pioneer in improving the living conditions of animals and as an important businessman in the city of Hamburg</mark>.
 
-Hagenbeck’s legacy is highly controversial. Alongside his innovations in zoo design, <mark style="color:$danger;background-color:$danger;">he organized the so-called Völkerschauen or “human zoos”, in which black people - especially from Africa - and Asian people were exhibited in setting that reinforced racist and colonial stereotypes.</mark>
+Hagenbeck’s legacy is highly controversial. Alongside his innovations in zoo design, <mark style="color:$danger;background-color:$danger;">he organized the so-called Völkerschauen or “human zoos”, in which Black people - especially from Africa - and Asian people were exhibited in settings that reinforced racist and colonial stereotypes.</mark>
 
-Since 2020, activists, anti-racist groups, scholars and parts of the public have demanded a critical reassessment of Hagenbeck’s commemoration. Petitions and protests have called for the removal of his statue at the zoo etrance, the renaming of streets bearing his name, and the creation of memorials to honor the victims of the Völkerschauen.
+Since 2020, activists, anti-racist groups, scholars and parts of the public have demanded a critical reassessment of Hagenbeck’s commemoration. Petitions and protests have called for the removal of his statue at the zoo entrance, the renaming of streets bearing his name, and the creation of memorials to honor the victims of the Völkerschauen.
 
 ***
 
@@ -59,13 +59,13 @@ The statue was gifted by the Indian president and became the focus of protests b
 
 ***
 
-### 5.MARY WOLLSTONECRAFT SCULPTURE (London, United Kingdom)
+### 5. MARY WOLLSTONECRAFT SCULPTURE (London, United Kingdom)
 
 <figure><img src="../.gitbook/assets/img_mary.avif" alt=""><figcaption></figcaption></figure>
 
-Mary Wollstonecraft (1759–1797) was an English writer, philosopher, and early advocate of women's rights. She is best known for A Vindication of the Rights of Woman (1792), one of the first major works of feminist philosophy, in which she argued that women are not naturally inferior to men but only appear so because of lack of education. Wollstonecraft is remembered as a pioneering intellectual who helped lay the foundations of modern feminism.
+Mary Wollstonecraft (1759–1797) was an English writer, philosopher, and early advocate of women's rights. She is best known for A Vindication of the Rights of Woman (1792), one of the first major works of feminist philosophy, in which she argued that women are not naturally inferior to men but only appear so because of a lack of education. Wollstonecraft is remembered as a pioneering intellectual who helped lay the foundations of modern feminism.
 
-In 2020, a statue by artist Maggi Hambling was unveiled in Newington Green, London, to honor Wollstonecraft. However, the work quickly provoked controversy. Instead of representing Wollstonecraft herself, the statue depicts a nude, generic female figure emerging from organic forms. Supporters defended the choice as a <mark style="color:$success;background-color:$success;">symbol of the authenticity, strength and liberation.</mark> Critics, however, argued that <mark style="color:$danger;background-color:$danger;">the representation was sexualized, objectifying and reductive, focusing on the female body rather than Wollstonecraft's ideas and intellectual legacy.</mark>
+In 2020, a statue by artist Maggi Hambling was unveiled in Newington Green, London, to honor Wollstonecraft. However, the work quickly provoked controversy. Instead of representing Wollstonecraft herself, the statue depicts a nude, generic female figure emerging from organic forms. Supporters defended the choice as a <mark style="color:$success;background-color:$success;">symbol of authenticity, strength and liberation.</mark> Critics, however, argued that <mark style="color:$danger;background-color:$danger;">the representation was sexualized, objectifying and reductive, focusing on the female body rather than Wollstonecraft's ideas and intellectual legacy.</mark>
 
 ***
 
@@ -73,7 +73,7 @@ In 2020, a statue by artist Maggi Hambling was unveiled in Newington Green, Lond
 
 <figure><img src="../.gitbook/assets/img_colbert.jpg" alt=""><figcaption></figcaption></figure>
 
-Jean-Baptiste Colbert (1619–1683) was a French statesman who served as Minister of Finances under King Louis XIV. He played a central role in strengthening the French state, promoting mercantilist policies, and laying the foundations of modern state intervention in the economy. Remembered by many as a <mark style="color:$success;background-color:$success;">devoted servant of the monarchy and later celebrated as a precursor of republican values</mark>, his name has been given to streets, schools, and monuments across France.
+Jean-Baptiste Colbert (1619–1683) was a French statesman who served as Minister of Finance under King Louis XIV. He played a central role in strengthening the French state, promoting mercantilist policies, and laying the foundations of modern state intervention in the economy. Remembered by many as a <mark style="color:$success;background-color:$success;">devoted servant of the monarchy and later celebrated as a precursor of republican values</mark>, his name has been given to streets, schools, and monuments across France.
 
 Colbert’s legacy is deeply compromised by his authorship of the Code Noir (1685), a legal text that regulated and legitimized slavery in the French colonies. For many critics, the statue of Colbert <mark style="color:$danger;background-color:$danger;">symbolizes France’s colonial past and its complicity in the transatlantic slave trade.</mark>
 
@@ -105,7 +105,7 @@ On 7 June 2020, during a Black Lives Matter protest following the murder of Geor
 
 ***
 
-### 9. STALIN MONUMENT (Budapest, Hungary )
+### 9. STALIN MONUMENT (Budapest, Hungary)
 
 <figure><img src="../.gitbook/assets/img_stalin.jpg" alt=""><figcaption></figcaption></figure>
 
@@ -121,7 +121,7 @@ On 23 October 1956, at the outbreak of the Hungarian Revolution, a large crowd o
 
 <figure><img src="../.gitbook/assets/img_jimmy_savile.jpg" alt=""><figcaption></figcaption></figure>
 
-Jimmy Savile (1926–2011) was a British television and radio personality, DJ, and charity fundraiser. For decades he was a well-known public figure, hosting popular BBC shows, and cultivating an eccentric public image with his tracksuits, jewelry, and catchphrases. Beyond his media career, Savile was <mark style="color:$success;background-color:$success;">celebrated for his philanthropy: he claimed to have raised millions of pounds for hospitals, children’s organisations, and community initiatives.</mark> In Glasgow, his commitment to charity events such as fun runs and marathons earned him public recognition, and in the 1990s a life-sized wooden statue was installed at the Scotstoun Leisure Centre as a tribute to his perceived generosity and community spirit.
+Jimmy Savile (1926–2011) was a British television and radio personality, DJ, and charity fundraiser. For decades he was a well-known public figure, hosting popular BBC shows, and cultivating an eccentric public image with his tracksuits, jewelry, and catchphrases. Beyond his media career, Savile was <mark style="color:$success;background-color:$success;">celebrated for his philanthropy: he claimed to have raised millions of pounds for hospitals, children’s organizations, and community initiatives.</mark> In Glasgow, his commitment to charity events such as fun runs and marathons earned him public recognition, and in the 1990s a life-sized wooden statue was installed at the Scotstoun Leisure Centre as a tribute to his perceived generosity and community spirit.
 
 In 2012, a series of investigations revealed Savile’s long history of sexual abuse, including child victims, which had been systematically concealed during his lifetime. The revelations radically transformed his public image: from celebrated philanthropist to one of Britain’s most notorious sexual predators. His statue, once an emblem of charity, came to be seen as a <mark style="color:$danger;background-color:$danger;">symbol of betrayal and of society’s failure to protect victims.</mark>
 
