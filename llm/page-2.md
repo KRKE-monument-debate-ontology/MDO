@@ -1,4 +1,4 @@
-# LLM
+# Page 2
 
 ### Introduction
 
@@ -10,7 +10,7 @@ This experiment tested the robustness of our ontology as a modeling framework, i
 
 {% stepper %}
 {% step %}
-#### Obiettivo
+**Obiettivo**
 
 You must generate RDF/Turtle using ONLY the classes and properties listed below.\
 Do not invent new classes or properties.\
@@ -19,7 +19,7 @@ Use the prefix mdo: for the Monument Debate Ontology.
 {% endstep %}
 
 {% step %}
-#### CLASSES AND PROPERTIES
+**CLASSES AND PROPERTIES**
 
 {% content-ref url="../knowledge-representation/classes-and-properties.md" %}
 [classes-and-properties.md](../knowledge-representation/classes-and-properties.md)
@@ -27,25 +27,19 @@ Use the prefix mdo: for the Monument Debate Ontology.
 {% endstep %}
 
 {% step %}
-### User Story - semplificata&#x20;
-
-
+#### User Story - semplificata
 {% endstep %}
 
 {% step %}
-### RDF/TTL generation&#x20;
-
-
+#### RDF/TTL generation
 {% endstep %}
 
 {% step %}
-### Knowledge Graph&#x20;
-
-
+#### Knowledge Graph
 {% endstep %}
 
 {% step %}
-#### User Story -  con 2 eventi
+**User Story - con 2 eventi**
 
 In 2006, the Comune di Milano inaugurated a statue of Indro Montanelli in the public gardens of Milan that bearS his name. Sculpted by Vito Tongiani, the bronze figure shows Montanelli seated at his typewriter. The monument was intended as a tribute to one of the most influential Italian journalists of the 20th century. For several years, it stood largely as a symbol of journalistic achievement and civic recognition.
 
@@ -59,7 +53,7 @@ Since then, the statue has remained in place. Yet its meaning has changed. What 
 {% endstep %}
 
 {% step %}
-#### RDF/Turtle generated
+**RDF/Turtle generated**
 
 {% code expandable="true" %}
 ```luau
@@ -222,7 +216,7 @@ mdo:Journalist_Stakeholder a ceon-actor:Stakeholder ; dio:supports mdo:Argument_
 {% endstep %}
 
 {% step %}
-#### Knowledge Graph
+**Knowledge Graph**
 
 <figure><img src="../.gitbook/assets/rdf-grapher (2).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
