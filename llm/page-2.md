@@ -1,4 +1,4 @@
-# Page 2
+# LLM
 
 ### Introduction
 
@@ -47,7 +47,7 @@ Use the prefix mdo: for the Monument Debate Ontology.
 {% step %}
 #### User Story -  con 2 eventi
 
-In 2006, the Comune di Milano inaugurated a statue of Indro Montanelli in the public gardens of Milan that bear his name. Sculpted by Vito Tongiani, the bronze figure shows Montanelli seated at his typewriter. The monument was intended as a tribute to one of the most influential Italian journalists of the twentieth century. For several years, it stood largely as a symbol of journalistic achievement and civic recognition.
+In 2006, the Comune di Milano inaugurated a statue of Indro Montanelli in the public gardens of Milan that bearS his name. Sculpted by Vito Tongiani, the bronze figure shows Montanelli seated at his typewriter. The monument was intended as a tribute to one of the most influential Italian journalists of the 20th century. For several years, it stood largely as a symbol of journalistic achievement and civic recognition.
 
 The first rupture came in February 2012. One morning, the statue was found splashed with red paint, and a fake bomb made of wood and paper had been placed beneath its hat. The act marked the beginning of a public controversy. Among those present that day was an <mark style="color:red;background-color:red;">Eritrean man who supported the gesture</mark>. To him, the red paint <mark style="color:red;background-color:red;">symbolized the violence of Italian colonialism</mark> and forced the city to confront a history often left unaddressed. Not far away, a <mark style="color:green;background-color:green;">history student reacted differently</mark>. He was disturbed by the vandalism and believed that damaging a monument only deepened divisions. In his view, <mark style="color:green;background-color:green;">the statue represented a piece of public memory</mark>—problematic, perhaps, but something to be studied and debated rather than attacked.
 
