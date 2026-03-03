@@ -23,7 +23,7 @@ The second conceptual map represents a **more formal and structured conceptual m
 
 In this phase, we relied on existing ontologies whenever possible. However, we did not always find an ontological vocabulary that fully captured the specificities of our domain. For this reason, we introduced a set of **custom classes and properties**, defined within our own namespace, **MDO (Monument Debate Ontology)**.
 
-<figure><img src="../.gitbook/assets/AAA_conceptual_model_aggiornato.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/conceptual_model_aggiornato_SUBJECT.png" alt=""><figcaption></figcaption></figure>
 
 ## 📏<mark style="color:$primary;">Conceptual Model - alignment</mark>
 
@@ -36,4 +36,4 @@ On top of this participatory structure, we integrated the model of <mark style="
 
 Overall, this final conceptual map enables the modeling of monument debates as **situated interpretative processes**, rather than as static sets of facts. It highlights how perspectives emerge from the interaction between actors, values, knowledge, and time, and provides a formal structure for representing plurality, conflict, and change within cultural heritage controversies.
 
-<figure><img src="../.gitbook/assets/odp_persp_model_CORRETTO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/odp_persp_model_SUBJECT.png" alt=""><figcaption></figcaption></figure>
