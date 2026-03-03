@@ -25,7 +25,7 @@
 
 ## 🖥️ LLM
 
-* [Page 2](llm/page-2.md)
+* [LLM CONDITIONING](llm/page-2.md)
 
 ## 📃 DOCUMENTATION
 
