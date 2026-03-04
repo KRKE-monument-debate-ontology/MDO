@@ -358,30 +358,27 @@ WHERE {
 
 {% code expandable="true" %}
 ```sparql
-SELECT DISTINCT ?NomeMonumento ?controversiaLabel ?MediaPiattaforma
+SELECT DISTINCT ?MonumentName ?controversyLabel ?MediaPlatform
 WHERE {
   
-  ?monumento mdo:triggeredControversy ?controversia .
+  ?monument mdo:triggeredControversy ?controversy .
   
-  
-  ?partecipazione tip:forEntity ?idNelCSV .
-  ?partecipazione tip:isSettingFor ?luogoProtesta .
-  ?luogoProtesta a mdo:DebateSetting .
-  ?luogoProtesta rdfs:label ?MediaPiattaforma .
+  ?participation tip:forEntity ?csvID .
+  ?participation tip:isSettingFor ?debateSetting .
+  ?debateSetting a mdo:DebateSetting .
+  ?debateSetting rdfs:label ?MediaPlatform .
 
- 
-  FILTER (regex(str(?MediaPiattaforma), "social media|online|web|stampa", "i"))
+  FILTER (regex(str(?MediaPlatform), "social media|online|web|press", "i"))
 
-  
-  BIND(STRAFTER(REPLACE(STR(?monumento), "monument_", ""), "monument/") AS ?slug)
-  FILTER(CONTAINS(LCASE(STR(?idNelCSV)), LCASE(?slug)))
+  BIND(STRAFTER(REPLACE(STR(?monument), "monument_", ""), "monument/") AS ?slug)
 
+  FILTER(CONTAINS(LCASE(STR(?csvID)), LCASE(?slug)))
+
+  BIND(CONCAT("Monument ", UCASE(SUBSTR(?slug, 1, 1)), SUBSTR(?slug, 2)) AS ?MonumentName)
   
-  BIND(CONCAT("Monument ", UCASE(SUBSTR(?slug, 1, 1)), SUBSTR(?slug, 2)) AS ?NomeMonumento)
-  
-  OPTIONAL { ?controversia rdfs:label ?controversiaLabel . }
+  OPTIONAL { ?controversy rdfs:label ?controversyLabel . }
 }
-ORDER BY ?MediaPiattaforma
+ORDER BY ?MediaPlatform
 ```
 {% endcode %}
 
