@@ -66,7 +66,6 @@ And so Montanelli remains there—silent, immobile, suspended between two narrat
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix mdo: <https://github.com/KRKE-monument-debate-ontology/Data_MDO/md-ontology/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
@@ -79,9 +78,7 @@ And so Montanelli remains there—silent, immobile, suspended between two narrat
 @prefix deo: <http://purl.org/spar/deo/> .
 @prefix pr: <http://www.ontologydesignpatterns.org/cp/owl/participantRole.owl> .
 
-#################################################################
-# 1. IL MONUMENTO E FIGURA STORICA
-#################################################################
+### MONUMENT AND FIGURE ###
 
 mdo:statue_montanelli rdf:type dbo:Monument ;
     dcterms:title "Statua di Indro Montanelli" ;
@@ -89,6 +86,8 @@ mdo:statue_montanelli rdf:type dbo:Monument ;
     schema1:funder mdo:municipality_milan ;
     crm:P62 mdo:figure_montanelli ;
     crm:P108 mdo:production_2006 ;
+    ns1:hasMaterialComponent mdo:material_bronze ;
+    crm:P56 mdo:feature_pedestal_inscription ;
     mdo:triggeredControversy mdo:controversy_2020 .
 
 mdo:figure_montanelli rdf:type mdo:HistoricalFigure ;
@@ -98,47 +97,50 @@ mdo:figure_montanelli rdf:type mdo:HistoricalFigure ;
 mdo:legacy_journalism rdf:type mdo:Legacy ; rdfs:label "Eccellenza professionale" .
 mdo:fact_colonial_marriage rdf:type mdo:ControversialFact ; rdfs:label "Matrimonio coloniale" .
 
-#################################################################
-# 2. STAKEHOLDERS E CONTROVERSIA
-#################################################################
-
-mdo:controversy_2020 rdf:type mdo:Controversy ;
-    ceon-actor:participatingActor mdo:stakeholder_students , mdo:stakeholder_journalist .
+# 2. STAKEHOLDERS E ARGOMENTI (Con Label e Subject completi) #
 
 mdo:stakeholder_students rdf:type ceon-actor:Stakeholder ;
+    rdfs:label "Rete Studenti Milano" ;
     schema1:knowsAbout mdo:fact_colonial_marriage , mdo:legacy_journalism ;
     mdo:holdsValue mdo:value_social_justice ;
     dio:supports mdo:argument_pro_removal .
 
+mdo:argument_pro_removal rdf:type mdo:Argument ;
+    rdfs:label "Razzismo e violenza coloniale: la statua celebra un passato inaccettabile" ;
+    # Subject richiesti: Historical figure, monument, legacy, controversial fact
+    mdo:subject mdo:figure_montanelli , mdo:statue_montanelli , mdo:legacy_journalism , mdo:fact_colonial_marriage ;
+    mdo:justifiedWithValue mdo:value_social_justice .
+
 mdo:stakeholder_journalist rdf:type ceon-actor:Stakeholder ;
+    rdfs:label "Giornalista" ;
     schema1:knowsAbout mdo:fact_colonial_marriage , mdo:legacy_journalism ;
     mdo:holdsValue mdo:value_historical_memory ;
     dio:supports mdo:argument_pro_preservation .
 
-#################################################################
-# 3. PARTECIPAZIONE (TIP) E RUOLI
-#################################################################
+mdo:argument_pro_preservation rdf:type mdo:Argument ;
+    rdfs:label "Eredità culturale: il monumento deve restare per l'importanza giornalistica dell'autore" ;
+    # Subject richiesti: Historical figure, monument, legacy, controversial fact
+    mdo:subject mdo:figure_montanelli , mdo:statue_montanelli , mdo:legacy_journalism , mdo:fact_colonial_marriage ;
+    mdo:justifiedWithValue mdo:value_historical_memory .
+
+# 3. PARTECIPAZIONI (Entrambe su statue_montanelli) #
 
 mdo:participation_students rdf:type tip:TimeIndexedParticipation ;
     tip:forEntity mdo:stakeholder_students ;
     tip:includesObject mdo:statue_montanelli ;
-    tip:includesEvent mdo:activity_vandalism ; # Questo collegamento è corretto
+    tip:includesEvent mdo:activity_vandalism ;
     tip:hasRole mdo:role_protester ;
     mdo:hasStance mdo:stance_removal .
 
 mdo:participation_journalist rdf:type tip:TimeIndexedParticipation ;
     tip:forEntity mdo:stakeholder_journalist ;
     tip:includesObject mdo:statue_montanelli ;
-    # RIMOSSO: tip:includesEvent discussion (ERRORE PRECEDENTE)
     tip:hasRole mdo:role_defender ;
     mdo:hasStance mdo:stance_preservation .
 
-mdo:activity_vandalism rdf:type crm:E7_Activity ;
-    rdfs:label "Vandalismo vernice rossa" .
+mdo:activity_vandalism rdf:type crm:E7_Activity ; rdfs:label "Vandalismo vernice rossa" .
 
-#################################################################
-# 4. STANCES E DISCUSSIONE (LOGICA EMERSIONE)
-#################################################################
+# 4. DISCUSSIONE, PROPOSTA E RIMEDIO FINALE #
 
 mdo:stance_removal rdf:type mdo:ProRemoval ;
     mdo:emergesFrom mdo:discussion_confrontation .
@@ -147,31 +149,22 @@ mdo:stance_preservation rdf:type mdo:ProPreservation ;
     mdo:emergesFrom mdo:discussion_confrontation .
 
 mdo:discussion_confrontation rdf:type deo:Discussion ;
-    rdfs:label "Confronto verbale al cordone di polizia" ;
-    mdo:resultsIn mdo:proposal_context .
+    rdfs:label "Confronto verbale tra studente e giornalista" ;
+    mdo:resultsIn mdo:proposal_add_context .
 
-#################################################################
-# 5. ARGUMENTS (SUBJECTS COMPLETI)
-#################################################################
+# Action Proposal: La richiesta formulata nella discussione
+mdo:proposal_add_context rdf:type mdo:ActionProposal ;
+    rdfs:label "Add a plaque. Add a panel. Contextualize the monument" ;
+    mdo:resultsInto mdo:remedy_no_change .
 
-mdo:argument_pro_removal rdf:type mdo:Argument ;
-    # Soggetti multipli come richiesto
-    mdo:subject mdo:figure_montanelli , mdo:statue_montanelli , mdo:fact_colonial_marriage ;
-    mdo:justifiedWithValue mdo:value_social_justice .
+# Remedy: Il risultato finale (nessun cambiamento)
+mdo:remedy_no_change rdf:type mdo:Remedy ;
+    rdfs:label "No physical change: The statue stands unchanged" .
 
-mdo:argument_pro_preservation rdf:type mdo:Argument ;
-    # Soggetti multipli come richiesto
-    mdo:subject mdo:figure_montanelli , mdo:statue_montanelli , mdo:legacy_journalism ;
-    mdo:justifiedWithValue mdo:value_historical_memory .
+# 5. CONTROVERSIA E STAKEHOLDER #
 
-#################################################################
-# 6. ESITI
-#################################################################
-
-mdo:proposal_context rdf:type mdo:ActionProposal ;
-    mdo:resultsInto mdo:remedy_context .
-
-mdo:remedy_context rdf:type mdo:Remedy ; rdfs:label "Targa contestualizzante" .
+mdo:controversy_2020 rdf:type mdo:Controversy ;
+    ceon-actor:participatingActor mdo:stakeholder_students , mdo:stakeholder_journalist .
 ```
 {% endcode %}
 
@@ -181,7 +174,7 @@ mdo:remedy_context rdf:type mdo:Remedy ; rdfs:label "Targa contestualizzante" .
 {% step %}
 #### Knowledge Graph
 
-<figure><img src="../.gitbook/assets/rdf-grapher (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rdf-grapher_meglio.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
