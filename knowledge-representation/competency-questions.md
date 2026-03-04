@@ -322,19 +322,25 @@ ORDER BY ?participation
 
 {% code expandable="true" %}
 ```sparql
-SELECT DISTINCT ?NomeMonumento ?controversiaLabel ?luogoProtestaLabel
+SELECT DISTINCT ?MonumentName ?controversyLabel ?debateSettingLabel
 WHERE {
-  ?monumento mdo:triggeredControversy ?controversia .
-  BIND(STRAFTER(REPLACE(STR(?monumento), "monument_", ""), "monument/") AS ?slug)
-  ?partecipazione tip:forEntity ?idNelCSV .
-  FILTER(CONTAINS(LCASE(STR(?idNelCSV)), LCASE(?slug)))
-  ?partecipazione tip:isSettingFor ?luogoProtesta .
-  ?luogoProtesta a mdo:DebateSetting .
-  BIND(CONCAT("Monument ", UCASE(SUBSTR(?slug, 1, 1)), SUBSTR(?slug, 2)) AS ?NomeMonumento)
-  OPTIONAL { ?controversia rdfs:label ?controversiaLabel . }
-  OPTIONAL { ?luogoProtesta rdfs:label ?luogoProtestaLabel . }
+  
+  ?monument mdo:triggeredControversy ?controversy .
+  
+  BIND(STRAFTER(REPLACE(STR(?monument), "monument_", ""), "monument/") AS ?slug)
+  
+  ?participation tip:forEntity ?csvID .
+  FILTER(CONTAINS(LCASE(STR(?csvID)), LCASE(?slug)))
+  
+  ?participation tip:isSettingFor ?debateSetting .
+  ?debateSetting a mdo:DebateSetting .
+  
+  BIND(CONCAT("Monument ", UCASE(SUBSTR(?slug, 1, 1)), SUBSTR(?slug, 2)) AS ?MonumentName)
+  
+  OPTIONAL { ?controversy rdfs:label ?controversyLabel . }
+  OPTIONAL { ?debateSetting rdfs:label ?debateSettingLabel . }
 }
-ORDER BY ?NomeMonumento
+ORDER BY ?MonumentName
 ```
 {% endcode %}
 
