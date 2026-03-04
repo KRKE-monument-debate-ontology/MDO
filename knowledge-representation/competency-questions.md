@@ -250,8 +250,9 @@ GROUP BY ?value ?valueLabel
 #### 10) Which contestation events or actions are associated with the monument?
 
 ```sparql
-SELECT  ?ParticipationLabel ?monument
+SELECT  ?ParticipationLabel ?monumentID
 WHERE {
+  ?monument dcterms:identifier ?monumentID .
   ?Participation tip:includesObject ?monument .
   ?Participation rdfs:label ?ParticipationLabel . 
 }
