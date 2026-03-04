@@ -44,7 +44,6 @@ PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/>
 {% code fullWidth="false" expandable="true" %}
 ```sparql
 SELECT 
-  ?monument
   (SAMPLE(?title) AS ?titleSample)
   (SAMPLE(?date) AS ?dateSample)
   (SAMPLE(?HistoricalFigureLabel) AS ?HistoricalFigureLabelSample)
