@@ -194,18 +194,22 @@ WHERE {
 #### 7) What positions do stakeholders take in the controversy (pro-removal or pro-preservation)?
 
 ```sparql
-SELECT ?controversyLabel ?stakeholderLabel ?perspectiveLabel 
+SELECT ?stakeholderLabel ?perspectiveLabel ?activityLabel ?controversyLabel
 WHERE {
-  ?participation mdo:hasStance ?perspective .
   ?participation tip:forEntity ?stakeholder .
+  ?participation tip:includesEvent ?activity ;
+  				 mdo:hasStance ?perspective .
+
+  ?controversy ceon-actor:participatingActor ?stakeholder .
+
   ?stakeholder rdfs:label ?stakeholderLabel . 
   ?perspective rdfs:label ?perspectiveLabel .
-  ?controversy ceon-actor:participatingActor ?stakeholder .
-  ?controversy rdfs:label ?controversyLabel . 
+  ?controversy rdfs:label ?controversyLabel .
+  ?activity rdfs:label ?activityLabel
 }
 ```
 
-<table><thead><tr><th width="348.99993896484375">controversy</th><th width="282">stakeholder</th><th width="351.2000732421875">perspective</th></tr></thead><tbody><tr><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td><td>Anna Mueller, history teacher</td><td>Pro Preservation perspective on Hagenbeck statue controversy</td></tr><tr><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td><td>Samuel Bako, community organizer of Afro-German heritage</td><td>Pro Removal perspective on Hagenbeck statue controversy</td></tr></tbody></table>
+<table><thead><tr><th width="282">stakeholder</th><th width="351.2000732421875">perspective</th><th>activity</th><th width="348.99993896484375">controversy</th></tr></thead><tbody><tr><td>Anna Mueller, history teacher</td><td>Pro Preservation perspective on Hagenbeck statue controversy</td><td></td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr><tr><td>Samuel Bako, community organizer of Afro-German heritage</td><td>Pro Removal perspective on Hagenbeck statue controversy</td><td></td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr></tbody></table>
 
 #### 8) What values are held by stakeholders supporting either the removal or the preservation of monuments to sustain their respective arguments?
 
