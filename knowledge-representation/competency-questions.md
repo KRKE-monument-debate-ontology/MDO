@@ -10,7 +10,7 @@ In ontology design, Competency Questions help define the scope of the model, tes
 
 Below, we present the Competency Questions developed for our **Monument Debate Ontology**, which models controversial situations related to 10 selected statues and the broader debate around cancel culture. The questions reflect both perspectives, those who support preserving the monuments and those who advocate their removal.
 
-For clarity, the answer tables use simplified labels (e.g., _Monument_, _Controversy_, _Place_) instead of technical csv dataset terms such as `monument_id, controversy_id or place_id` , making the results easier to read while maintaining the structure of the underlying data.
+For clarity, the answer tables use simplified labels (e.g., _monument, controversy, place_) instead of technical csv dataset terms such as `monument_id, controversy_id or place_id` , making the results easier to read while maintaining the structure of the underlying data.
 
 ### <mark style="color:$primary;">PREFIXES</mark>
 
