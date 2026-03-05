@@ -92,7 +92,7 @@ GROUP BY ?monument
 ```
 {% endcode %}
 
-<table data-full-width="false"><thead><tr><th>monument</th><th width="153.5999755859375">HistoricalFigure</th><th width="80.79998779296875">date</th><th width="104.79998779296875">material</th><th width="232.79998779296875">location</th><th width="129.5999755859375">creator</th><th>funder</th><th width="173.5999755859375">feature</th><th width="215.20001220703125">contextual material</th><th width="176">heritage concept</th><th width="222.4000244140625">controversy</th></tr></thead><tbody><tr><td>Indro Montanelli Statue</td><td>Indro Montanelli (1909-2001)</td><td>2006</td><td>Bronze</td><td>Montanelli public gardens, Milan</td><td>Vito Tongiani</td><td>Municipality of Milan</td><td>Indro Montanelli seated while typing on his Olivetti</td><td>Engraved inscription on the pedestal reading "Indro Montanelli, Journalist"</td><td>Colonialism, Freedom of press, Pedophilia, Racism</td><td>The controversy triggered by Indro Montanelli Statue in the montanelli public gardens</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th>monument</th><th width="153.5999755859375">historical figure</th><th width="80.79998779296875">date</th><th width="104.79998779296875">material</th><th width="232.79998779296875">location</th><th width="129.5999755859375">creator</th><th>funder</th><th width="173.5999755859375">feature</th><th width="215.20001220703125">contextual material</th><th width="176">heritage concept</th><th width="222.4000244140625">controversy</th></tr></thead><tbody><tr><td>Indro Montanelli Statue</td><td>Indro Montanelli (1909-2001)</td><td>2006</td><td>Bronze</td><td>Montanelli public gardens, Milan</td><td>Vito Tongiani</td><td>Municipality of Milan</td><td>Indro Montanelli seated while typing on his Olivetti</td><td>Engraved inscription on the pedestal reading "Indro Montanelli, Journalist"</td><td>Colonialism, Freedom of press, Pedophilia, Racism</td><td>The controversy triggered by Indro Montanelli Statue in the montanelli public gardens</td></tr></tbody></table>
 
 ***
 
@@ -117,7 +117,7 @@ GROUP BY ?historicalFigureLabel
 ```
 {% endcode %}
 
-| HistoricalFigure                | Legacy                              |
+| historical figure               | legacy                              |
 | ------------------------------- | ----------------------------------- |
 | António Vieira (1608-1697)      | Advocacy; Religion and Spirituality |
 | Mary Wollstonecraft (1759-1797) | Philosophy; Women's rights; Writing |
@@ -153,7 +153,7 @@ WHERE {
 }
 ```
 
-<table><thead><tr><th width="280.79998779296875">historicalFigure</th><th width="800">controversialFact</th></tr></thead><tbody><tr><td>Jean Baptiste Colbert (1619-1683)</td><td>Colbert was responsible for laying the foundations of the Code Noir, a legal text that legitimised slavery and institutionalised the domination and brutal treatment of people in the French colonies.</td></tr><tr><td>Jimmy Savile (1926-2011)</td><td>After his death, Jimmy Savile was accused of widespread sexual abuse of minors and adults, with investigations concluding that he had exploited his celebrity status to commit offences over several decades.</td></tr><tr><td>Carl Hagenbeck (1844-1913)</td><td>Hagenbeck was known for his exhibitions of people, especially from Africa, which were brought in Germany and displayed in circuses and zoos</td></tr></tbody></table>
+<table><thead><tr><th width="280.79998779296875">historical figure</th><th width="800">controversial fact</th></tr></thead><tbody><tr><td>Jean Baptiste Colbert (1619-1683)</td><td>Colbert was responsible for laying the foundations of the Code Noir, a legal text that legitimised slavery and institutionalised the domination and brutal treatment of people in the French colonies.</td></tr><tr><td>Jimmy Savile (1926-2011)</td><td>After his death, Jimmy Savile was accused of widespread sexual abuse of minors and adults, with investigations concluding that he had exploited his celebrity status to commit offences over several decades.</td></tr><tr><td>Carl Hagenbeck (1844-1913)</td><td>Hagenbeck was known for his exhibitions of people, especially from Africa, which were brought in Germany and displayed in circuses and zoos</td></tr></tbody></table>
 
 ***
 
@@ -241,7 +241,7 @@ WHERE {
 GROUP BY ?value ?valueLabel
 ```
 
-<table><thead><tr><th width="159.20001220703125">value</th><th width="562.5999755859375">proRemovalPerspectives</th><th width="596">proPreservationPerspectives</th></tr></thead><tbody><tr><td>Critical thinking</td><td>Pro Removal perspective on António Vieira statue controversy</td><td>Pro Preservation perspective on Jean Baptiste Colbert statue controversy, Pro Preservation perspective on Hagenbeck statue controversy</td></tr><tr><td>Cultural identity</td><td>Pro Removal perspective on Jean Baptiste Colbert statue controversy, Pro Removal perspective on Gandhi statue controversy</td><td>Pro Preservation perspective on Colombo statue controversy,<br>Pro Preservation perspective on Edward Colston statue controversy,<br>Pro Preservation perspective on Savile statue controversy,<br>Pro Preservation perspective on Stalin statue controversy,<br>Pro Preservation perspective on António Vieira statue controversy</td></tr></tbody></table>
+<table><thead><tr><th width="159.20001220703125">value</th><th width="562.5999755859375">pro removal perspectives</th><th width="596">pro preservation perspectives</th></tr></thead><tbody><tr><td>Critical thinking</td><td>Pro Removal perspective on António Vieira statue controversy</td><td>Pro Preservation perspective on Jean Baptiste Colbert statue controversy, Pro Preservation perspective on Hagenbeck statue controversy</td></tr><tr><td>Cultural identity</td><td>Pro Removal perspective on Jean Baptiste Colbert statue controversy, Pro Removal perspective on Gandhi statue controversy</td><td>Pro Preservation perspective on Colombo statue controversy,<br>Pro Preservation perspective on Edward Colston statue controversy,<br>Pro Preservation perspective on Savile statue controversy,<br>Pro Preservation perspective on Stalin statue controversy,<br>Pro Preservation perspective on António Vieira statue controversy</td></tr></tbody></table>
 
 ***
 
@@ -338,7 +338,7 @@ ORDER BY ?MonumentName
 ```
 {% endcode %}
 
-<table><thead><tr><th width="181.60003662109375">monumento</th><th width="575.8001708984375">controversy</th><th width="254.800048828125">place</th></tr></thead><tbody><tr><td>Monument Stalin</td><td>The controversy triggered by the Stalin Statue in Városliget, Budapest</td><td>Budapest, Városliget</td></tr><tr><td>Monument Vieira</td><td>The controversy triggered by António Vieira in Trindade Coelho Square</td><td>Trindade Coelho Square</td></tr></tbody></table>
+<table><thead><tr><th width="181.60003662109375">monument</th><th width="575.8001708984375">controversy</th><th width="254.800048828125">place</th></tr></thead><tbody><tr><td>Monument Stalin</td><td>The controversy triggered by the Stalin Statue in Városliget, Budapest</td><td>Budapest, Városliget</td></tr><tr><td>Monument Vieira</td><td>The controversy triggered by António Vieira in Trindade Coelho Square</td><td>Trindade Coelho Square</td></tr></tbody></table>
 
 #### 14) What is the outcome of the debate?
 
