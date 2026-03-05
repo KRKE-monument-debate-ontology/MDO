@@ -98,7 +98,7 @@ GROUP BY ?monument
 
 ### <mark style="color:$primary;">LEVEL 2 - Symbolic values related to the statue and the historical figure</mark>
 
-#### 2) Why was the character celebrated with a statue?
+#### 2) Why was the historical figure commemorated with a statue?
 
 {% code fullWidth="false" expandable="true" %}
 ```sparql
