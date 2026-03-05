@@ -250,17 +250,19 @@ GROUP BY ?value ?valueLabel
 #### 10) Which contestation events or actions are associated with the monument?
 
 ```sparql
-SELECT  ?ParticipationLabel ?monumentID
+SELECT ?monumentID ?ActivityLabel 
 WHERE {
   ?monument dcterms:identifier ?monumentID .
   ?Participation tip:includesObject ?monument .
-  ?Participation rdfs:label ?ParticipationLabel . 
+
+  ?Participation tip:includesEvent ?activity .
+  ?activity a crm:E7_Activity .
+
+  ?activity rdfs:label ?ActivityLabel .
 }
 ```
 
-| participation                                            | monument         |
-| -------------------------------------------------------- | ---------------- |
-| Participation in the protest about Jimmy Savile's statue | monument\_savile |
+<table><thead><tr><th width="224">monument</th><th width="725.2000732421875">activity</th></tr></thead><tbody><tr><td>monument_savile</td><td>Following posthumous revelations of sexual abuse, the statue of Jimmy Savile in Glencoe was removed after public backlash, reflecting a rapid collapse of commemorative legitimacy.</td></tr></tbody></table>
 
 #### 11) Which stakeholders participate in contestation events or protests?
 
