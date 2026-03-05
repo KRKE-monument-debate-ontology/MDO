@@ -179,17 +179,23 @@ WHERE {
 #### 6) What arguments are expressed by stakeholders involved in the controversy?
 
 ```sparql
-SELECT  ?argumentLabel ?stakeholderLabel ?controversyLabel
+SELECT DISTINCT ?stakeholderLabel ?argumentLabel ?activityLabel ?controversyLabel
 WHERE {
-  ?controversy ceon-actor:participatingActor ?stakeholder .
   ?stakeholder dio:supports ?argument .
   ?argument rdfs:label ?argumentLabel .
   ?stakeholder rdfs:label ?stakeholderLabel .
+ 
+  ?activity ceon-actor:participatingActor ?stakeholder .
+  ?activity a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
+  ?activity rdfs:label ?activityLabel .
+ 
+  ?controversy ceon-actor:participatingActor ?stakeholder .
+  ?controversy a mdo:Controversy .
   ?controversy rdfs:label ?controversyLabel .
 }
 ```
 
-<table><thead><tr><th width="431.39996337890625">controversy</th><th width="428.60009765625">stakeholder</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Ministry of Foreign Affairs</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
+<table><thead><tr><th width="428.60009765625">stakeholder</th><th width="800">activity</th><th width="673.60009765625">argument</th><th width="431.39996337890625">controversy</th></tr></thead><tbody><tr><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>A ‘Gandhi Must Fall’ movement was initiated by university professors in the form of an online petition. Petitioners cited Gandhi’s racist attitudes towards Black Africans and his controversial stance on the caste system as reasons to remove the statue from campus</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td></tr><tr><td>Ministry of Foreign Affairs</td><td>A ‘Gandhi Must Fall’ movement was initiated by university professors in the form of an online petition. Petitioners cited Gandhi’s racist attitudes towards Black Africans and his controversial stance on the caste system as reasons to remove the statue from campus</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td></tr></tbody></table>
 
 #### 7) What positions do stakeholders take in the controversy (pro-removal or pro-preservation)?
 
