@@ -37,7 +37,7 @@ PREFIX  ceon-actor: <http://w3id.org/CEON/ontology/actor/>
 ```
 {% endcode %}
 
-### <mark style="color:$primary;">LEVEL 1  - description of the monument</mark>
+### <mark style="color:$primary;">LEVEL 1 - description of the monument</mark>
 
 #### 1) Where, when, who, how?
 
@@ -98,7 +98,7 @@ GROUP BY ?monument
 
 ### <mark style="color:$primary;">LEVEL 2 - Symbolic values related to the statue and the historical figure</mark>
 
-#### 2) Why was the character celebrated with a statue?&#x20;
+#### 2) Why was the character celebrated with a statue?
 
 {% code fullWidth="false" expandable="true" %}
 ```sparql
@@ -122,7 +122,7 @@ GROUP BY ?historicalFigureLabel
 | António Vieira (1608-1697)      | Advocacy; Religion and Spirituality |
 | Mary Wollstonecraft (1759-1797) | Philosophy; Women's rights; Writing |
 
-#### 3) Which values and concepts are associated with the statue?&#x20;
+#### 3) Which values and concepts are associated with the statue?
 
 ```sparql
 SELECT DISTINCT ?conceptLabel ?monumenttitle
@@ -141,7 +141,7 @@ WHERE {
 | Racism           | Carl Hagenbeck Statue         |
 | Sexism           | Mary Wollstonecraft Sculpture |
 
-#### 4) For what reasons is the character depicted considered controversial?&#x20;
+#### 4) For what reasons is the character depicted considered controversial?
 
 ```sparql
 SELECT DISTINCT ?historicalfigurelabel ?controversialFactlabel
@@ -159,7 +159,7 @@ WHERE {
 
 ### <mark style="color:$primary;">LEVEL 3 - Interpretations of the statue</mark>
 
-#### 5) Who is involved in the controversy triggered by the monument?&#x20;
+#### 5) Who is involved in the controversy triggered by the monument?
 
 ```sparql
 SELECT DISTINCT ?stakeholderlabel ?controversylabel
@@ -176,7 +176,7 @@ WHERE {
 | Maya Johnson, sociology junior and leader in the school’s Diversity and Inclusion group | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 | Marco Bellini, 1992 alumnus and Italian-American cultural leader                        | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 
-#### 6) What is the stakeholder argument?&#x20;
+#### 6) What is the stakeholder argument?
 
 ```sparql
 SELECT  ?argumentLabel ?stakeholderLabel ?controversyLabel
@@ -191,7 +191,7 @@ WHERE {
 
 <table><thead><tr><th width="431.39996337890625">controversy</th><th width="428.60009765625">stakeholder</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Ministry of Foreign Affairs</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
 
-#### 7) What is the stakeholder's position?&#x20;
+#### 7) What is the stakeholder's position?
 
 ```sparql
 SELECT ?controversyLabel ?stakeholderLabel ?perspectiveLabel 
@@ -205,9 +205,9 @@ WHERE {
 }
 ```
 
-<table><thead><tr><th width="348.99993896484375">controversy</th><th width="282">stakeholder</th><th width="351.2000732421875">perspective</th></tr></thead><tbody><tr><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td><td>Anna Mueller, history teacher</td><td>Pro Removal perspective on Hagenbeck statue controversy</td></tr><tr><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td><td>Samuel Bako, community organizer of Afro-German heritage</td><td>Pro Preservation perspective on Hagenbeck statue controversy</td></tr></tbody></table>
+<table><thead><tr><th width="348.99993896484375">controversy</th><th width="282">stakeholder</th><th width="351.2000732421875">perspective</th></tr></thead><tbody><tr><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td><td>Anna Mueller, history teacher</td><td>Pro Preservation perspective on Hagenbeck statue controversy</td></tr><tr><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td><td>Samuel Bako, community organizer of Afro-German heritage</td><td>Pro Removal perspective on Hagenbeck statue controversy</td></tr></tbody></table>
 
-#### 8) What values are held by stakeholders supporting either the removal or the preservation of monuments to sustain their respective arguments?&#x20;
+#### 8) What values are held by stakeholders supporting either the removal or the preservation of monuments to sustain their respective arguments?
 
 ```sparql
 SELECT  ?stakeholderLabel ?valueLabel ?argumentLabel
@@ -262,7 +262,7 @@ WHERE {
 | -------------------------------------------------------- | ---------------- |
 | Participation in the protest about Jimmy Savile's statue | monument\_savile |
 
-#### 11) Who are the stakeholders participating in the protest?&#x20;
+#### 11) Who are the stakeholders participating in the protest?
 
 {% code expandable="true" %}
 ```sparql
@@ -318,7 +318,7 @@ ORDER BY ?participation
 
 <table><thead><tr><th width="436.6000061035156">participation</th><th width="224.5999755859375">stakeholder</th><th>begin</th><th>end</th></tr></thead><tbody><tr><td>Participation in the protest about Montanelli's statue</td><td>eritrean person</td><td>2012-02</td><td>2012-02</td></tr><tr><td>Participation in the protest about Montanelli's statue</td><td>history student</td><td>2012-02</td><td>2012-02</td></tr><tr><td>Participation in the protest about Montanelli's statue</td><td>feminist LGBTQ+</td><td>2018-01</td><td>2018-01</td></tr><tr><td>Participation in the protest about Montanelli's statue</td><td>right-wing mayor of Milan, Gabriele Albertini</td><td>2018-01</td><td>2018-01</td></tr></tbody></table>
 
-#### 13) What is the setting of the contestation?&#x20;
+#### 13) What is the setting of the contestation?
 
 {% code expandable="true" %}
 ```sparql
@@ -340,7 +340,7 @@ ORDER BY ?MonumentName
 
 <table><thead><tr><th width="181.60003662109375">monumento</th><th width="575.8001708984375">controversy</th><th width="254.800048828125">place</th></tr></thead><tbody><tr><td>Monument Stalin</td><td>The controversy triggered by the Stalin Statue in Városliget, Budapest</td><td>Budapest, Városliget</td></tr><tr><td>Monument Vieira</td><td>The controversy triggered by António Vieira in Trindade Coelho Square</td><td>Trindade Coelho Square</td></tr></tbody></table>
 
-#### 14) What is the outcome of the debate?&#x20;
+#### 14) What is the outcome of the debate?
 
 ```sparql
 SELECT DISTINCT ?discussionLabel ?proposalLabel
