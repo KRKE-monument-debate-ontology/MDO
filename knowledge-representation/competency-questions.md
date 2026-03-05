@@ -363,7 +363,7 @@ WHERE {
 }
 ```
 
-<table><thead><tr><th width="545.2001342773438">discussion</th><th width="415.59991455078125">proposal</th></tr></thead><tbody><tr><td>The discussion that arises from different stakeholders' perspectives on Savile statue controversy</td><td>The discussion among the stakeholders did not lead to a remedy action</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Gandhi statue controversy</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Wollstonecraftstatue controversy</td><td>Replace the statue with a new one</td></tr></tbody></table>
+<table><thead><tr><th width="545.2001342773438">discussion</th><th width="415.59991455078125">proposal</th></tr></thead><tbody><tr><td>The discussion that arises from different stakeholders' perspectives on Savile statu</td><td>Contextualization; Keeping; Removal</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Gandhi statue controversy</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Wollstonecraft statue controversy</td><td>Replace the statue with a new one</td></tr></tbody></table>
 
 #### 15) Which monuments triggered debates that gained significant resonance in online or social media environments?
 
