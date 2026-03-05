@@ -141,7 +141,7 @@ WHERE {
 | Racism           | Carl Hagenbeck Statue         |
 | Sexism           | Mary Wollstonecraft Sculpture |
 
-#### 4) For what reasons is the character depicted considered controversial?
+#### 4) Why is the historical figure depicted in the monument considered controversial?
 
 ```sparql
 SELECT DISTINCT ?historicalfigurelabel ?controversialFactlabel
@@ -176,7 +176,7 @@ WHERE {
 | Maya Johnson, sociology junior and leader in the school’s Diversity and Inclusion group | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 | Marco Bellini, 1992 alumnus and Italian-American cultural leader                        | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 
-#### 6) What is the stakeholder argument?
+#### 6) What arguments are expressed by stakeholders involved in the controversy?
 
 ```sparql
 SELECT  ?argumentLabel ?stakeholderLabel ?controversyLabel
@@ -191,7 +191,7 @@ WHERE {
 
 <table><thead><tr><th width="431.39996337890625">controversy</th><th width="428.60009765625">stakeholder</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td><td>Ministry of Foreign Affairs</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
 
-#### 7) What is the stakeholder's position?
+#### 7) What positions do stakeholders take in the controversy (pro-removal or pro-preservation)?
 
 ```sparql
 SELECT ?controversyLabel ?stakeholderLabel ?perspectiveLabel 
@@ -222,7 +222,7 @@ WHERE {
 
 <table><thead><tr><th width="269.79998779296875">stakeholder</th><th width="177.4000244140625">value</th><th width="564.7999877929688">argument</th></tr></thead><tbody><tr><td>right-wing mayor of Milan, Gabriele Albertini</td><td>Historical memory</td><td>The statue should be preserved to remember Indro Montanelli as he was one of the most famous Italian journalists of the twentieth century</td></tr><tr><td>feminist group (Non Una Di Meno)</td><td>Gender equality</td><td>The statue should be removed because it celebrates Indro Montanelli without providing proper historical context, overlooking his statements on colonialism and his marriage to a twelve-year-old Eritrean girl</td></tr></tbody></table>
 
-#### 9) Do Pro-Removal and Pro-Preservation stakeholders share any common values in their arguments?
+#### 9) Do pro-removal and pro-preservation stakeholders share common values in their arguments?
 
 ```sparql
 SELECT 
@@ -262,7 +262,7 @@ WHERE {
 | -------------------------------------------------------- | ---------------- |
 | Participation in the protest about Jimmy Savile's statue | monument\_savile |
 
-#### 11) Who are the stakeholders participating in the protest?
+#### 11) Which stakeholders participate in contestation events or protests?
 
 {% code expandable="true" %}
 ```sparql
@@ -354,7 +354,7 @@ WHERE {
 
 <table><thead><tr><th width="545.2001342773438">discussion</th><th width="415.59991455078125">proposal</th></tr></thead><tbody><tr><td>The discussion that arises from different stakeholders' perspectives on Savile statue controversy</td><td>The discussion among the stakeholders did not lead to a remedy action</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Gandhi statue controversy</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Wollstonecraftstatue controversy</td><td>Replace the statue with a new one</td></tr></tbody></table>
 
-#### 15) Which monuments triggered debates that gained significant digital resonance, specifically within online or social media settings?
+#### 15) Which monuments triggered debates that gained significant resonance in online or social media environments?
 
 {% code expandable="true" %}
 ```sparql
