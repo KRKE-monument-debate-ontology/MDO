@@ -34,12 +34,12 @@ This temporal dimension is essential for the analysis of monument-related protes
 
 On top of this participatory structure, we integrated the model of <mark style="color:orange;background-color:orange;">Cognitive Perspectivisation</mark> proposed by Gangemi and Presutti in _Formal Representation and Extraction of Perspectives_. From this framework, we adapted the core classes aligning them with the needs of our domain:
 
-* <mark style="background-color:orange;">**BackgroundKnowledge**</mark>**:**&#x20;
-* <mark style="background-color:orange;">**Eventuality**</mark>**:** Eventuality is the objective "piece of reality" subject to interpretation. In our case, the `Monument` is modeled as an Eventuality because it represents a persistent state of affairs. Rather than a mere object, it is a continuous social and cultural "fact" whose ongoing presence in the public space acts as the situational referent for conflicting perspectives.
-* <mark style="background-color:orange;">**Conceptualiser**</mark>**:**
-* <mark style="background-color:orange;">**Cut**</mark>**:**
-* <mark style="background-color:orange;">**Lens**</mark>**:**
-* <mark style="background-color:orange;">**Attitude**</mark>**:**
+* <mark style="background-color:orange;">**Eventuality**</mark>**:** is the objective "piece of reality" subject to interpretation. In our case, the `Monument` is modeled as an Eventuality because it represents a persistent state of affairs. Rather than a mere object, it is a continuous social and cultural "fact" whose ongoing presence in the public space acts as the situational referent for conflicting perspectives.
+* <mark style="background-color:orange;">**BackgroundKnowledge**</mark>**:** shared or contextual knowledge that serves as a starting point _(e.g., social movements, colonial history, or historical knowledge about the person)_ – In our case the background knowledge is the `Legacy`
+* <mark style="background-color:orange;">**Conceptualiser**</mark>**:** the person who adopts a perspective – In our case the conceptualizer is the `Stakeholder`
+* <mark style="background-color:orange;">**Cut**</mark>**:** the interpretative framing that the conceptualiser applies to the eventuality _(e.g., act of vandalism vs. act of social justice)_ – In our case the cut is the `Argument`
+* <mark style="background-color:orange;">**Lens**</mark>**:** the conceptual or cultural perspective used to produce the cut _(e.g., conservative values vs. social equality)_ – In our case the lens is the `Value`
+* <mark style="background-color:orange;">**Attitude**</mark>**:** the expressed stance or evaluation _(e.g., approval, disapproval, irony)_ – In our case the attitude is the `Perspective`
 
 Overall, this final conceptual map enables the modeling of monument debates as **situated interpretative processes**, rather than as static sets of facts. It highlights how perspectives emerge from the interaction between actors, values, knowledge, and time, and provides a formal structure for representing plurality, conflict, and change within cultural heritage controversies.
 
