@@ -13,4 +13,4 @@ The project **Monument Debate Ontology (MDO)** is designed to capture and repres
 In particular, our ontology acknowledges the following dual perspectives:
 
 * <mark style="color:$danger;background-color:red;">Those who advocate for removal or alteration</mark>: arguing that certain monuments glorify oppression, colonialism, racism, or other harmful legacies, and therefore perpetuate social harm in public spaces.
-* <mark style="color:$success;background-color:$success;">Those who advocate for preservation</mark>: emphasizing the statues’ cultural, artistic, or historical value, and maintaining that they represent not only negative aspects of the past but also broader contexts that should not be erased and that are still relevant for the society.
+* <mark style="color:green;background-color:green;">Those who advocate for preservation</mark>: emphasizing the statues’ cultural, artistic, or historical value, and maintaining that they represent not only negative aspects of the past but also broader contexts that should not be erased and that are still relevant for the society.

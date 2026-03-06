@@ -8,22 +8,22 @@ icon: robot
 
 As last step, we used the ontology as a conditioning framework for a Large Language Model.\
 By providing the LLM with selected case studies and constraining it to our ontology structure, we asked it to generate knowledge graphs compliant with MDO.\
-This experiment tested the robustness of our ontology as a modeling framework, its applicability in AI-assisted knowledge extraction, its potential for hybrid symbolic–neural workflows.
+This experiment tested the robustness of our ontology as a modeling framework and its applicability in AI-assisted knowledge extraction.
 
 ## Statue of Indro Montanelli
 
 {% stepper %}
 {% step %}
-**Obiettivo**
+#### Task&#x20;
 
-You must generate RDF/Turtle using ONLY the classes and properties listed below.\
+You must generate RDF/Turtle using ONLY the classes and properties defined in our ontology.\
 Do not invent new classes or properties.\
 Use correct RDF syntax.\
 Use the prefix mdo: for the Monument Debate Ontology.
 {% endstep %}
 
 {% step %}
-**CLASSES AND PROPERTIES**
+#### INPUT - Classes and Properties&#x20;
 
 {% content-ref url="../knowledge-representation/classes-and-properties.md" %}
 [classes-and-properties.md](../knowledge-representation/classes-and-properties.md)
@@ -31,33 +31,29 @@ Use the prefix mdo: for the Monument Debate Ontology.
 {% endstep %}
 
 {% step %}
-#### User Story - semplificata
+#### INPUT - Case Study
 
-It is a bright spring Saturday in Milan. In Piazza della Repubblica, the statue of Indro Montanelli sits in the public gardens that bear his name. Sculpted in bronze by Vito Tongiani, the monument shows Montanelli seated at his Olivetti typewriter. It was commissioned by the Municipality of Milan and inaugurated in 2006, meant as a tribute to one of the most influential Italian journalists of the twentieth century. On the pedestal, the engraved inscription reads: “Indro Montanelli, Journalist.”\
-But today the statue is not simply a monument. It is the center of a long, painful debate.
+<sup>It is a bright spring Saturday in</sup> <sup></sup><sup>_<mark style="color:$info;">Milan</mark>_</sup><sup>. In Piazza della Repubblica, the</sup> <sup></sup><sup><mark style="background-color:yellow;">statue of Indro Montanelli<mark style="background-color:yellow;"></sup> <sup></sup><sup>sits in the</sup> <sup></sup><sup>_<mark style="color:$info;">public gardens that bear his name</mark>_</sup><sup>. Sculpted in</sup> <sup></sup><sup><mark style="background-color:yellow;">bronze<mark style="background-color:yellow;"></sup> <sup></sup><sup>by</sup> <sup></sup><sup><mark style="background-color:yellow;">Vito Tongiani<mark style="background-color:yellow;"></sup><sup>, the monument shows</sup> <sup></sup><sup>_<mark style="color:$info;">Montanelli seated at his Olivetti typewriter</mark>_</sup><sup>. It was commissioned by the</sup> <sup></sup><sup><mark style="background-color:yellow;">Municipality of Milan<mark style="background-color:yellow;"></sup> <sup></sup><sup>and inaugurated in</sup> <sup></sup><sup>_<mark style="color:$info;">2006</mark>_</sup><sup>, meant as a tribute to one of the most influential Italian journalists of the twentieth century. On the pedestal, the engraved inscription reads: “Indro Montanelli, Journalist.”</sup>\ <sup>But today the statue is not simply a monument. It is the center of a long, painful debate.</sup>
 
-The 2020 protest:\
-The crowd gathered closest to the police cordon is young, loud, and determined. Members of the student organisation Rete Studenti Milano stand at the front, holding signs splashed with red paint—the same red they threw on the statue just days earlier, where they also sprayed at the base the words “Racist, Rapist” in black.
+<sup>The</sup> <sup></sup><sup>_<mark style="color:$info;">2020</mark>_</sup> <sup></sup><sup>protest:</sup>\ <sup>The crowd gathered closest to the police cordon is young, loud, and determined. Members of the</sup> <sup></sup><sup><mark style="background-color:blue;">student organisation Rete Studenti Milano<mark style="background-color:blue;"></sup> <sup></sup><sup>stand at the front, holding signs splashed with red paint—the same red they threw on the statue just days earlier, where they also</sup> <sup></sup><sup><mark style="background-color:blue;">sprayed at the base the words “Racist, Rapist” in black.<mark style="background-color:blue;"></sup>
 
-<mark style="color:red;background-color:red;">For the students, the statue represents a celebration without context, a public honor that ignores Montanelli’s statements on colonialism and his marriage to a twelve‑year‑old Eritrean girl</mark>. They argue that Milan cannot continue to commemorate a figure without acknowledging the harm tied to his actions.
+<sup><mark style="color:red;background-color:red;">For the students, the statue represents a celebration without context, a public honor that ignores Montanelli’s statements on colonialism and his marriage to a twelve‑year‑old Eritrean girl<mark style="color:red;background-color:red;"></sup><sup>. They argue that Milan cannot continue to commemorate a figure without acknowledging the harm tied to his actions.</sup>
 
-Across the cordon stands <mark style="color:green;background-color:green;">a journalist</mark>, visibly shaken by the scene. He speaks to a small group of supporters, explaining that Montanelli’s legacy in journalism is immense, that he shaped Italian reporting for decades. <mark style="color:green;background-color:green;">Removing the statue, he says, would not correct history—it would erase it</mark>. He believes the monument should remain, perhaps contextualized, but not torn down.
+<sup>Across the cordon stands</sup> <sup></sup><sup><mark style="background-color:blue;">a journalist<mark style="background-color:blue;"></sup><sup>, visibly shaken by the scene. He speaks to a small group of supporters,</sup> <sup></sup><sup><mark style="color:green;background-color:green;">explaining that Montanelli’s legacy in journalism is immense, that he shaped Italian reporting for decades.<mark style="color:green;background-color:green;"></sup> <sup></sup><sup>Removing the statue, he says, would not correct history—it would erase it. He believes the monument should remain, perhaps contextualized, but not torn down.</sup>
 
-A moment of confrontation:\
-As the chants soften for a moment, the journalist and one of the student representatives find themselves unexpectedly close, separated only by a thin line of police.&#x20;
+<sup>A moment of confrontation:</sup>\ <sup>As the chants soften for a moment, the journalist and one of the student representatives find themselves unexpectedly close, separated only by a thin line of police.</sup>&#x20;
 
-“Public spaces should not glorify someone who caused harm,” the student says. “This statue stands here without any explanation. People walk by and see only a celebrated journalist, not the full truth.”
+<sup>“Public spaces should not glorify someone who caused harm,” the student says. “This statue stands here without any explanation. People walk by and see only a celebrated journalist.”</sup>
 
-The journalist nods, but his expression tightens. “I don’t deny the truth. But removing him from sight won’t make the past disappear. Montanelli shaped Italian journalism. His contradictions should be explained, not erased.”
+<sup>The journalist nods. “I don’t deny the truth. But removing him from sight won’t make the past disappear. Montanelli shaped Italian journalism. His contradictions should be explained, not erased.”</sup>
 
-“So add context,” the student replies. “Add a plaque. Add a panel. Tell the whole story. But don’t pretend this statue is neutral.”
+<sup>“</sup><sup><mark style="background-color:blue;">So add context,” the student replies. “Add a plaque. Add a panel. Tell the whole story. But don’t pretend this statue is neutral<mark style="background-color:blue;"></sup><sup>.”</sup>
 
-The statue stands unchanged, but everything around it has shifted. For some, it embodies racism, colonial violence, and the normalization of a painful past. For others, it represents journalistic legacy, freedom of expression, and the need to preserve history even when it is uncomfortable.\
-And so Montanelli remains there—silent, immobile, suspended between two narratives that refuse to meet.
+<sup><mark style="background-color:purple;">The statue stands unchanged<mark style="background-color:purple;"></sup><sup>, but everything around it has shifted. For some, it embodies racism, colonial violence, and the normalization of a painful past. For others, it represents journalistic legacy, freedom of expression, and the need to preserve history even when it is uncomfortable.</sup>\ <sup>And so Montanelli remains there—silent, immobile, suspended between two narratives that refuse to meet.</sup>
 {% endstep %}
 
 {% step %}
-#### RDF/TTL generation
+#### OUTPUT - RDF/TTL generation
 {% endstep %}
 
 {% step %}
@@ -172,9 +168,15 @@ mdo:controversy_2020 rdf:type mdo:Controversy ;
 {% endstep %}
 
 {% step %}
-#### Knowledge Graph
+#### OUTPUT - Knowledge Graph
 
-<figure><img src="../.gitbook/assets/rdf-grapher_meglio.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rdf-grapher_5_colori.png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Analysis&#x20;
+
+
 {% endstep %}
 
 {% step %}
