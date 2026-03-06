@@ -4,8 +4,6 @@ icon: robot
 
 # LLM CONDITIONING
 
-### Introduction
-
 As last step, we used the ontology as a conditioning framework for a Large Language Model.\
 By providing the LLM with selected case studies and constraining it to our ontology structure, we asked it to generate knowledge graphs compliant with MDO.\
 This experiment tested the robustness of our ontology as a modeling framework and its applicability in AI-assisted knowledge extraction.
@@ -170,3 +168,17 @@ mdo:controversy_2020 rdf:type mdo:Controversy ;
 {% endstep %}
 {% endstepper %}
 
+### LLM Performance Analysis
+
+The LLM demonstrated a consistent ability to identify and map the core classes and properties of the provided ontology. However, the mapping was not exhaustive, and several interventions were required to achieve a complete graph.&#x20;
+
+**Key Findings:**&#x20;
+
+* **Connectivity Issues in Complex Classes:** The most complex parts of the model, specifically the `ceon-actor:Stakeholder` and `mdo:Argument` classes, were initially generated with incomplete properties. Multiple prompts and specific solicitations were necessary to force the LLM to create all the required logical links. Without these interventions, the model failed to autonomously respect the full relational structure of the ontology.&#x20;
+* **Data Fragmentation and Misclassification:** Sometimes the LLM struggled with specific classes. A notable example is the handling of `dcterms:date`. Instead of maintaining it as distinct entity, the LLM frequently merged it into other instances—such as folding the year into the label of the `crm:E12_Production` class (e.g., `production_2006`).&#x20;
+* **Omission of Temporal Context:** The model failed to explicitly instantiate the `tip:TimeInterval` class to represent the duration of the protest, even if the year was mentioned in the text.
+* **Consistent Failure with Contextualization and Setting:** Across multiple tests, the LLM failed to utilize `mdo:isContextualisedBy`. This property links the monument to physical contextualization elements (plaques/panels). Instead, the model misattributed these to `crm:E26_Physical_Feature`, which should describe the statue's original state. Furthermore, the `mdo:debateSetting` class, defining the environment of the confrontation (the police cordon), was consistently omitted.
+
+**Conclusion:**&#x20;
+
+While the LLM is capable of a "macro" mapping, it tends to simplify or ignore the most granular and relational aspects of the ontology. Substantial human oversight is required to ensure that complex classes are not just present, but correctly interconnected according to the schema's properties.
