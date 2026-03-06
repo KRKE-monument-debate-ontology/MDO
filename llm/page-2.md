@@ -12,7 +12,7 @@ This experiment tested the robustness of our ontology as a modeling framework an
 
 {% stepper %}
 {% step %}
-#### Prompt
+### Prompt
 
 **TASK**: Rigorous RDF/Turtle mapping of a narrative onto a provided ontology.
 
@@ -23,13 +23,13 @@ This experiment tested the robustness of our ontology as a modeling framework an
 {% endstep %}
 
 {% step %}
-#### Our Ontology&#x20;
+### Our Ontology&#x20;
 
 {% file src="../.gitbook/assets/ontology.ttl" %}
 {% endstep %}
 
 {% step %}
-#### Case Study
+### Case Study
 
 <sup>It is a bright spring Saturday in Milan. In Piazza della Repubblica, the</sup> <sup></sup><sup><mark style="background-color:yellow;">statue of Indro Montanelli<mark style="background-color:yellow;"></sup> <sup></sup><sup>sits in the public gardens that bear his name. Sculpted in</sup> <sup></sup><sup><mark style="background-color:yellow;">bronze<mark style="background-color:yellow;"></sup> <sup></sup><sup>by</sup> <sup></sup><sup><mark style="background-color:yellow;">Vito Tongiani<mark style="background-color:yellow;"></sup><sup>, the monument shows Montanelli seated at his Olivetti typewriter. It was commissioned by the</sup> <sup></sup><sup><mark style="background-color:yellow;">Municipality of Milan<mark style="background-color:yellow;"></sup> <sup></sup><sup>and inaugurated in 2006, meant as a tribute to one of the most influential Italian journalists of the twentieth century. On the pedestal, the engraved inscription reads: “Indro Montanelli, Journalist.”</sup>\ <sup>But today the statue is not simply a monument. It is the center of a long, painful debate.</sup>
 
@@ -162,7 +162,7 @@ mdo:controversy_2020 rdf:type mdo:Controversy ;
 {% endstep %}
 
 {% step %}
-#### Knowledge Graph
+### Knowledge Graph
 
 <figure><img src="../.gitbook/assets/rdf-grapher_5_colori.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
