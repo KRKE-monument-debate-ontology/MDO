@@ -178,6 +178,7 @@ WHERE {
 
 #### 6) Considering the Legacy (BackgroundKnowledge) of the Historical Figure represented in the monument, what is the argument (cut) that the stakeholder (conceptualiser) derives from the monument (eventuality) by applying their values (lens)?
 
+{% code expandable="true" %}
 ```sparql
 SELECT ?stakeholderLabel 
        (GROUP_CONCAT(DISTINCT ?bgLabel; separator=", ") AS ?backgrounds)
@@ -201,6 +202,7 @@ WHERE {
 }
 GROUP BY ?stakeholderLabel
 ```
+{% endcode %}
 
 <table><thead><tr><th width="174.4000244140625">monument</th><th width="328.800048828125">legacy</th><th width="428.60009765625">stakeholder</th><th width="257.60009765625">value</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>Mahatma Gandhi Statue</td><td>Opposition to racism, Indian Independence, Non violent resistance</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>Cultural identity, Decolonization, Social justice</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>Mahatma Gandhi Statue</td><td>Opposition to racism, Indian Independence, Non violent resistance</td><td>Ministry of Foreign Affairs</td><td>Diplomacy, Historical memory</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
 
