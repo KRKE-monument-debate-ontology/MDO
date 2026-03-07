@@ -179,6 +179,12 @@ WHERE {
 #### 6) Considering the Legacy (BackgroundKnowledge) of the Historical Figure represented in the monument, what is the argument (cut) that the stakeholder (conceptualiser) derives from the monument (eventuality) by applying their values (lens)?
 
 ```sparql
+SELECT ?stakeholderLabel 
+       (GROUP_CONCAT(DISTINCT ?bgLabel; separator=", ") AS ?backgrounds)
+	     (GROUP_CONCAT(DISTINCT ?valueLabel; separator=", ") AS ?values)
+       (GROUP_CONCAT(DISTINCT ?argumentLabel; separator=", ") AS ?arguments)
+       (GROUP_CONCAT(DISTINCT ?monumentTitle; separator=", ") AS ?monuments)
+ 
 WHERE {
   ?stakeholder dio:supports ?argument ;
                schema:knowsAbout ?backgroundKnowledge ;
@@ -190,7 +196,7 @@ WHERE {
   ?monument dcterms:title ?monumentTitle .
   ?argument mdo:subject ?monument ;
                     rdfs:label ?argumentLabel .
-
+ 
  ?value rdfs:label ?valueLabel .
 }
 GROUP BY ?stakeholderLabel
