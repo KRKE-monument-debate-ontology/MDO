@@ -10,7 +10,9 @@ Since ready-to-use open datasets for the domain we modelled were not available, 
 
 We organized our data in Excel sheets, one for each Class in our conceptual model. We started with column names in natural language, that we mapped to the properties in our conceptual model in order to transform data in the Excel file into RDF.
 
-The Excel and csv file can be downloaded here. The Python script used for the RDF production can be seen below.
+The Excel and csv file can be downloaded here.&#x20;
+
+The Python script used for the RDF production can be seen below.
 
 <br>
 
