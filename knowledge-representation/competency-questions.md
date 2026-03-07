@@ -255,7 +255,7 @@ WHERE {
   OPTIONAL { ?pers2 rdfs:label ?pers2Label . }
   OPTIONAL { ?value rdfs:label ?valueLabel . }
 }
-GROUP BY ?value ?valueLabel
+GROUP BY ?valueLabel
 ```
 
 <table><thead><tr><th width="159.20001220703125">value</th><th width="562.5999755859375">pro removal perspectives</th><th width="596">pro preservation perspectives</th></tr></thead><tbody><tr><td>Critical thinking</td><td>Pro Removal perspective on António Vieira statue controversy</td><td>Pro Preservation perspective on Jean Baptiste Colbert statue controversy, Pro Preservation perspective on Hagenbeck statue controversy</td></tr><tr><td>Cultural identity</td><td>Pro Removal perspective on Jean Baptiste Colbert statue controversy, Pro Removal perspective on Gandhi statue controversy</td><td>Pro Preservation perspective on Colombo statue controversy,<br>Pro Preservation perspective on Edward Colston statue controversy,<br>Pro Preservation perspective on Savile statue controversy,<br>Pro Preservation perspective on Stalin statue controversy,<br>Pro Preservation perspective on António Vieira statue controversy</td></tr></tbody></table>
