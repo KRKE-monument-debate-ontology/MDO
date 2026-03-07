@@ -301,6 +301,8 @@ The RDF production was carried out using Python rdflib and Pandas. The resulting
 
 ## <mark style="color:$primary;">Protégé</mark>
 
-bo scriviamo qualcosa&#x20;
+The output turtle file resulting from the Python transformation was then used to formalize our ontology in Protégé. &#x20;
+
+Monument Debate Ontology counts NUMERO classes, NUMERO object properties, NUMERO data properties and NUMERO individuals.
 
 <figure><img src="../.gitbook/assets/protege_img.jpeg" alt=""><figcaption></figcaption></figure>
