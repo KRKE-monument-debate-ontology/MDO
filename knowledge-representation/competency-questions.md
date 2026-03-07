@@ -201,10 +201,10 @@ GROUP BY ?stakeholderLabel
 
 <table><thead><tr><th width="174.4000244140625">monument</th><th width="428.60009765625">stakeholder</th><th width="257.60009765625">value</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>Mahatma Gandhi Statue</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>Cultural identity, Decolonization, Social justice</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>Mahatma Gandhi Statue</td><td>Ministry of Foreign Affairs</td><td>Diplomacy, Historical memory</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
 
-#### 7) What positions do stakeholders take in the controversy (pro-removal or pro-preservation)?
+#### 7) What are the positions (attitudes) adopted by the stakeholders (conceptualisers) participating to a protest originated by the controversy?
 
 ```sparql
-SELECT ?stakeholderLabel ?perspectiveLabel ?activityLabel ?controversyLabel
+SELECT ?stakeholderLabel ?controversyLabel ?perspectiveLabel ?activityLabel 
 WHERE {
   ?participation tip:forEntity ?stakeholder ;
                         tip:includesEvent ?activity ;
@@ -220,7 +220,7 @@ WHERE {
 }
 ```
 
-<table><thead><tr><th width="282">stakeholder</th><th width="351.2000732421875">perspective</th><th>activity</th><th width="348.99993896484375">controversy</th></tr></thead><tbody><tr><td>Anna Mueller, history teacher</td><td>Pro Preservation perspective on Hagenbeck statue controversy</td><td></td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr><tr><td>Samuel Bako, community organizer of Afro-German heritage</td><td>Pro Removal perspective on Hagenbeck statue controversy</td><td></td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr></tbody></table>
+<table><thead><tr><th width="282">stakeholder</th><th width="348.99993896484375">controversy</th><th width="351.2000732421875">perspective</th><th width="390.4000244140625">activity</th></tr></thead><tbody><tr><td>Anna Mueller, history teacher</td><td>The controversy triggered by Carl Hagenbeck Statue in Tierpark Hagenbeck</td><td>Pro Preservation perspective on Hagenbeck statue controversy</td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr><tr><td>Samuel Bako, community organizer of Afro-German heritage</td><td>The controversy triggered by Carl Hagenbeck Statue in Tierpark Hagenbeck</td><td>Pro Removal perspective on Hagenbeck statue controversy</td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr></tbody></table>
 
 #### 9) Do pro-removal and pro-preservation stakeholders share common values in their arguments?
 
