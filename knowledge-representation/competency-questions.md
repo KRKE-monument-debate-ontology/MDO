@@ -203,16 +203,17 @@ WHERE {
 ```sparql
 SELECT ?stakeholderLabel ?perspectiveLabel ?activityLabel ?controversyLabel
 WHERE {
-  ?participation tip:forEntity ?stakeholder .
-  ?participation tip:includesEvent ?activity ;
-  				 mdo:hasStance ?perspective .
-
-  ?controversy ceon-actor:participatingActor ?stakeholder .
-
+  ?participation tip:forEntity ?stakeholder ;
+                        tip:includesEvent ?activity ;
+  	            mdo:hasStance ?perspective .
+ 
+  ?controversy ceon-actor:participatingActor ?stakeholder ;
+               a mdo:Controversy .
+ 
   ?stakeholder rdfs:label ?stakeholderLabel . 
   ?perspective rdfs:label ?perspectiveLabel .
   ?controversy rdfs:label ?controversyLabel .
-  ?activity rdfs:label ?activityLabel
+  ?activity rdfs:label ?activityLabel .
 }
 ```
 
