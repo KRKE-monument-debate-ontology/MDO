@@ -176,30 +176,27 @@ WHERE {
 | Maya Johnson, sociology junior and leader in the school’s Diversity and Inclusion group | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 | Marco Bellini, 1992 alumnus and Italian-American cultural leader                        | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 
-#### 6) What is the argument (cut) that the stakeholder (conceptualiser) derives from the monument (eventuality) by applying their values (lens)?
+#### 6) Considering the Legacy (BackgroundKnowledge) of the Historical Figure represented in the monument, what is the argument (cut) that the stakeholder (conceptualiser) derives from the monument (eventuality) by applying their values (lens)?
 
 ```sparql
-SELECT ?stakeholderLabel 
-	(GROUP_CONCAT(DISTINCT ?valueLabel; separator=", ") AS ?values)
-  (GROUP_CONCAT(DISTINCT ?argumentLabel; separator=", ") AS ?arguments)
-  (GROUP_CONCAT(DISTINCT ?monumentTitle; separator=", ") AS ?monuments)
- 
 WHERE {
   ?stakeholder dio:supports ?argument ;
+               schema:knowsAbout ?backgroundKnowledge ;
                rdfs:label ?stakeholderLabel .
    
+  ?backgroundKnowledge rdfs:label ?bgLabel .
   ?argument mdo:justifiedWithValue ?value .
   ?monument a dbo:Monument .
   ?monument dcterms:title ?monumentTitle .
   ?argument mdo:subject ?monument ;
                     rdfs:label ?argumentLabel .
- 
+
  ?value rdfs:label ?valueLabel .
 }
 GROUP BY ?stakeholderLabel
 ```
 
-<table><thead><tr><th width="174.4000244140625">monument</th><th width="428.60009765625">stakeholder</th><th width="257.60009765625">value</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>Mahatma Gandhi Statue</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>Cultural identity, Decolonization, Social justice</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>Mahatma Gandhi Statue</td><td>Ministry of Foreign Affairs</td><td>Diplomacy, Historical memory</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
+<table><thead><tr><th width="174.4000244140625">monument</th><th width="328.800048828125">legacy</th><th width="428.60009765625">stakeholder</th><th width="257.60009765625">value</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>Mahatma Gandhi Statue</td><td>Opposition to racism, Indian Independence, Non violent resistance</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>Cultural identity, Decolonization, Social justice</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>Mahatma Gandhi Statue</td><td>Opposition to racism, Indian Independence, Non violent resistance</td><td>Ministry of Foreign Affairs</td><td>Diplomacy, Historical memory</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
 
 #### 7) What are the positions (attitudes) adopted by the stakeholders (conceptualisers) participating to a protest originated by the controversy?
 
