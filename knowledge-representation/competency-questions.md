@@ -176,27 +176,30 @@ WHERE {
 | Maya Johnson, sociology junior and leader in the school’s Diversity and Inclusion group | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 | Marco Bellini, 1992 alumnus and Italian-American cultural leader                        | The controversy triggered by Cristoforo Colombo Statue at Pepperdine University |
 
-#### 6) What arguments are expressed by stakeholders involved in the controversy?
+#### 6) What is the argument (cut) that the stakeholder (conceptualiser) derives from the monument (eventuality) by applying their values (lens)?
 
 ```sparql
-SELECT ?stakeholderLabel ?argumentLabel ?activityLabel ?controversyLabel
+SELECT ?stakeholderLabel 
+	(GROUP_CONCAT(DISTINCT ?valueLabel; separator=", ") AS ?values)
+  (GROUP_CONCAT(DISTINCT ?argumentLabel; separator=", ") AS ?arguments)
+  (GROUP_CONCAT(DISTINCT ?monumentTitle; separator=", ") AS ?monuments)
+ 
 WHERE {
   ?stakeholder dio:supports ?argument ;
                rdfs:label ?stakeholderLabel .
-               
-  ?argument rdfs:label ?argumentLabel .
+   
+  ?argument mdo:justifiedWithValue ?value .
+  ?monument a dbo:Monument .
+  ?monument dcterms:title ?monumentTitle .
+  ?argument mdo:subject ?monument ;
+                    rdfs:label ?argumentLabel .
  
-  ?activity a crm:E7_Activity ;
-            ceon-actor:participatingActor ?stakeholder ;
-            rdfs:label ?activityLabel .
- 
-  ?controversy a mdo:Controversy ;
-               ceon-actor:participatingActor ?stakeholder ;
-               rdfs:label ?controversyLabel .
+ ?value rdfs:label ?valueLabel .
 }
+GROUP BY ?stakeholderLabel
 ```
 
-<table><thead><tr><th width="428.60009765625">stakeholder</th><th width="800">activity</th><th width="673.60009765625">argument</th><th width="431.39996337890625">controversy</th></tr></thead><tbody><tr><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>A ‘Gandhi Must Fall’ movement was initiated by university professors in the form of an online petition. Petitioners cited Gandhi’s racist attitudes towards Black Africans and his controversial stance on the caste system as reasons to remove the statue from campus</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td></tr><tr><td>Ministry of Foreign Affairs</td><td>A ‘Gandhi Must Fall’ movement was initiated by university professors in the form of an online petition. Petitioners cited Gandhi’s racist attitudes towards Black Africans and his controversial stance on the caste system as reasons to remove the statue from campus</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td><td>The controversy triggered by Mahatma Gandhi Statue in the University of Ghana</td></tr></tbody></table>
+<table><thead><tr><th width="174.4000244140625">monument</th><th width="428.60009765625">stakeholder</th><th width="257.60009765625">value</th><th width="673.60009765625">argument</th></tr></thead><tbody><tr><td>Mahatma Gandhi Statue</td><td>Professor Adomako Ampofo, the former Director of the Institute of African Studies at the University</td><td>Cultural identity, Decolonization, Social justice</td><td>The statue must be removed because of Gandhi’s racist statements toward African people and his casteist views.</td></tr><tr><td>Mahatma Gandhi Statue</td><td>Ministry of Foreign Affairs</td><td>Diplomacy, Historical memory</td><td>The statue should be preserved to commemorate the reputation Gandhi had earned during the later years of his life.</td></tr></tbody></table>
 
 #### 7) What positions do stakeholders take in the controversy (pro-removal or pro-preservation)?
 
@@ -218,26 +221,6 @@ WHERE {
 ```
 
 <table><thead><tr><th width="282">stakeholder</th><th width="351.2000732421875">perspective</th><th>activity</th><th width="348.99993896484375">controversy</th></tr></thead><tbody><tr><td>Anna Mueller, history teacher</td><td>Pro Preservation perspective on Hagenbeck statue controversy</td><td></td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr><tr><td>Samuel Bako, community organizer of Afro-German heritage</td><td>Pro Removal perspective on Hagenbeck statue controversy</td><td></td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr></tbody></table>
-
-#### 8) What values are held by stakeholders supporting either the removal or the preservation of monuments to sustain their respective arguments?
-
-```sparql
-SELECT ?stakeholderLabel 
-       (GROUP_CONCAT(DISTINCT ?valueLabel; separator=", ") AS ?values)
-       (GROUP_CONCAT(DISTINCT ?argumentLabel; separator=", ") AS ?arguments)
-WHERE {
-  ?stakeholder dio:supports ?argument .
-  ?argument rdfs:label ?argumentLabel . 
-  
-  ?stakeholder mdo:holdsValue ?value .
-  ?value rdfs:label ?valueLabel .
-  
-  ?stakeholder rdfs:label ?stakeholderLabel .
-}
-GROUP BY ?stakeholderLabel
-```
-
-<table><thead><tr><th width="269.79998779296875">stakeholder</th><th width="177.4000244140625">value</th><th width="650.4000854492188">argument</th></tr></thead><tbody><tr><td>right-wing mayor of Milan, Gabriele Albertini</td><td>Historical memory</td><td>The statue should be preserved to remember Indro Montanelli as he was one of the most famous Italian journalists of the twentieth century</td></tr><tr><td>feminist group (Non Una Di Meno)</td><td>Gender equality</td><td>The statue should be removed because it celebrates Indro Montanelli without providing proper historical context, overlooking his statements on colonialism and his marriage to a twelve-year-old Eritrean girl</td></tr></tbody></table>
 
 #### 9) Do pro-removal and pro-preservation stakeholders share common values in their arguments?
 
