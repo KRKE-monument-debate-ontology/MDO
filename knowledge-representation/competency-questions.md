@@ -179,19 +179,20 @@ WHERE {
 #### 6) What arguments are expressed by stakeholders involved in the controversy?
 
 ```sparql
-SELECT DISTINCT ?stakeholderLabel ?argumentLabel ?activityLabel ?controversyLabel
+SELECT ?stakeholderLabel ?argumentLabel ?activityLabel ?controversyLabel
 WHERE {
-  ?stakeholder dio:supports ?argument .
+  ?stakeholder dio:supports ?argument ;
+               rdfs:label ?stakeholderLabel .
+               
   ?argument rdfs:label ?argumentLabel .
-  ?stakeholder rdfs:label ?stakeholderLabel .
  
-  ?activity ceon-actor:participatingActor ?stakeholder .
-  ?activity a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
-  ?activity rdfs:label ?activityLabel .
+  ?activity a crm:E7_Activity ;
+            ceon-actor:participatingActor ?stakeholder ;
+            rdfs:label ?activityLabel .
  
-  ?controversy ceon-actor:participatingActor ?stakeholder .
-  ?controversy a mdo:Controversy .
-  ?controversy rdfs:label ?controversyLabel .
+  ?controversy a mdo:Controversy ;
+               ceon-actor:participatingActor ?stakeholder ;
+               rdfs:label ?controversyLabel .
 }
 ```
 
