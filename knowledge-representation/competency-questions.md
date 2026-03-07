@@ -222,7 +222,7 @@ WHERE {
 
 <table><thead><tr><th width="282">stakeholder</th><th width="348.99993896484375">controversy</th><th width="351.2000732421875">perspective</th><th width="390.4000244140625">activity</th></tr></thead><tbody><tr><td>Anna Mueller, history teacher</td><td>The controversy triggered by Carl Hagenbeck Statue in Tierpark Hagenbeck</td><td>Pro Preservation perspective on Hagenbeck statue controversy</td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr><tr><td>Samuel Bako, community organizer of Afro-German heritage</td><td>The controversy triggered by Carl Hagenbeck Statue in Tierpark Hagenbeck</td><td>Pro Removal perspective on Hagenbeck statue controversy</td><td>Online petition that originated from the debate about Hagenbeck's Statue in Tierpark Hagenberg in June 2020</td></tr></tbody></table>
 
-#### 9) Do pro-removal and pro-preservation stakeholders share common values in their arguments?
+#### 8) Do pro-removal and pro-preservation stakeholders share common values in their arguments?
 
 ```sparql
 SELECT 
@@ -247,7 +247,7 @@ GROUP BY ?valueLabel
 
 ### <mark style="color:$primary;">LEVEL 4 - Debate, Positions and Proposals</mark>
 
-#### 10) Which contestation events or actions are associated with the monument?
+#### 9) Which contestation events or actions are associated with the monument?
 
 ```sparql
 SELECT ?monumentID ?ActivityLabel 
@@ -264,7 +264,7 @@ WHERE {
 
 <table><thead><tr><th width="224">monument</th><th width="725.2000732421875">activity</th></tr></thead><tbody><tr><td>monument_savile</td><td>Following posthumous revelations of sexual abuse, the statue of Jimmy Savile in Glencoe was removed after public backlash, reflecting a rapid collapse of commemorative legitimacy.</td></tr></tbody></table>
 
-#### 11) Which stakeholders participate in contestation events or protests?
+#### 10) Which stakeholders participate in contestation events or protests?
 
 {% code expandable="true" %}
 ```sparql
@@ -287,7 +287,7 @@ ORDER BY ?participation
 
 <table><thead><tr><th width="411.5999755859375">participation</th><th width="553.199951171875">stakeholder</th></tr></thead><tbody><tr><td>Participation in the protest about Stalin's statue</td><td>István, factory worker</td></tr><tr><td>Participation in the protest about Stalin's statue</td><td>Katalin, history teacher</td></tr></tbody></table>
 
-#### 12) What is the temporal interval of the protest?
+#### 11) What is the temporal interval of the protest?
 
 {% code expandable="true" %}
 ```sparql
@@ -320,7 +320,7 @@ ORDER BY ?participation
 
 <table><thead><tr><th width="436.6000061035156">participation</th><th width="224.5999755859375">stakeholder</th><th>begin</th><th>end</th></tr></thead><tbody><tr><td>Participation in the protest about Montanelli's statue</td><td>eritrean person</td><td>2012-02</td><td>2012-02</td></tr><tr><td>Participation in the protest about Montanelli's statue</td><td>history student</td><td>2012-02</td><td>2012-02</td></tr><tr><td>Participation in the protest about Montanelli's statue</td><td>feminist LGBTQ+</td><td>2018-01</td><td>2018-01</td></tr><tr><td>Participation in the protest about Montanelli's statue</td><td>right-wing mayor of Milan, Gabriele Albertini</td><td>2018-01</td><td>2018-01</td></tr></tbody></table>
 
-#### 13) What is the setting of the contestation?
+#### 12) What is the setting of the contestation?
 
 {% code expandable="true" %}
 ```sparql
@@ -342,7 +342,7 @@ ORDER BY ?MonumentName
 
 <table><thead><tr><th width="181.60003662109375">monument</th><th width="575.8001708984375">controversy</th><th width="254.800048828125">place</th></tr></thead><tbody><tr><td>Monument Stalin</td><td>The controversy triggered by the Stalin Statue in Városliget, Budapest</td><td>Budapest, Városliget</td></tr><tr><td>Monument Vieira</td><td>The controversy triggered by António Vieira in Trindade Coelho Square</td><td>Trindade Coelho Square</td></tr></tbody></table>
 
-#### 14) What is the outcome of the debate?
+#### 13) What is the outcome of the debate?
 
 ```sparql
 SELECT DISTINCT ?discussionLabel ?proposalLabel
@@ -356,7 +356,7 @@ WHERE {
 
 <table><thead><tr><th width="545.2001342773438">discussion</th><th width="415.59991455078125">proposal</th></tr></thead><tbody><tr><td>The discussion that arises from different stakeholders' perspectives on Savile statu</td><td>Contextualization; Keeping; Removal</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Gandhi statue controversy</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Wollstonecraft statue controversy</td><td>Replace the statue with a new one</td></tr></tbody></table>
 
-#### 15) Which monuments triggered debates that gained significant resonance in online or social media environments?
+#### 14) Which monuments triggered debates that gained significant resonance in online or social media environments?
 
 {% code expandable="true" %}
 ```sparql
