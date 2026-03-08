@@ -10,7 +10,7 @@ This Gitbook contains the documentation for the final project of the course "Kno
 
 <div style="border-left:6px solid #b76e79; background:#f7e9ec; padding:20px; border-radius:8px;">
 
-<h3 style="margin-top:0;">🌹 Team Members</h3>
+<h3 style="margin-top:0;">🙋‍♀️ Team Members</h3>
 
 <table>
 
