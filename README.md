@@ -1,4 +1,4 @@
-![MDO Logo](.gitbook/assets/logo.png)
+![MDO Logo](logo.png)
 
 # mdo
 
