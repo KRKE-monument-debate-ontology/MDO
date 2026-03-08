@@ -18,9 +18,9 @@ This Gitbook contains the documentation for the final project of the course "Kno
       <img src="statue1.png" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid #b76e79; object-fit: cover; display: block;">
     </td>
     <td style="border: none; padding: 3px 0; vertical-align: middle;">
-      <span style="color: #4a4a4a; font-weight: bold; font-size: 0.85em;">Virginia D'Antonio</span> 
+      <span style="color: #4a4a4a; font-weight: bold; font-size: 0.85em;">Alice Piazzi</span> 
       <span style="color: #b76e79; font-size: 0.8em; margin-left: 8px;">•</span>
-      <a href="mailto:virginia.dantonio@studio.unibo.it" style="color: #b76e79; font-size: 0.8em; text-decoration: none; margin-left: 8px;">virginia.dantonio@studio.unibo.it</a>
+      <a href="mailto:alice.piazzi@studio.unibo.it" style="color: #b76e79; font-size: 0.8em; text-decoration: none; margin-left: 8px;">virginia.dantonio@studio.unibo.it</a>
     </td>
   </tr>
   <tr style="border: none;">
@@ -28,9 +28,9 @@ This Gitbook contains the documentation for the final project of the course "Kno
       <img src="statue2.png" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid #b76e79; object-fit: cover; display: block;">
     </td>
     <td style="border: none; padding: 3px 0; vertical-align: middle;">
-      <span style="color: #4a4a4a; font-weight: bold; font-size: 0.85em;">Elena Binotti</span> 
+      <span style="color: #4a4a4a; font-weight: bold; font-size: 0.85em;">Anna Pasetto</span> 
       <span style="color: #b76e79; font-size: 0.8em; margin-left: 8px;">•</span>
-      <a href="mailto:elena.binotti2@studio.unibo.it" style="color: #b76e79; font-size: 0.8em; text-decoration: none; margin-left: 8px;">elena.binotti2@studio.unibo.it</a>
+      <a href="mailto:anna.pasetto2@studio.unibo.it" style="color: #b76e79; font-size: 0.8em; text-decoration: none; margin-left: 8px;">elena.binotti2@studio.unibo.it</a>
     </td>
   </tr>
   <tr style="border: none;">
@@ -38,9 +38,9 @@ This Gitbook contains the documentation for the final project of the course "Kno
       <img src="statue3.png" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid #b76e79; object-fit: cover; display: block;">
     </td>
     <td style="border: none; padding: 3px 0; vertical-align: middle;">
-      <span style="color: #4a4a4a; font-weight: bold; font-size: 0.85em;">Elvira Kushlak</span> 
+      <span style="color: #4a4a4a; font-weight: bold; font-size: 0.85em;">Francesca Gaeta</span> 
       <span style="color: #b76e79; font-size: 0.8em; margin-left: 8px;">•</span>
-      <a href="mailto:elvira.kushlak@studio.unibo.it" style="color: #b76e79; font-size: 0.8em; text-decoration: none; margin-left: 8px;">elvira.kushlak@studio.unibo.it</a>
+      <a href="mailto:francesca.gaeta3@studio.unibo.it" style="color: #b76e79; font-size: 0.8em; text-decoration: none; margin-left: 8px;">elvira.kushlak@studio.unibo.it</a>
     </td>
   </tr>
   <tr style="border: none;">
@@ -48,9 +48,9 @@ This Gitbook contains the documentation for the final project of the course "Kno
       <img src="statue4.png" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid #b76e79; object-fit: cover; display: block;">
     </td>
     <td style="border: none; padding: 3px 0; vertical-align: middle;">
-      <span style="color: #4a4a4a; font-weight: bold; font-size: 0.85em;">Anna Pak</span> 
+      <span style="color: #4a4a4a; font-weight: bold; font-size: 0.85em;">Matilde Passafaro</span> 
       <span style="color: #b76e79; font-size: 0.8em; margin-left: 8px;">•</span>
-      <a href="mailto:anna.pak@studio.unibo.it" style="color: #b76e79; font-size: 0.8em; text-decoration: none; margin-left: 8px;">anna.pak@studio.unibo.it</a>
+      <a href="matilde.passafaro@studio.unibo.it" style="color: #b76e79; font-size: 0.8em; text-decoration: none; margin-left: 8px;">anna.pak@studio.unibo.it</a>
     </td>
   </tr>
 </table>
