@@ -15,7 +15,7 @@ This Gitbook contains the documentation for the final project of the course "Kno
 <table style="width: 100%; border-collapse: collapse; border: none;">
   <tr style="border: none;">
     <td style="width: 40px; border: none; padding: 5px 0;">
-      <img src="statue1.png" style="width: 35px; height: 35px; border-radius: 50%; border: 1.5px solid #b76e79; object-fit: cover;">
+      <img src="statue1.png" style="width: 15px; height: 155px; border-radius: 50%; border: 1.5px solid #b76e79; object-fit: cover;">
     </td>
     <td style="border: none; padding: 5px 10px; vertical-align: middle;">
       <strong style="color: #4a4a4a; font-size: 0.95em;">Virginia D'Antonio</strong><br/>
