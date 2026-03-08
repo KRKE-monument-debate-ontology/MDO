@@ -6,13 +6,15 @@ icon: book
 
 ## <mark style="color:$tint;">BIBLIOGRAPHY</mark>
 
-* Apollonio 2023: Andrea Apollonio, Memoria diabolica: interpretare i conflitti del passato, tra cancel culture e mutamento sociale, in «Cambio. Rivista sulle trasformazioni sociali», 25, 1, 2023, pp.
-* De Rada 2021: Dimitri De Rada, Cancel Culture e diritto all’accesso all’informazione, «Nomos. Le attualità del diritto. Quadrimestrale di teoria generale, diritto pubblico comparato e storia costituzionale», 2, 2021, pp. 2-24
-* Degli Esposti-Tirabassi 2025: P. Degli Esposti-Laura Tirabassi, Cultural Consumption, Social Media and Polarization. Cancel Culture as a Practice of Cultural Resistance and its Critical Issues, «Comunicazione Politica», 1, 2025, pp.
-* Erker-Goanta-Spanakis 2022: Justus-Jonas Erker, Catalina Goanta, Gerasimos Spanakis, A Cancel Culture Corpus through the lens of Natural Language Processing, Proceedings of LATERAISSE Workshop, Marseille, 25 June 2022, pp. 17-25
-* Flores 2023: Marcello Flores, La cancel culture e il senso della storia, , in «Cambio. Rivista sulle trasformazioni sociali», 25, 13, 2023, pp. 89-100
-* Hobbs 2021: Angela H Hobbs, In memoriam: The who, how, where and when of statues, «Journal of Philosophy of Education», Volume 55, Issue 3, June 2021, Pages 430–438, [https://doi.org/10.1111/1467-9752.12589](https://doi.org/10.1111/1467-9752.12589)
-* Jelincic-Reap 2022: Daniela Jelincic-James Reap, Contested Heritage or Cancel Culture? The Case of Ivan Meštrović’s Public Sculptures in Chicago. Heritage. 5. 2022, 2732-2745. 10.3390/heritage5030142.
+* Apollonio 2023: Andrea Apollonio, _Memoria diabolica: interpretare i conflitti del passato, tra cancel culture e mutamento sociale_, in «Cambio. Rivista sulle trasformazioni sociali», 25, 1, 2023, pp.
+* Blomqvist-Daga-Gangemi-Presutti 2009: Eva Blomqvist-Enrico Daga-Aldo Gangemi-Valentina Presutti, _eXtreme Design with Content Ontology Design Patterns_, in Proc. Workshop on Ontology Patterns, pp. 83-97.
+* De Rada 2021: Dimitri De Rada, _Cancel Culture e diritto all’accesso all’informazione_, «Nomos. Le attualità del diritto. Quadrimestrale di teoria generale, diritto pubblico comparato e storia costituzionale», 2, 2021, pp. 2-24
+* Degli Esposti-Tirabassi 2025: P. Degli Esposti-Laura Tirabassi, _Cultural Consumption, Social Media and Polarization. Cancel Culture as a Practice of Cultural Resistance and its Critical Issues_, «Comunicazione Politica», 1, 2025, pp.
+* Erker-Goanta-Spanakis 2022: Justus-Jonas Erker, Catalina Goanta, Gerasimos Spanakis, _A Cancel Culture Corpus through the lens of Natural Language Processing_, Proceedings of LATERAISSE Workshop, Marseille, 25 June 2022, pp. 17-25
+* Flores 2023: Marcello Flores, _La cancel culture e il senso della storia_, in «Cambio. Rivista sulle trasformazioni sociali», 25, 13, 2023, pp. 89-100
+* Gangemi-Presutti 2022: Aldo Gangemi-Valentina Presutti, _Formal representation and extraction of perspectives_, in Creating a more transparent Internet, edited by P. Vossen-A.Fokkens, Cambridge, Cambridge University Press, 2022, pp. 208-228.
+* Hobbs 2021: Angela H Hobbs, _In memoriam: The who, how, where and when of statues_, «Journal of Philosophy of Education», Volume 55, Issue 3, June 2021, Pages 430–438, [https://doi.org/10.1111/1467-9752.12589](https://doi.org/10.1111/1467-9752.12589)
+* Jelincic-Reap 2022: Daniela Jelincic-James Reap, _Contested Heritage or Cancel Culture? The Case of Ivan Meštrović’s Public Sculptures in Chicago_. Heritage. 5. 2022, 2732-2745. 10.3390/heritage5030142.
 
 ## <mark style="color:$primary;">SITOGRAPHY</mark>
 
