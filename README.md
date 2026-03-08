@@ -1,4 +1,6 @@
-![MDO Logo](logo.png)
+<p align="center">
+  <img src="logo.png" width="900">
+</p>
 
 # MDO
 
