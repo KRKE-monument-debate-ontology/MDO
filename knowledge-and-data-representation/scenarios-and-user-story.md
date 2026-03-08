@@ -4,9 +4,9 @@ icon: book-open
 
 # Scenarios and User Story
 
-We selected 10 sample user scenarios describing controversial situations based on 10 statues we chose to address the topic of cancel culture, considering both the perspectives of those who want to preserve them and those who want to remove them.
+The following sections present LLM generated scenarios describing controversial situations based on the statues we chose, considering both the perspectives of those who want to preserve them and those who want to remove them, and a complete user story based on the statue of Indro Montanelli in Milan.
 
-## 🎬 <mark style="color:$primary;"> Preservation and Removal sample user scenarios</mark>
+## 🎬 <mark style="color:$primary;">Preservation and Removal sample user scenarios</mark>
 
 <details>
 
@@ -93,7 +93,7 @@ On a grey late afternoon in Bristol, the sky heavy with clouds, the bronze statu
 
 On a crisp late October night in 1956, Városliget in Budapest is tense under the shadow of the towering bronze statue of Joseph Stalin. The city is in the grip of revolution, and the statue, erected in 1951, looms as a symbol of Soviet oppression.\
 🔴 István, a 25-year-old factory worker, stands among the protesters with ropes and cutting torches. For him, the statue is not just bronze—it <mark style="color:$danger;background-color:$danger;">embodies the fear, disappearances, and oppression his family endured</mark>. He sees tearing it down as the first step toward freedom, a defiant act to reclaim dignity and make the world witness their refusal to kneel.\
-🟢 Katalin, 52, a history teacher and longtime communist party member, watches from the sidelines. She recognizes Stalin’s crimes but views the statue as a <mark style="color:$success;background-color:$success;">testament to the fight against fascism and a reminder of those who died</mark>. She urges caution, fearing that destroying it could erase lessons of the past and invite chaos. Her hope is to preserve history in a museum where its full story can be told. ➡️ As ropes tighten and the bronze figure groans, the statue crashes to the ground, leaving only the boots behind—a surreal reminder of oppression toppled. The act is both defiant and symbolic: the fall of the statue signals the city’s first steps toward freedom, yet the memory of the past remains, haunting the empty space.\
+🟢 Katalin, 52, a history teacher and longtime communist party member, watches from the sidelines. She recognizes Stalin’s crimes but views the statue as a <mark style="color:$success;background-color:$success;">testament to the fight against fascism and a reminder of those who died</mark>. She urges caution, fearing that destroying it could erase lessons of the past and invite chaos. Her hope is to preserve history in a museum where its full story can be told. ➡️ As ropes tighten and the bronze figure groans, the statue crashes to the ground, leaving only the boots behind—a surreal reminder of oppression toppled. The act is both defiant and symbolic: the fall of the statue signals the city’s first steps toward freedom, yet the memory of the past remains, haunting the empty space.\\
 
 </details>
 
@@ -107,8 +107,6 @@ On a chilly evening in 2012, the small square in Glencoe, Scotland, is tense as 
 ➡️ As the workers lift the statue onto a truck, the square feels strangely empty, yet the weight of history lingers. The removal signals both the town’s reckoning with abuse and the enduring debate over how public memory should confront moral complexity.
 
 </details>
-
-
 
 ***
 
@@ -125,4 +123,4 @@ The two groups watch each other warily, divided by barriers. Marta and Lorenzo c
 — Marta: “I understand the value Montanelli had for you, but this statue hurts many.”\
 — Lorenzo: “And I understand the pain. But I believe the solution is to explain, not tear it down.”
 
-➡️ Neither changes their mind. Yet, as they part ways, both carry a quiet awareness: behind every monument lies a debate that speaks more about the present than the past.&#x20;
+➡️ Neither changes their mind. Yet, as they part ways, both carry a quiet awareness: behind every monument lies a debate that speaks more about the present than the past.
