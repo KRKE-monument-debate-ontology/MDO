@@ -8,38 +8,13 @@ This Gitbook contains the documentation for the final project of the course "Kno
 
 <br/>
 
-<div style="border-left: 4px solid #b76e79; background-color: #faf3f4; padding: 15px; border-radius: 8px; max-width: 450px;">
+<br/>
 
-<h5 style="margin: 0 0 10px 0; color: #b76e79; font-family: sans-serif; font-size: 0.9em;">🙋‍♀️ TEAM MEMBERS</h5>
+| | |
+| :--- | :--- |
+| <img src="statue1.png" width="25" height="25"> | **Virginia D'Antonio** — [email](mailto:virginia.dantonio@studio.unibo.it) |
+| <img src="statue2.png" width="25" height="25"> | **Elena Binotti** — [email](mailto:elena.binotti2@studio.unibo.it) |
+| <img src="statue3.png" width="25" height="25"> | **Elvira Kushlak** — [email](mailto:elvira.kushlak@studio.unibo.it) |
+| <img src="statue4.png" width="25" height="25"> | **Anna Pak** — [email](mailto:anna.pak@studio.unibo.it) |
 
-<div style="line-height: 1.8;">
-  <div style="display: flex; align-items: center; margin-bottom: 4px;">
-    <span style="display: inline-block; width: 20px; height: 20px; min-width: 20px; margin-right: 10px;">
-      <img src="statue1.png" style="width: 100%; height: 100%; border-radius: 50%; border: 1px solid #b76e79; object-fit: cover; display: block;">
-    </span>
-    <span style="font-size: 0.85em; color: #4a4a4a;"><b>Alice Piazzi</b> — <a href="mailto:alice.piazzi@studio.unibo.it" style="color: #b76e79; text-decoration: none;">email</a></span>
-  </div>
-  
-  <div style="display: flex; align-items: center; margin-bottom: 4px;">
-    <span style="display: inline-block; width: 20px; height: 20px; min-width: 20px; margin-right: 10px;">
-      <img src="statue2.png" style="width: 100%; height: 100%; border-radius: 50%; border: 1px solid #b76e79; object-fit: cover; display: block;">
-    </span>
-    <span style="font-size: 0.85em; color: #4a4a4a;"><b>Elena Binotti</b> — <a href="mailto:elena.binotti2@studio.unibo.it" style="color: #b76e79; text-decoration: none;">email</a></span>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 4px;">
-    <span style="display: inline-block; width: 20px; height: 20px; min-width: 20px; margin-right: 10px;">
-      <img src="statue3.png" style="width: 100%; height: 100%; border-radius: 50%; border: 1px solid #b76e79; object-fit: cover; display: block;">
-    </span>
-    <span style="font-size: 0.85em; color: #4a4a4a;"><b>Elvira Kushlak</b> — <a href="mailto:elvira.kushlak@studio.unibo.it" style="color: #b76e79; text-decoration: none;">email</a></span>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 4px;">
-    <span style="display: inline-block; width: 20px; height: 20px; min-width: 20px; margin-right: 10px;">
-      <img src="statue4.png" style="width: 100%; height: 100%; border-radius: 50%; border: 1px solid #b76e79; object-fit: cover; display: block;">
-    </span>
-    <span style="font-size: 0.85em; color: #4a4a4a;"><b>Anna Pak</b> — <a href="mailto:anna.pak@studio.unibo.it" style="color: #b76e79; text-decoration: none;">email</a></span>
-  </div>
-</div>
-
-</div>
+<br/>
