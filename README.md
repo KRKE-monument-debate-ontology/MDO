@@ -8,40 +8,45 @@ This Gitbook contains the documentation for the final project of the course "Kno
 
 <br>
 
-<div style="border-left:6px solid #b76e79; background:#f7e9ec; padding:20px; border-radius:8px;">
+<div style="border-left: 6px solid #b76e79; background: #faf3f4; padding: 25px; border-radius: 12px; font-family: sans-serif;">
+  
+  <h3 style="margin-top: 0; color: #b76e79; display: flex; align-items: center; gap: 10px;">
+    <span>🙋‍♀️</span> Team Members
+  </h3>
 
-<h3 style="margin-top:0;">🙋‍♀️ Team Members</h3>
+  <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
 
-<table>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <img src="statue1.png" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #b76e79;">
+      <div>
+        <div style="font-weight: bold; color: #4a4a4a; font-size: 1.1em;">Virginia D'Antonio</div>
+        <a href="mailto:virginia.dantonio@studio.unibo.it" style="color: #b76e79; text-decoration: none; font-size: 0.9em;">virginia.dantonio@studio.unibo.it</a>
+      </div>
+    </div>
 
-<tr>
-<td><img src="statue1.png" width="60"></td>
-<td><b>Virginia D'Antonio</b><br>
-<a href="mailto:virginia.dantonio@studio.unibo.it">virginia.dantonio@studio.unibo.it</a>
-</td>
-</tr>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <img src="statue2.png" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #b76e79;">
+      <div>
+        <div style="font-weight: bold; color: #4a4a4a; font-size: 1.1em;">Elena Binotti</div>
+        <a href="mailto:elena.binotti2@studio.unibo.it" style="color: #b76e79; text-decoration: none; font-size: 0.9em;">elena.binotti2@studio.unibo.it</a>
+      </div>
+    </div>
 
-<tr>
-<td><img src="statue2.png" width="60"></td>
-<td><b>Elena Binotti</b><br>
-<a href="mailto:elena.binotti2@studio.unibo.it">elena.binotti2@studio.unibo.it</a>
-</td>
-</tr>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <img src="statue3.png" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #b76e79;">
+      <div>
+        <div style="font-weight: bold; color: #4a4a4a; font-size: 1.1em;">Elvira Kushlak</div>
+        <a href="mailto:elvira.kushlak@studio.unibo.it" style="color: #b76e79; text-decoration: none; font-size: 0.9em;">elvira.kushlak@studio.unibo.it</a>
+      </div>
+    </div>
 
-<tr>
-<td><img src="statue3.png" width="60"></td>
-<td><b>Elvira Kushlak</b><br>
-<a href="mailto:elvira.kushlak@studio.unibo.it">elvira.kushlak@studio.unibo.it</a>
-</td>
-</tr>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <img src="statue4.png" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #b76e79;">
+      <div>
+        <div style="font-weight: bold; color: #4a4a4a; font-size: 1.1em;">Anna Pak</div>
+        <a href="mailto:anna.pak@studio.unibo.it" style="color: #b76e79; text-decoration: none; font-size: 0.9em;">anna.pak@studio.unibo.it</a>
+      </div>
+    </div>
 
-<tr>
-<td><img src="statue4.png" width="60"></td>
-<td><b>Anna Pak</b><br>
-<a href="mailto:anna.pak@studio.unibo.it">anna.pak@studio.unibo.it</a>
-</td>
-</tr>
-
-</table>
-
+  </div>
 </div>
