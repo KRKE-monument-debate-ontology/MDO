@@ -10,16 +10,13 @@
 * [State of the Art](theoretical-framework/state-of-the-art.md)
 * [Statue Chosen](theoretical-framework/statue-chosen.md)
 
-## 🧠 KNOWLEDGE REPRESENTATION
+## 🧠 KNOWLEDGE AND DATA REPRESENTATION
 
-* [Scenarios and User Story](knowledge-representation/scenarios-and-user-story.md)
-* [Knowledge Organization](knowledge-representation/knowledge-organization.md)
-* [Classes and Properties](knowledge-representation/classes-and-properties.md)
-* [Competency Questions](knowledge-representation/competency-questions.md)
-
-## 🔎 Dataset
-
-* [DATASET](dataset/dataset.md)
+* [Scenarios and User Story](knowledge-and-data-representation/scenarios-and-user-story.md)
+* [Knowledge Organization](knowledge-and-data-representation/knowledge-organization.md)
+* [DATASET](knowledge-and-data-representation/dataset.md)
+* [Classes and Properties](knowledge-and-data-representation/classes-and-properties.md)
+* [Competency Questions](knowledge-and-data-representation/competency-questions.md)
 
 ## 🖥️ LLM
 
