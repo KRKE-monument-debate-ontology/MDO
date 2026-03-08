@@ -1,10 +1,8 @@
 # Table of contents
 
-* [MDO](README.md)
-
 ## 👀 OVERVIEW
 
-* [Monument Debate Ontology](overview/monument-debate-ontology.md)
+* [Monument Debate Ontology](README.md)
 * [Methodology](overview/methodology.md)
 
 ## 💡 THEORETICAL FRAMEWORK
