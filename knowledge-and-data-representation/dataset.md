@@ -301,7 +301,22 @@ The RDF production was carried out using Python rdflib and Pandas. The resulting
 
 ## <mark style="color:$primary;">PROTÉGÉ</mark>
 
-The output turtle file resulting from the Python transformation was then used to formalize our ontology in Protégé. &#x20;
+The output turtle file resulting from the Python transformation was then used to **formalize our ontology in Protégé**.\
+We defined the hierarchical structure of the Monument Debate Ontology by mapping its core concepts to superclasses derived from the Perspectivisation ontology, as specified in our conceptual model.\
+Furthemore, Protégé was used to express **properties' characteristics** and to add **cardinality restrictions**.\
+Specifically, we employed cardinality constraints to specify that the `ActionProposal` class can have at most one `Remedy`. This implies that while a proposal may results into a single remedy, it can also exist without one if a decision has not yet been reached.
+
+To ensure logical consistency and data integrity, we carefully defined the **nature of our properties**:
+
+All the properties in our ontology are defined as both asymmetric and irreflexive.
+
+An **Asymmetric property** represents a strictly "one-way" relationship _(if A relates to B, B cannot relate to A)_, ensuring the hierarchy remains directed and non-reversible.
+
+Complementing this, an **irreflexive characteristic** prevents an entity from being related to itself _(a "no self-relation" rule)_. The subject and the object must always be different.
+
+Finally, properties like `tip:atTime`, `time:hasBeginning`, and `time:hasEnd` were declared functional. A property is **functional** when a subject can have only one unique value (object). This is essential for facts that cannot logically have multiple values, such as a specific date or a single point in time, ensuring that each event in our ontology has one clear and consistent time reference.
+
+&#x20;&#x20;
 
 Monument Debate Ontology counts NUMERO classes, NUMERO object properties, NUMERO data properties and NUMERO individuals.
 
