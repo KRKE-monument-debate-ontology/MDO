@@ -350,16 +350,20 @@ ORDER BY ?MonumentName
 #### 13) What is the outcome of the debate?
 
 ```sparql
-SELECT DISTINCT ?discussionLabel ?proposalLabel
+SELECT DISTINCT ?discussionLabel ?proposaltypeLabel ?remedytypeLabel
 WHERE {
   ?discussion mdo:resultsIn ?proposal .
+  ?proposal mdo:resultsInto ?remedy.
   
-  OPTIONAL { ?discussion rdfs:label ?discussionLabel . }
-  OPTIONAL { ?proposal rdfs:label ?proposalLabel . }
+    ?discussion rdfs:label ?discussionLabel . 
+    ?proposal crm:P2 ?proposaltype . 
+    ?remedy crm:P2 ?remedytype . 
+    ?proposaltype rdfs:label ?proposaltypeLabel . 
+    ?remedytype rdfs:label ?remedytypeLabel . 
 }
 ```
 
-<table><thead><tr><th width="545.2001342773438">discussion</th><th width="415.59991455078125">proposal</th></tr></thead><tbody><tr><td>The discussion that arises from different stakeholders' perspectives on Savile statu</td><td>Contextualization; Keeping; Removal</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Gandhi statue controversy</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Wollstonecraft statue controversy</td><td>Replace the statue with a new one</td></tr></tbody></table>
+<table><thead><tr><th width="545.2001342773438">discussion</th><th width="123.599853515625">proposal</th><th>remedy</th></tr></thead><tbody><tr><td>The discussion that arises from different stakeholders' perspectives on Colombo statue controversy</td><td>Relocation</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Colston statue controversy</td><td>Relocation</td><td>Relocation</td></tr><tr><td>The discussion that arises from different stakeholders' perspectives on Gandhi statue controversy</td><td>Removal</td><td>Removal</td></tr></tbody></table>
 
 #### 14) Which monuments triggered debates that gained significant resonance in online or social media environments?
 
