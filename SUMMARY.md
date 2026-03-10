@@ -13,7 +13,7 @@
 ## 🧠 KNOWLEDGE AND DATA REPRESENTATION
 
 * [Scenarios and User Story](knowledge-and-data-representation/scenarios-and-user-story.md)
-* [Knowledge Organization](knowledge-and-data-representation/knowledge-organization.md)
+* [Conceptual Modeling](knowledge-and-data-representation/knowledge-organization.md)
 * [Dataset](knowledge-and-data-representation/dataset.md)
 * [Classes and Properties](knowledge-and-data-representation/classes-and-properties.md)
 * [Competency Questions](knowledge-and-data-representation/competency-questions.md)
