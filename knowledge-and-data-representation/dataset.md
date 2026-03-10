@@ -316,8 +316,6 @@ Complementing this, an **irreflexive characteristic** prevents an entity from be
 
 Finally, properties like `tip:atTime`, `time:hasBeginning`, and `time:hasEnd` were declared functional. A property is **functional** when a subject can have only one unique value (object). This is essential for facts that cannot logically have multiple values, such as a specific date or a single point in time, ensuring that each event in our ontology has one clear and consistent time reference.
 
-&#x20;&#x20;
 
-Monument Debate Ontology counts NUMERO classes, NUMERO object properties, NUMERO data properties and NUMERO individuals.
 
 <figure><img src="../.gitbook/assets/protege_img.jpeg" alt=""><figcaption></figcaption></figure>
