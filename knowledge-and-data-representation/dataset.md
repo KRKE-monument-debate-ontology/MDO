@@ -299,7 +299,7 @@ The RDF production was carried out using Python rdflib and Pandas. The resulting
 
 {% embed url="https://github.com/KRKE-monument-debate-ontology/Data_MDO" %}
 
-## <mark style="color:$primary;">Protégé</mark>
+## <mark style="color:$primary;">PROTÉGÉ</mark>
 
 The output turtle file resulting from the Python transformation was then used to formalize our ontology in Protégé. &#x20;
 
