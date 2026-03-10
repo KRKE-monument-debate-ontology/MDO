@@ -14,13 +14,13 @@
 
 * [Scenarios and User Story](knowledge-and-data-representation/scenarios-and-user-story.md)
 * [Knowledge Organization](knowledge-and-data-representation/knowledge-organization.md)
-* [DATASET](knowledge-and-data-representation/dataset.md)
+* [Dataset](knowledge-and-data-representation/dataset.md)
 * [Classes and Properties](knowledge-and-data-representation/classes-and-properties.md)
 * [Competency Questions](knowledge-and-data-representation/competency-questions.md)
 
 ## 🖥️ LLM
 
-* [LLM CONDITIONING](llm/page-2.md)
+* [LLM Conditioning](llm/page-2.md)
 
 ## 📃 DOCUMENTATION
 
