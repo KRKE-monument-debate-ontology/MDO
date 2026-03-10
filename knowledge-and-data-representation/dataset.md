@@ -12,7 +12,7 @@ We organized our data in Excel sheets, one for each Class in our conceptual mode
 
 The Excel file can be downloaded [here](https://github.com/KRKE-monument-debate-ontology/Data_MDO/blob/main/dataset.xlsx?raw=true).
 
-{% file src="../.gitbook/assets/dataset.xlsx" %}
+{% file src="../.gitbook/assets/dataset (1).xlsx" %}
 
 The Python script used for the RDF production can be seen below.
 
@@ -73,6 +73,7 @@ classes = {
     "proPreservation": mdo.ProPreservation,
     "discussion": deo.Discussion,
     "actionProposal": mdo.ActionProposal,
+    "remedy": mdo.Remedy,
     "production": crm.E12_Production,
     "actor": crm.E39_Actor,
     "governmentOrganization": schema.GovernmentOrganization,
@@ -103,6 +104,7 @@ g.bind("mdo", mdo)
 g.bind("dio", dio)
 g.bind("deo", deo)
 g.bind("ceon-actor", ceonActor)
+g.bind("ceon-material", ceonMaterial)
 g.bind("tip", tip)
 g.bind("pr", pr)
 
@@ -200,7 +202,7 @@ class_id_alignment = {
     "cf": "controversialFact",
     "arg": "argument",
     "prod": "production",
-    "action": "actionProposal",
+    "proposal": "actionProposal",
     "mon": "monument",
     "heritage": "heritageConcept",
     "prorem": "proRemoval",
@@ -209,8 +211,7 @@ class_id_alignment = {
     "interval": "timeInterval",
     "feature": "physicalFeature",
     "setting": "debateSetting",
-    "contextualmaterial": "contextualMaterial",
-    "undefined": "actionUndefined"
+    "contextualmaterial": "contextualMaterial"
 }
 
 # function for aligning ids to class names
@@ -279,6 +280,7 @@ g.add((mdo.Remedy, crm.P2, crm.E55_Type))
 
 # turtle serialization
 print(g.serialize(destination="md-ontology/output.ttl", format="turtle"))
+
 
 ```
 {% endcode %}

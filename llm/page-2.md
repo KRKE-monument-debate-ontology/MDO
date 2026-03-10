@@ -23,9 +23,9 @@ This experiment tested the robustness of our ontology as a modeling framework an
 {% endstep %}
 
 {% step %}
-### Our Ontology&#x20;
+### Our Ontology
 
-{% file src="../.gitbook/assets/ontology.ttl" %}
+{% file src="../.gitbook/assets/ontology (1).ttl" %}
 {% endstep %}
 
 {% step %}
